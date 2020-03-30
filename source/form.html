@@ -26,8 +26,42 @@
       </div>
     </nav>
   </header>
-  <main>
-
+  <main class="main-page">
+    <section class="application-form">
+      <h1 class="application-form__title"></h1>
+      <p class="application-form__description"></p>
+      <form class="application-form__form form">
+        <div class="form__personal-wrapper personal-field">
+          <label class="personal-field__name">Имя:<input type="text" name="name" required placeholder="Барсик"></label>
+          <label class="personal-field__weight">Вес (кг):<input type="text" name="weight" required placeholder="7"></label>
+          <label class="personal-field__old">Возрас (лет):<input type="text" name="old" placeholder="7"></label>
+        </div>
+        <div class="form__program-choiсe-wrapper choose-program-field">
+          <label class="choose-program-field__loose-weight"><input type="radio" name="loose-weight" value="loose-weight">Похудение</label>
+          <label class="choose-program-field__weight-set"><input type="radio" name="weight-set" value="weight-set">Набор массы</label>
+          <label class="choose-program-field__advice"><input type="radio" name="need-advice" value="need-advice">Не знаю (нужен ваш совет)</label>
+        </div>
+        <div class="form__contacts-wrapper contacts-field">
+          <div class="contacts-field__title">Контактные данные (владельца кота)</div>
+          <label class="contacts-field__personal">E-mail:<input type="email" name="e-mail" required placeholder="Kuklachev@gmail.com"></label>
+          <label class="contacts-field__personal">Телефон:<input type="tel" name="phone-number" required placeholder="8 (960) 900-60-90"></label>
+        </div>
+        <div class="form__comments-wrapper comments-field">
+          <div class="comments-field__title">Комментарий</div>
+          <textarea class="comments-field__text" name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
+        </div>
+        <div class="form__related-wrapper related-field">
+          <label class="related-field__loose-weight"><input type="checkbox" name="related-sweetener" value="sweetener" checked>Сахарозаменитель</label>
+          <label class="related-field__weight-set"><input type="checkbox" name="related-water" value="water">Питьевая вода</label>
+          <label class="related-field__advice"><input type="checkbox" name="related-milk" value="milk">Молоко</label>
+          <label class="related-field__advice"><input type="checkbox" name="related-vitamin" value="vitamin">Витамины</label>
+        </div>
+        <button type="submit" class="form__button button">Отправить заявку</button>
+      </form>
+      <small class="application-form__legend">
+        <sup>*</sup> — Обязательные поля
+      </small>
+    </section>
   </main>
   <footer class="footer-page">
     <div class="footer-page__wrapper">
