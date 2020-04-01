@@ -1,0 +1,56 @@
+.footer-list {
+  width: 320px;
+  background-color: #f2f2f2;
+  list-style: none;
+  padding: 0;
+}
+.footer-list__item {
+  width: 320px;
+  height: 94px;
+}
+.footer-list__vk-icon {
+  width: 22px;
+  height: 12px;
+  background-image: url("../../img/icon-vk.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer-list__insta-icon {
+  width: 17px;
+  height: 17px;
+  background-image: url("../../img/icon-insta.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer-list__fb-icon {
+  width: 10px;
+  height: 19px;
+  background-image: url("../../img/icon-fb.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer-list__copyright {
+  text-decoration: none;
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  color: #444444;
+}
+.footer-list__copyright-logo {
+  width: 27px;
+  height: 34px;
+  background-image: url("../../img/htmlacademy.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+}
+.footer-list__html-academy-logo {
+  width: 27px;
+  height: 34px;
+  text-decoration: none;
+}

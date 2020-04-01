@@ -2,23 +2,24 @@
 <html lang="ru">
   <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="css/style.css">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image logo-img" src="https://via.placeholder.com/150x150" alt="Логотип Cat Energy">
+      <img class="page-header__logo-image logo-img" src="img/logo-mobile.svg" alt="Логотип Cat Energy">
       <nav class="main-nav">
-        <button type="button" class="main-nav__toggle">Меню</button>
+        <button type="button" class="main-nav__toggle"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
-              <a href="#" title="Главная">Главная</a>
+              <a class="menu-list__link" href="#" title="Главная">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a href="#" title="Каталог продукции">Каталог продукции</a>
+              <a class="menu-list__link" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
             </li>
             <li class="menu-list__item">
-              <a href="#" title="Подбор программы">Подбор программы</a>
+              <a class="menu-list__link" href="form.html" title="Подбор программы">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -29,23 +30,25 @@
         <div class="slogan__wrapper">
           <H1 class="slogan__title">Функциональное питание для котов</H1>
           <p class="slogan__call">Занялся собой? Займись котом!</p>
-          <img src="https://via.placeholder.com/150x150" class="slogan__image product-image" alt="Банка с питанием">
         </div>
+        <img src="img/index-can-mobile@1x.png" class="slogan__image product-image" alt="Банка с питанием">
       </section>
       <section class="programs">
         <div class="programs__wrapper">
           <h2 class="visually-hidden">Выбор программы для кота</h2>
           <a href="#" class="programs__button button" title="Подобрать программу">Подобрать программу</a>
           <ul class="programs__list">
-            <li class="programs__item programs-item--slim">
-              <h3 class="programs-item__title">Похудение</h3>
-              <p class="programs-item__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям? Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="programs-item__catalog" title="Каталог Slim">Каталог Slim</a>
+            <li class="programs__item programs-slim">
+              <h3 class="programs-slim__title">Похудение</h3>
+              <p class="programs-slim__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
+                Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
+              <a class="programs-slim__catalog" title="Каталог Slim">Каталог Slim</a>
             </li>
-            <li class="programs__item programs-item--pro">
-              <h3 class="programs-item__title">Набор массы</h3>
-              <p class="programs-item__description">Заработать авторитет среди дворовых котов и даже собак? Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="programs-item__catalog" title="Каталог Pro">Каталог Pro</a>
+            <li class="programs__item programs-pro">
+              <h3 class="programs-pro__title">Набор массы</h3>
+              <p class="programs-pro__description">Заработать авторитет среди дворовых котов и даже собак?
+                Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
+              <a class="programs-pro__catalog" title="Каталог Pro">Каталог Pro</a>
             </li>
           </ul>
         </div>
@@ -106,19 +109,24 @@
         <map class="footer-page__map"></map>
         <ul class="footer-page__list footer-list">
           <li class="footer-list__item">
-            <img class="footer-list__logo-image logo-img" src="https://via.placeholder.com/150x150" alt="Логотип Cat Energy">
+            <img class="footer-list__logo-image logo-img" src="img/logo-footer.svg" alt="Логотип Cat Energy">
           </li>
           <li class="footer-list__item">
-            <a class="footer-list__vk-icon" title="Vkontakte">
-            </a>
-            <a class="footer-list__insta-icon" title="Instagram">
-            </a>
-            <a class="footer-list__fb-icon" title="Facebook">
-            </a>
+            <div class="footer-list__vk-icon">
+              <a title="Vkontakte"></a>
+            </div>
+            <div class="footer-list__insta-icon">
+              <a title="Instagram"></a>
+            </div>
+            <div class="footer-list__fb-icon">
+              <a title="Facebook"></a>
+            </div>
           </li>
           <li class="footer-list__item">
             <a class="footer-list__copyright html-academy" href="#" title="HTML academy">HTML academy</a>
-            <a class="footer-list__copyright-logo html-academy-logo" href="#" title="HTML academy"></a>
+            <div class="footer-list__copyright-logo">
+              <a class="footer-list__html-academy-logo" href="#" title="HTML academy"></a>
+            </div>
           </li>
         </ul>
       </div>
