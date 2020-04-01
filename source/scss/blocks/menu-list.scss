@@ -1,5 +1,6 @@
 .menu-list {
   padding: 0;
+  margin: 0;
 }
 .menu-list__item {
   color: #111111;
@@ -8,5 +9,11 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+.menu-list__link {
   text-decoration: none;
+  color: #111111;
 }
