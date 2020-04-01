@@ -1,1 +1,8 @@
-body { background: red; }
+@import "source/scss/fonts";
+@import "source/scss/blocks/page-header.scss";
+@import "source/scss/blocks/page-main";
+@import "source/scss/blocks/footer-page";
+@import "source/scss/blocks/main-nav";
+@import "source/scss/blocks/menu-list";
+@import "source/scss/blocks/slogan";
+
