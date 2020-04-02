@@ -1,0 +1,50 @@
+.related {
+  list-style: none;
+  padding-left: 20px;
+  width: 280px;
+}
+.related__item {
+  border-bottom: 1px solid #f2f2f2;
+}
+.related__title {
+  font-family: 'Oswald', serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 16px;
+  text-align: left;
+  text-transform: uppercase;
+  color: #222222;
+  margin: 0;
+  padding-top: 14px;
+  padding-left: 22px;
+}
+.related__size,
+.related__price {
+  font-family: 'Arial', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 14px;
+  color: #444444;
+  margin: 0;
+  padding-top: 33px;
+}
+.related__size {
+  text-align: left;
+}
+.related__price {
+  text-align: right;
+}
+.related__button {
+  font-family: 'Oswald', serif;
+  font-weight: normal;
+  font-size: 16px;
+  line-height: 20px;
+  text-align: center;
+  text-transform: uppercase;
+  color: #ffffff;
+  margin-top: 17px;
+  margin-bottom: 17px;
+  padding: 13px 108px 12px 111px;
+  background-color: #68b738;
+  border: none;
+}
