@@ -33,29 +33,30 @@
       <p class="application-form__description">Заполните анкету и мы подберем программу питания для вашего кота</p>
       <form class="application-form__form form" action="https://echo.htmlacademy.ru">
         <fieldset class="form__personal-wrapper personal-field">
-          <label class="personal-field__name">Имя:<input type="text" name="name" required placeholder="Барсик"></label>
-          <label class="personal-field__weight">Вес (кг):<input type="text" name="weight" required placeholder="7"></label>
-          <label class="personal-field__old">Возрас (лет):<input type="text" name="old" placeholder="7"></label>
+          <label class="personal-field__name form__label">Имя:<input type="text" name="name" required placeholder="Барсик"></label>
+          <label class="personal-field__weight form__label">Вес (кг):<input type="text" name="weight" required placeholder="7"></label>
+          <label class="personal-field__old form__label">Возраст (лет):<input type="text" name="old" placeholder="7"></label>
         </fieldset>
         <fieldset class="form__program-choiсe-wrapper choose-program-field">
-          <label class="choose-program-field__loose-weight"><input type="radio" name="loose-weight" value="loose-weight">Похудение</label>
-          <label class="choose-program-field__weight-set"><input type="radio" name="weight-set" value="weight-set">Набор массы</label>
-          <label class="choose-program-field__advice"><input type="radio" name="need-advice" value="need-advice">Не знаю (нужен ваш совет)</label>
+          <label class="choose-program-field__loose-weight form__label"><input type="radio" name="loose-weight" value="loose-weight">Похудение</label>
+          <label class="choose-program-field__weight-set form__label"><input type="radio" name="weight-set" value="weight-set">Набор массы</label>
+          <label class="choose-program-field__advice form__label"><input type="radio" name="need-advice" value="need-advice">Не знаю (нужен ваш совет)</label>
         </fieldset>
         <fieldset class="form__contacts-wrapper contacts-field">
-          <legend class="contacts-field__title">Контактные данные (владельца кота)</legend>
-          <label class="contacts-field__personal">E-mail:<input type="email" name="e-mail" required placeholder="Kuklachev@gmail.com"></label>
-          <label class="contacts-field__personal">Телефон:<input type="tel" name="phone-number" required placeholder="8 (960) 900-60-90"></label>
+          <legend class="form__title contacts-field__title">Контактные данные (владельца кота)</legend>
+          <label class="contacts-field__personal form__label">E-mail:<input type="email" name="e-mail" required placeholder="Kuklachev@gmail.com"></label>
+          <label class="contacts-field__personal form__label">Телефон:<input type="tel" name="phone-number" required placeholder="8 (960) 900-60-90"></label>
         </fieldset>
         <fieldset class="form__comments-wrapper comments-field">
-          <legend class="comments-field__title">Комментарий</legend>
+          <legend class="form__title comments-field__title">Комментарий</legend>
           <textarea class="comments-field__text" name="comment" rows="5" placeholder="Расскажите обо всех повадках кота"></textarea>
         </fieldset>
         <fieldset class="form__related-wrapper related-field">
-          <label class="related-field__loose-weight"><input type="checkbox" name="related-sweetener" value="sweetener" checked>Сахарозаменитель</label>
-          <label class="related-field__weight-set"><input type="checkbox" name="related-water" value="water">Питьевая вода</label>
-          <label class="related-field__advice"><input type="checkbox" name="related-milk" value="milk">Молоко</label>
-          <label class="related-field__advice"><input type="checkbox" name="related-vitamin" value="vitamin">Витамины</label>
+          <legend class="form__title related-field__title">Дополнительно</legend>
+          <label class="related-field__loose-weight form__label"><input type="checkbox" name="related-sweetener" value="sweetener" checked>Сахарозаменитель</label>
+          <label class="related-field__weight-set form__label"><input type="checkbox" name="related-water" value="water">Питьевая вода</label>
+          <label class="related-field__advice form__label"><input type="checkbox" name="related-milk" value="milk">Молоко</label>
+          <label class="related-field__advice form__label"><input type="checkbox" name="related-vitamin" value="vitamin">Витамины</label>
         </fieldset>
         <button type="submit" class="form__button button">Отправить заявку</button>
       </form>
@@ -70,22 +71,27 @@
         <p class="footer-page__partnership">Приглашаем к сотрудничеству дилеров!</p>
         <p class="footer-page__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
       </div>
-      <map class="footer-page__map"></map>
+      <img class="footer-page__map" src="img/bg-map-mobile@1x.png" alt="карта">
       <ul class="footer-page__list footer-list">
         <li class="footer-list__item">
-          <img class="footer-list__logo-image logo-img" src="https://via.placeholder.com/150x150" alt="Логотип Cat Energy">
+          <img class="footer-list__logo-image logo-img" src="img/logo-footer.svg" alt="Логотип Cat Energy">
         </li>
         <li class="footer-list__item">
-          <a class="footer-list__vk-icon" title="Vkontakte">
-          </a>
-          <a class="footer-list__insta-icon" title="Instagram">
-          </a>
-          <a class="footer-list__fb-icon" title="Facebook">
-          </a>
+          <div class="footer-list__vk-icon">
+            <a title="Vkontakte"></a>
+          </div>
+          <div class="footer-list__insta-icon">
+            <a title="Instagram"></a>
+          </div>
+          <div class="footer-list__fb-icon">
+            <a title="Facebook"></a>
+          </div>
         </li>
         <li class="footer-list__item">
           <a class="footer-list__copyright html-academy" href="#" title="HTML academy">HTML academy</a>
-          <a class="footer-list__copyright-logo html-academy-logo" href="#" title="HTML academy"></a>
+          <div class="footer-list__copyright-logo">
+            <a class="footer-list__html-academy-logo" href="#" title="HTML academy"></a>
+          </div>
         </li>
       </ul>
     </div>
