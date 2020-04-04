@@ -6,3 +6,8 @@
     width: 768px;
   }
 }
+@media (min-width: $desktop-width) {
+  .page-main {
+    width: 1440px;
+  }
+}

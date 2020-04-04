@@ -35,3 +35,42 @@
   padding-top: 45px;
   padding-bottom: 22px;
 }
+@media (min-width: $tablet-width) {
+  .programs-pro__title {
+    font-size: 36px;
+    padding: 81px 380px 0 55px;
+  }
+  .programs-pro__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 31px 316px 0 52px;
+  }
+  .programs-pro__catalog {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 53px;
+    padding-top: 61px;
+    padding-bottom: 62px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .programs-pro__title {
+    font-size: 36px;
+    padding: 81px 100px 0 216px;
+  }
+  .programs-pro__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 75px 46px 0 52px;
+  }
+  .programs-pro__catalog {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 53px;
+    padding-top: 36px;
+    padding-bottom: 62px;
+  }
+  .programs-slim {
+    width: 570px;
+  }
+}

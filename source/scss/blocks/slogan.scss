@@ -111,3 +111,52 @@
     text-transform: uppercase;
   }
 }
+@media (min-width: $desktop-width) {
+  .slogan {
+    position: relative;
+  }
+  .slogan__wrapper {
+    width: 1440px;
+    height: 696px;
+    background-image: url("../img/index-background-desktop@1x.jpg");
+    background-repeat: no-repeat;
+    background-position: 100% 0;
+  }
+  .slogan__title {
+    margin: 0;
+    padding-top: 150px;
+    padding-left: 120px;
+    width: 460px;
+  }
+  .slogan__call {
+    margin: 0;
+    padding-top: 33px;
+    padding-left: 120px;
+  }
+  .slogan__image {
+    width: 552px;
+    height: 499px;
+    background: url("../img/index-can-desktop@1x.png") no-repeat center;
+    background-size: cover;
+    margin-left: 480px;
+    margin-top: -637px;
+  }
+  .slogan__button {
+    background-color: #68b738;
+    padding: 13px 21px 10px 18px;
+    margin: 0;
+    position: absolute;
+    top: 382px;
+    left: 119px;
+  }
+  .slogan__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald', serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+  }
+}

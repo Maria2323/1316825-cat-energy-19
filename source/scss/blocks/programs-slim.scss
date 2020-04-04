@@ -1,6 +1,4 @@
-.programs-slim {
 
-}
 .programs-slim__title {
   font-family: 'Oswald', serif;
   font-weight: normal;
@@ -34,4 +32,47 @@
   padding-left: 20px;
   padding-top: 44px;
   padding-bottom: 22px;
+}
+@media (min-width: $tablet-width) {
+  .programs-slim {
+    margin-top: 30px;
+  }
+  .programs-slim__title {
+    font-size: 36px;
+    padding: 81px 492px 0 55px;
+  }
+  .programs-slim__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 31px 316px 0 52px;
+  }
+  .programs-slim__catalog {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 53px;
+    padding-top: 61px;
+    padding-bottom: 62px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .programs-slim__title {
+    font-size: 36px;
+    padding: 81px 193px 0 216px;
+  }
+  .programs-slim__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 75px 46px 0 52px;
+  }
+  .programs-slim__catalog {
+    font-size: 20px;
+    line-height: 20px;
+    padding-left: 53px;
+    padding-top: 36px;
+    padding-bottom: 62px;
+  }
+  .programs-slim {
+    margin-right: 80px;
+    width: 570px;
+  }
 }

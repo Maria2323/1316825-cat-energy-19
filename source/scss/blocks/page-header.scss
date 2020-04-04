@@ -1,5 +1,6 @@
 .page-header {
   width: 320px;
+  min-height: 65px;
   background-color: white;
 }
 .page-header__wrapper-logo {
@@ -45,11 +46,16 @@
 }
 @media (min-width: $desktop-width) {
   .page-header {
-    width: 1200px;
+    width: 1440px;
     display: flex;
     align-items: center;
     justify-content: space-between;
     min-height: 65px;
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 10;
+    background: transparent;
   }
   .page-header__logo-image {
     width: 203px;
