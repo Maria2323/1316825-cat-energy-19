@@ -3,6 +3,14 @@
 }
 .footer-page__contacts {
   background-color: #f2f2f2;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 320px;
+  min-height: 114px;
+  &--main {
+    background-color: #ffffff;
+  }
 }
 .footer-page__partnership {
   font-family: 'Oswald', serif;
@@ -13,8 +21,7 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 31px;
-  padding-left: 19px;
+  padding-left: 20px;
 }
 .footer-page__address {
   font-family: 'Arial', sans-serif;
@@ -24,5 +31,4 @@
   text-align: left;
   color: #444444;
   margin: 0;
-  padding-top: 33px;
 }

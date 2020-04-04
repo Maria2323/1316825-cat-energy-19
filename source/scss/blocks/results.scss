@@ -23,6 +23,13 @@
   margin: 0;
   padding: 33px 34px 0 20px;
 }
+.results__wrapper-results {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 280px;
+  margin-left: 20px;
+}
 .results__sum {
   padding-top: 44px;
 }
@@ -61,6 +68,15 @@
   padding-top: 44px;
   padding-right: 9px;
 }
+.results__wrapper-before-after {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  width: 197px;
+  margin-left: 64px;
+  padding-top: 35px;
+  padding-bottom: 38px;
+}
 .results__before,
 .results__after {
   font-family: 'Oswald', serif;
@@ -70,15 +86,9 @@
   color: #111111;
   margin: 0;
 }
-.results__wrapper-before-after {
-  padding-top: 35px;
-  padding-bottom: 38px;
-}
 .results__before {
   text-align: left;
-  padding-left: 64px;
 }
 .results__after {
   text-align: right;
-  padding-right: 59px;
 }

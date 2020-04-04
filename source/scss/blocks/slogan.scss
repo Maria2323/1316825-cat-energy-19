@@ -11,7 +11,7 @@
   font-family: 'Oswald', serif;
   font-weight: normal;
   font-size: 36px;
-  line-height: 36px;
+  line-height: 1;
   text-align: center;
   margin: 0;
   padding-top: 29px;
@@ -21,9 +21,93 @@
   font-family: 'Oswald', serif;
   font-weight: normal;
   font-size: 14px;
-  line-height: 14px;
+  line-height: 1;
   text-transform: uppercase;
   text-align: center;
   margin: 0;
   padding-top: 19px;
+}
+.slogan__image {
+  width: 280px;
+  height: 270px;
+  background: url("../img/index-can-mobile@1x.png") no-repeat center;
+  margin-top: -140px;
+  margin-left: 20px;
+}
+.slogan__button {
+  background-color: #68b738;
+  padding: 14px 68px 11px 66px;
+  margin-left: 20px;
+  margin-right: 20px;
+  margin-top: 3px;
+}
+.slogan__link {
+  color: #ffffff;
+  text-decoration: none;
+  font-family: 'Oswald', serif;
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 18px;
+  text-align: center;
+  text-transform: uppercase;
+}
+@media (min-width: $tablet-width) {
+  .slogan {
+    position: relative;
+  }
+  .slogan__wrapper {
+    width: 460px;
+    height: 265px;
+    background: none;
+  }
+  .slogan__title {
+    color: #111111;
+    font-family: 'Oswald', serif;
+    font-weight: normal;
+    font-size: 60px;
+    line-height: 1;
+    text-align: left;
+    margin: 0;
+    padding-top: 68px;
+    padding-left: 120px;
+    width: 460px;
+  }
+  .slogan__call {
+    color: #111111;
+    font-family: 'Oswald', serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 1;
+    text-transform: uppercase;
+    text-align: left;
+    margin: 0;
+    padding-top: 33px;
+    padding-left: 120px;
+  }
+  .slogan__image {
+    width: 709px;
+    height: 609px;
+    background: url("../img/index-can-tablet@1x.jpg") no-repeat center;
+    background-size: cover;
+    margin-left: 20px;
+    margin-top: 0;
+  }
+  .slogan__button {
+    background-color: #68b738;
+    padding: 13px 21px 10px 18px;
+    margin: 0;
+    position: absolute;
+    top: 300px;
+    left: 119px;
+  }
+  .slogan__link {
+    color: #ffffff;
+    text-decoration: none;
+    font-family: 'Oswald', serif;
+    font-weight: normal;
+    font-size: 20px;
+    line-height: 20px;
+    text-align: left;
+    text-transform: uppercase;
+  }
 }
