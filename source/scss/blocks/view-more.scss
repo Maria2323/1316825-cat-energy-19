@@ -1,8 +1,11 @@
 .view-more {
-  border-top: 1px solid #f2f2f2;
   border-bottom: 1px solid #f2f2f2;
-  width: 320px;
+  width: 280px;
   height: 210px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
 }
 .view-more__products {
   font-family: 'Oswald', serif;
@@ -12,7 +15,7 @@
   text-align: center;
   color: #111111;
   text-transform: uppercase;
-  padding-top: 83px;
+  padding-top: 23px;
   margin: 0;
 }
 .view-more__flavours {
@@ -26,11 +29,8 @@
   padding-top: 11px;
 }
 .view-more__button {
-  margin-left: 20px;
-  margin-bottom: 38px;
-  margin-top: 34px;
-}
-.view-more__link {
+  display: block;
+  margin-top: 22px;
   text-decoration: none;
   background-color: #f2f2f2;
   color: #444444;
@@ -40,19 +40,17 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  padding: 13px 94px 12px 97px;
+  padding: 13px 90px 12px 93px;
 }
 @media (min-width: $tablet-width) {
   .view-more {
     border: 1px solid #f2f2f2;
     width: 322px;
-    height: 432px;
+    height: 430px;
   }
   .view-more__products {
     font-size: 20px;
-    padding-top: 166px;
-    padding-left: 96px;
-    margin: 0;
+    padding-top: 128px;
     width: 143px;
   }
   .view-more__flavours {
@@ -60,43 +58,17 @@
     margin: 0;
     width: 175px;
     padding-top: 28px;
-    padding-left: 80px;
   }
   .view-more__button {
-    margin-left: 38px;
-    margin-bottom: 40px;
     margin-top: 85px;
-  }
-  .view-more__link {
     padding: 13px 79px 12px 81px;
   }
 }
 @media (min-width: $desktop-width) {
   .view-more {
-    border: 1px solid #f2f2f2;
     width: 243px;
-    height: 432px;
-  }
-  .view-more__products {
-    font-size: 20px;
-    padding-top: 166px;
-    padding-left: 56px;
-    margin: 0;
-    width: 143px;
-  }
-  .view-more__flavours {
-    font-size: 16px;
-    margin: 0;
-    width: 175px;
-    padding-top: 28px;
-    padding-left: 40px;
   }
   .view-more__button {
-    margin-left: 38px;
-    margin-bottom: 40px;
-    margin-top: 85px;
-  }
-  .view-more__link {
     padding: 13px 39px 12px 41px;
   }
 }
