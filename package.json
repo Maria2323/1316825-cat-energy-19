@@ -33,7 +33,7 @@
     "source/*.html",
     "source/js/**/*.js",
     "source/img/**/*.svg",
-    "source/less/**/*.less"
+    "source/scss/**/*.scss"
   ],
   "engines": {
     "node": "8.16"

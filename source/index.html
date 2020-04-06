@@ -3,23 +3,26 @@
   <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи</title>
   </head>
   <body>
     <header class="page-header">
-      <img class="page-header__logo-image logo-img" src="img/logo-mobile.svg" alt="Логотип Cat Energy">
+      <div class="page-header__wrapper-logo">
+        <div class="page-header__logo-image logo-img"></div>
+        <button type="button" class="page-header__toggle"></button>
+      </div>
       <nav class="main-nav">
-        <button type="button" class="main-nav__toggle"></button>
         <div class="main-nav__wrapper">
           <ul class="main-nav__list menu-list">
             <li class="menu-list__item">
-              <a class="menu-list__link" href="#" title="Главная">Главная</a>
+              <a class="menu-list__link menu-list__link--white" href="#" title="Главная">Главная</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
+              <a class="menu-list__link menu-list__link--white" href="catalog.html" title="Каталог продукции">Каталог продукции</a>
             </li>
             <li class="menu-list__item">
-              <a class="menu-list__link" href="form.html" title="Подбор программы">Подбор программы</a>
+              <a class="menu-list__link menu-list__link--white" href="form.html" title="Подбор программы">Подбор программы</a>
             </li>
           </ul>
         </div>
@@ -31,24 +34,27 @@
           <H1 class="slogan__title">Функциональное питание для котов</H1>
           <p class="slogan__call">Занялся собой? Займись котом!</p>
         </div>
-        <img src="img/index-can-mobile@1x.png" class="slogan__image product-image" alt="Банка с питанием">
+        <a href="#" class="slogan__button button" title="Подобрать программу">Подобрать программу</a>
       </section>
       <section class="programs">
         <div class="programs__wrapper">
           <h2 class="visually-hidden">Выбор программы для кота</h2>
-          <a href="#" class="programs__button button" title="Подобрать программу">Подобрать программу</a>
           <ul class="programs__list">
             <li class="programs__item programs-slim">
               <h3 class="programs-slim__title">Похудение</h3>
               <p class="programs-slim__description">Ваш кот весит больше собаки и почти утратил способность лазить по деревьям?
                 Пора на диету! Cat Energy Slim поможет вашему питомцу сбросить лишний вес.</p>
-              <a class="programs-slim__catalog" title="Каталог Slim">Каталог Slim</a>
+              <div class="programs-slim__catalog">
+                <a class="programs-slim__link" title="Каталог Slim">Каталог Slim</a>
+              </div>
             </li>
             <li class="programs__item programs-pro">
               <h3 class="programs-pro__title">Набор массы</h3>
               <p class="programs-pro__description">Заработать авторитет среди дворовых котов и даже собак?
                 Серия Cat Energy Pro поможет вашему коту нарастить необходимые мышцы!</p>
-              <a class="programs-pro__catalog" title="Каталог Pro">Каталог Pro</a>
+              <div class="programs-pro__catalog">
+                <a class="programs-pro__link" title="Каталог Pro">Каталог Pro</a>
+              </div>
             </li>
           </ul>
         </div>
@@ -102,7 +108,7 @@
     </main>
     <footer class="footer-page">
       <div class="footer-page__wrapper">
-        <div class="footer-page__contacts">
+        <div class="footer-page__contacts footer-page__contacts--main">
           <p class="footer-page__partnership">Приглашаем к сотрудничеству дилеров!</p>
           <p class="footer-page__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
         </div>

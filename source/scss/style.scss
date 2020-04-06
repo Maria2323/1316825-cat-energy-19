@@ -1,4 +1,7 @@
+@import "general";
 @import "source/scss/fonts.scss";
+@import "source/scss/vars.scss";
+@import "source/scss/blocks/visually-hidden.scss";
 @import "source/scss/blocks/page-header.scss";
 @import "source/scss/blocks/page-main.scss";
 @import "source/scss/blocks/footer-page.scss";
@@ -20,4 +23,5 @@
 @import "source/scss/blocks/application-form.scss";
 @import "source/scss/blocks/form.scss";
 @import "source/scss/blocks/personal-field.scss";
+@import "source/scss/blocks/product-item.scss";
 

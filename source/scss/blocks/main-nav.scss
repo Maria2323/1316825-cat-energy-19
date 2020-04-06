@@ -1,19 +1,30 @@
 .main-nav {
   width: 320px;
 }
-.main-nav__toggle {
-  width: 19px;
-  height: 19px;
-  background-color: transparent;
-  background-image: url("../img/icon-close.svg");
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-  border: 0;
-  padding: 0;
-}
 .main-nav__list {
   width: 320px;
   list-style: none;
   padding: 0;
+  display: block;
+}
+@media (min-width: $tablet-width) {
+  .main-nav {
+    width: 469px;
+  }
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+@media (min-width: $desktop-width) {
+  .main-nav {
+    width: 477px;
+    margin-right: 110px;
+  }
+  .main-nav__list {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
 }

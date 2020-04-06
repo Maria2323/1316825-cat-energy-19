@@ -21,3 +21,119 @@
   text-align: left;
   color: #444444;
 }
+.functionality__image--leaf {
+  width: 60px;
+  height: 60px;
+  background: #68b738 url("../img/advantage-leaf@1x.png") no-repeat center;
+}
+.functionality__image--water {
+  width: 60px;
+  height: 60px;
+  background: #68b738 url("../img/advantage-powder@1x.png") no-repeat center;
+}
+.functionality__image--fork {
+  width: 60px;
+  height: 60px;
+  background: #68b738 url("../img/advantage-dining@1x.png") no-repeat center;
+}
+.functionality__image--watch {
+  width: 60px;
+  height: 60px;
+  background: #68b738 url("../img/advantage-clock@1x.png") no-repeat center;
+}
+@media (min-width: $tablet-width) {
+  .functionality {
+    width: 650px;
+    min-height: 729px;
+  }
+  .functionality__title {
+    font-size: 60px;
+    padding-left: 33px;
+  }
+  .functionality__list {
+    width: 650px;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+  }
+  .functionality__item {
+    font-size: 16px;
+    line-height: 24px;
+    width: 201px;
+    height: 228px;
+  }
+  .functionality__item:first-child,
+  .functionality__item:nth-child(3) {
+    margin-right: 187px;
+  }
+  .functionality__image--leaf {
+    width: 80px;
+    height: 80px;
+  }
+  .functionality__image--water {
+    width: 80px;
+    height: 80px;
+  }
+  .functionality__image--fork {
+    width: 80px;
+    height: 80px;
+  }
+  .functionality__image--watch {
+    width: 80px;
+    height: 80px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .functionality {
+    width: 1220px;
+    min-height: 444px;
+  }
+  .functionality__title {
+    font-size: 60px;
+    padding-left: 113px;
+    margin-bottom: 61px;
+  }
+  .functionality__list {
+    width: 1220px;
+    margin-left: 110px;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    align-items: center;
+    align-content: space-between;
+  }
+  .functionality__item {
+    font-size: 16px;
+    line-height: 24px;
+    width: 201px;
+    height: 228px;
+  }
+  .functionality__item:first-child {
+    margin-right: 124px;
+  }
+  .functionality__item:nth-child(2) {
+    margin-right: 89px;
+  }
+  .functionality__item:nth-child(3) {
+    margin-right: 87px;
+  }
+  .functionality__image--leaf {
+    width: 80px;
+    height: 80px;
+  }
+  .functionality__image--water {
+    width: 80px;
+    height: 80px;
+  }
+  .functionality__image--fork {
+    width: 80px;
+    height: 80px;
+  }
+  .functionality__image--watch {
+    width: 80px;
+    height: 80px;
+  }
+}
