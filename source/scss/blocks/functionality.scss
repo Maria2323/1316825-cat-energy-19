@@ -2,6 +2,11 @@
   width: 320px;
   height: 447px;
 }
+.functionality__wrapper {
+  width: 320px;
+  height: 447px;
+  padding-left: 20px;
+}
 .functionality__title {
   font-family: 'Oswald', serif;
   font-weight: 400;
@@ -12,6 +17,8 @@
 }
 .functionality__list {
   list-style: none;
+  padding: 0;
+  margin: 0;
 }
 .functionality__item {
   font-family: 'ArialMT', sans-serif;
@@ -20,6 +27,13 @@
   line-height: 18px;
   text-align: left;
   color: #444444;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.functionality__description {
+  width: 190px;
+  height: 50px;
 }
 .functionality__image--leaf {
   width: 60px;
@@ -43,12 +57,19 @@
 }
 @media (min-width: $tablet-width) {
   .functionality {
-    width: 650px;
+    width: 768px;
     min-height: 729px;
+    border-bottom: 1px solid #cdcdcd;
+  }
+  .functionality__wrapper {
+    width: 650px;
+    height: 729px;
+    padding-left: 30px;
+    padding-right: 109px;
   }
   .functionality__title {
     font-size: 60px;
-    padding-left: 33px;
+    padding-left: 3px;
   }
   .functionality__list {
     width: 650px;
@@ -63,10 +84,18 @@
     line-height: 24px;
     width: 201px;
     height: 228px;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
   }
   .functionality__item:first-child,
   .functionality__item:nth-child(3) {
     margin-right: 187px;
+  }
+  .functionality__item:first-child,
+  .functionality__item:nth-child(2) {
+    margin-bottom: 89px;
   }
   .functionality__image--leaf {
     width: 80px;
@@ -87,8 +116,15 @@
 }
 @media (min-width: $desktop-width) {
   .functionality {
+    width: 1440px;
+    min-height: 356px;
+    border-bottom: none;
+  }
+  .functionality__wrapper {
     width: 1220px;
-    min-height: 444px;
+    height: 356px;
+    padding-left: 110px;
+    padding-right: 112px;
   }
   .functionality__title {
     font-size: 60px;
@@ -113,9 +149,11 @@
   }
   .functionality__item:first-child {
     margin-right: 124px;
+    margin-bottom: 0;
   }
   .functionality__item:nth-child(2) {
     margin-right: 89px;
+    margin-bottom: 0;
   }
   .functionality__item:nth-child(3) {
     margin-right: 87px;

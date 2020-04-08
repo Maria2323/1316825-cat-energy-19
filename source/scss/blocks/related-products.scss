@@ -2,10 +2,45 @@
   font-family: 'Oswald', serif;
   font-weight: normal;
   font-size: 24px;
-  line-height: 24px;
+  line-height: 1;
   text-align: left;
   color: #111111;
   margin: 0;
   padding-top: 31px;
+  padding-bottom: 30px;
   padding-left: 19px;
+}
+.related__description {
+  display: flex;
+  justify-content: space-between;
+}
+@media (min-width: $tablet-width) {
+  .related-products__title {
+    font-size: 36px;
+    padding-top: 0;
+    padding-bottom: 75px;
+    padding-left: 67px;
+  }
+  .related__description {
+    display: flex;
+    justify-content: space-between;
+  }
+}
+@media (min-width: $desktop-width) {
+  .related-products__title {
+    padding-bottom: 75px;
+    padding-left: 109px;
+  }
+  .related__description {
+    display: flex;
+    justify-content: space-between;
+  }
+  .related-products__wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 1220px;
+    margin-left: 110px;
+    margin-bottom: 86px;
+  }
 }

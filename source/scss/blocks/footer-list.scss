@@ -4,6 +4,7 @@
   width: 280px;
   background-color: #f2f2f2;
   list-style: none;
+  margin: 0;
 }
 .footer-list__item {
   height: 94px;
@@ -78,7 +79,7 @@
   .footer-list {
     padding-left: 31px;
     padding-right: 30px;
-    width: 768px;
+    width: 707px;
     height: 150px;
     display: flex;
     align-items: center;
@@ -106,16 +107,25 @@
   .footer-list__logo-image {
     padding-left: 0;
   }
+  .footer-list__vk-icon {
+    width: 30px;
+    height: 16px;
+  }
+  .footer-list__insta-icon {
+    width: 23px;
+    height: 23px;
+  }
+  .footer-list__fb-icon {
+    width: 14px;
+    height: 28px;
+  }
 }
 @media (min-width: $desktop-width) {
   .footer-list {
     padding-left: 31px;
     padding-right: 30px;
-    width: 1440px;
+    width: 1379px;
     height: 150px;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
   }
   .footer-list__item {
     height: 34px;
