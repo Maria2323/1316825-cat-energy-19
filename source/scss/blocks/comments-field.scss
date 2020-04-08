@@ -1,0 +1,41 @@
+.comments-field {
+  height: 237px;
+  border: none;
+  padding: 0;
+  margin: 0;
+}
+.comments-field__title {
+  padding-bottom: 31px;
+}
+.comments-field__text {
+  width: 280px;
+  height: 150px;
+  padding: 0;
+  border: 1px solid #cdcdcd;
+}
+@media (min-width: $tablet-width) {
+  .comments-field {
+    height: 351px;
+  }
+  .comments-field__title {
+    padding-bottom: 71px;
+    padding-top: 69px;
+  }
+  .comments-field__text {
+    width: 629px;
+    height: 172px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .comments-field {
+    height: 353px;
+  }
+  .comments-field__title {
+    padding-bottom: 71px;
+    padding-top: 71px;
+  }
+  .comments-field__text {
+    width: 1218px;
+    height: 172px;
+  }
+}

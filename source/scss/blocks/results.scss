@@ -1,6 +1,10 @@
 .results {
   width: 320px;
+  height: 705px;
   background-color: #f2f2f2;
+}
+.results__wrapper {
+  height: 385px;
 }
 .results__title {
   font-family: 'Oswald', serif;
@@ -31,7 +35,8 @@
   margin-left: 20px;
 }
 .results__sum {
-  padding-top: 44px;
+  padding-top: 27px;
+  height: 94px;
 }
 .results__kg,
 .results__days {
@@ -42,17 +47,25 @@
   text-align: center;
   color: #111111;
   margin: 0;
+  width: 124px;
+  height: 39px;
+  outline: 1px solid #cdcdcd;
+  padding-top: 17px;
 }
 .results__weight-loss,
 .results__time-spent {
   font-family: 'Arial', sans-serif;
   font-weight: normal;
   font-size: 12px;
-  line-height: 12px;
+  line-height: 1;
   text-align: center;
   color: #444444;
-  margin: 0;
-  padding-top: 12px;
+  padding-left: 16px;
+  padding-right: 17px;
+  margin-top: -6px;
+  margin-bottom: 0;
+  width: 87px;
+  height: 23px;
 }
 .results__money-spent {
   font-family: 'Oswald', serif;
@@ -62,17 +75,18 @@
   text-align: center;
   color: #111111;
   margin: 0;
-  padding-top: 25px;
 }
 .results__cat-image {
-  padding-top: 44px;
+  height: 232px;
   padding-right: 9px;
+  background: url("../img/before-mobile@1x.png") no-repeat center;
 }
 .results__wrapper-before-after {
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
   width: 197px;
+  height: 88px;
   margin-left: 64px;
   padding-top: 35px;
   padding-bottom: 38px;
@@ -84,6 +98,7 @@
   font-size: 16px;
   line-height: 20px;
   color: #111111;
+  text-transform: uppercase;
   margin: 0;
 }
 .results__before {
@@ -91,4 +106,143 @@
 }
 .results__after {
   text-align: right;
+}
+@media (min-width: $tablet-width) {
+  .results {
+    width: 768px;
+    height: 1081px;
+    background-color: #f2f2f2;
+  }
+  .results__wrapper {
+    height: 619px;
+    width: 768px;
+    background-color: #ffffff;
+  }
+  .results__title {
+    font-size: 60px;
+    padding-left: 30px;
+    padding-top: 51px;
+  }
+  .results__description {
+    font-size: 16px;
+    line-height: 24px;
+    padding: 60px 63px 0 31px;
+  }
+  .results__wrap {
+    width: 707px;
+    padding-left: 30px;
+    padding-right: 31px;
+    height: 214px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .results__money-spent {
+    font-size: 20px;
+    line-height: 20px;
+    text-align: right;
+    width: 174px;
+  }
+  .results__wrapper-results {
+    width: 366px;
+    margin-left: 0;
+  }
+  .results__sum {
+    padding-top: 0;
+    height: 74px;
+  }
+  .results__kg,
+  .results__days {
+    font-size: 30px;
+    line-height: 37px;
+    width: 162px;
+    height: 50px;
+    padding-top: 22px;
+    text-transform: uppercase;
+  }
+  .results__weight-loss,
+  .results__time-spent {
+    font-size: 14px;
+    padding: 0;
+    margin-top: -6px;
+    margin-bottom: 0;
+    width: 162px;
+  }
+  .results__image-wrap {
+    width: 768px;
+    height: 631px;
+  }
+  .results__wrapper-before-after {
+    width: 533px;
+    height: 93px;
+    margin-left: 99px;
+    padding-top: 21px;
+    padding-bottom: 0;
+  }
+  .results__cat-image {
+    height: 517px;
+    padding-right: 0;
+    margin-top: -169px;
+    background-image: url("../img/before-tablet@1x.png"), url("../img/after-tablet@1x.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 46px bottom, 146px bottom;
+  }
+}
+@media (min-width: $desktop-width) {
+  .results {
+    width: 1440px;
+    height: 652px;
+    background-color: #ffffff;
+    display: flex;
+  }
+  .results__wrapper {
+    height: 462px;
+    width: 680px;
+    background-color: #f2f2f2;
+    margin-top: 190px;
+  }
+  .results__title {
+    padding-left: 110px;
+    padding-top: 63px;
+    margin-top: -190px;
+  }
+  .results__description {
+    padding: 142px 139px 0 111px;
+  }
+  .results__wrap {
+    width: 366px;
+    padding-left: 111px;
+    padding-right: 31px;
+    padding-top: 71px;
+    height: 156px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .results__money-spent {
+    text-align: left;
+    width: 326px;
+  }
+  .results__image-wrap {
+    width: 768px;
+    height: 462px;
+    background-color: #f2f2f2;
+    margin-top: 190px;
+  }
+  .results__wrapper-before-after {
+    width: 533px;
+    height: 93px;
+    margin-left: 99px;
+    padding-top: 42px;
+    padding-bottom: 0;
+  }
+  .results__cat-image {
+    height: 517px;
+    padding-right: 0;
+    margin-top: -190px;
+    background-image: url("../img/before-desktop@1x.png"), url("../img/after-desktop@1x.png");
+    background-repeat: no-repeat, no-repeat;
+    background-position: 20px bottom, 120px bottom;
+  }
 }

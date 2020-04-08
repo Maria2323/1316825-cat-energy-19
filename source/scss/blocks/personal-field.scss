@@ -1,5 +1,72 @@
+.personal-field {
+  border: none;
+  height: 163px;
+  padding: 39px 0 23px 20px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
+}
 .personal-field__name,
 .personal-field__weight,
 .personal-field__old {
-  padding-left: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.personal-field__name,
+.personal-field__weight {
+  margin-bottom: 14px;
+}
+.personal-field__input {
+  padding-top: 15px;
+  padding-left: 16px;
+  padding-bottom: 15px;
+  flex-grow: 1;
+  border: 1px solid #cdcdcd;
+  &--name {
+    margin-left: 15px;
+  }
+  &--weight {
+    margin-left: 18px;
+  }
+  &--old {
+    margin-left: 16px;
+  }
+}
+@media (min-width: $tablet-width) {
+  .personal-field {
+    height: 196px;
+    padding-left: 1px;
+    padding-top: 69px;
+    padding-bottom: 72px;
+  }
+  .personal-field__name,
+  .personal-field__weight {
+    margin-bottom: 20px;
+  }
+  .personal-field__input {
+    padding-top: 17px;
+    padding-left: 20px;
+    padding-bottom: 17px;
+
+    &--name {
+      margin-left: 16px;
+    }
+
+    &--weight {
+      margin-left: 19px;
+    }
+
+    &--old {
+      margin-left: 17px;
+    }
+  }
+}
+@media (min-width: $desktop-width) {
+  .personal-field {
+    height: 196px;
+    padding: 0;
+    width: 570px;
+  }
 }

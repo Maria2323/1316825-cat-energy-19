@@ -4,19 +4,21 @@
   width: 280px;
 }
 .related__item {
-  border-bottom: 1px solid #f2f2f2;
+  border-bottom: 1px solid #cdcdcd;
+}
+.related__item:first-of-type {
+  border-top: 1px solid #cdcdcd;
 }
 .related__title {
   font-family: 'Oswald', serif;
   font-weight: normal;
   font-size: 16px;
-  line-height: 16px;
+  line-height: 1;
   text-align: left;
   text-transform: uppercase;
   color: #222222;
   margin: 0;
   padding-top: 14px;
-  padding-left: 22px;
 }
 .related__size,
 .related__price {
@@ -47,4 +49,85 @@
   padding: 13px 108px 12px 111px;
   background-color: #68b738;
   border: none;
+}
+@media (min-width: $tablet-width) {
+  .related {
+    padding-left: 30px;
+    width: 708px;
+    margin: 0;
+  }
+  .related__item {
+    border: 1px solid #cdcdcd;
+  }
+  .related__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 633px;
+    margin-left: 40px;
+  }
+  .related__description {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .related__title {
+    font-size: 20px;
+    padding-top: 14px;
+    width: 160px;
+  }
+  .related__size,
+  .related__price {
+    font-size: 16px;
+    line-height: 20px;
+    padding-top: 33px;
+    text-align: right;
+  }
+  .related__button {
+    margin: 17px 37px 28px 38px;
+    padding: 13px 287px 12px 285px;
+  }
+}
+@media (min-width: $desktop-width) {
+  .related {
+    padding: 0;
+    width: 895px;
+    margin: 0;
+  }
+  .related__item {
+    border: 1px solid #cdcdcd;
+    border-left: none;
+    border-right: none;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+  }
+  .related__wrap {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 633px;
+    margin: 0;
+  }
+  .related__description {
+    width: 230px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  .related__title {
+    padding: 0;
+    width: 160px;
+  }
+  .related__size,
+  .related__price {
+    padding: 0;
+    text-align: left;
+  }
+  .related__button {
+    margin-top: 15px;
+    margin-bottom: 16px;
+    padding: 13px 91px 12px 93px;
+  }
 }
