@@ -20,10 +20,8 @@
 @media (min-width: $tablet-width) {
   .menu-list__item {
     color: #222222;
-    font-family: 'Oswald', serif;
     font-size: 18px;
     line-height: 25px;
-    text-transform: uppercase;
     text-align: left;
     border-top: none;
   }
@@ -33,12 +31,9 @@
 }
 @media (min-width: $desktop-width) {
   .menu-list__item {
-    font-family: 'Oswald', serif;
     font-size: 20px;
     line-height: 25px;
     text-transform: uppercase;
-    text-align: left;
-    border-top: none;
   }
   .menu-list__link--white {
     text-decoration: none;
