@@ -10,11 +10,10 @@
   align-items: center;
   justify-content: center;
 }
-.gift__icon {
+.gift__icon-wrap {
   width: 56px;
   height: 61px;
   padding-bottom: 30px;
-  background: url("../img/icon-gift.svg") no-repeat center;
 }
 .gift__description {
   color: #ffffff;
@@ -38,11 +37,10 @@
     flex-direction: row;
     justify-content: space-around;
   }
-  .gift__icon {
+  .gift__icon-wrap {
     width: 56px;
     height: 61px;
     padding-bottom: 0;
-    background: url("../img/icon-gift.svg") no-repeat center;
   }
   .gift__description {
     text-align: left;
@@ -58,11 +56,10 @@
     flex-direction: column;
     justify-content: center;
   }
-  .gift__icon {
+  .gift__icon-wrap {
     width: 56px;
     height: 61px;
     padding-bottom: 30px;
-    background: url("../img/icon-gift.svg") no-repeat center;
   }
   .gift__description {
     text-align: center;

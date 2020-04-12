@@ -1,11 +1,17 @@
 .programs {
   width: 320px;
+  height: 552px;
 }
 .programs__list {
   list-style: none;
   padding-left: 20px;
   padding-right: 20px;
-  margin-top: 22px;
+  height: 552px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+  margin: 0;
 }
 .programs__item {
   background-color: #f2f2f2;
@@ -13,25 +19,25 @@
 @media (min-width: $tablet-width) {
   .programs {
     width: 708px;
+    height: 774px;
     margin-left: 30px;
+    margin-bottom: 51px;
   }
   .programs__list {
     padding: 0;
+    height: 774px;
   }
 }
 @media (min-width: $desktop-width) {
   .programs {
     width: 1220px;
     margin-left: 110px;
-    margin-top: 160px;
-  }
-  .programs__wrapper {
-    width: 1220px;
+    margin-top: 80px;
+    height: 372px;
   }
   .programs__list {
     padding: 0;
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+    flex-direction: row;
+    height: 372px;
   }
 }

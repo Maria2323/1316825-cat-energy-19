@@ -1,3 +1,6 @@
+.related-products {
+  position: relative;
+}
 .related-products__title {
   font-family: 'Oswald', serif;
   font-weight: normal;
@@ -9,6 +12,15 @@
   padding-top: 31px;
   padding-bottom: 30px;
   padding-left: 19px;
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 45px;
+    right: 0;
+    width: 53px;
+    height: 3px;
+    background-color: #68b738;
+  }
 }
 .related__description {
   display: flex;
@@ -20,6 +32,20 @@
     padding-top: 0;
     padding-bottom: 75px;
     padding-left: 67px;
+    &::after {
+      top: 20px;
+      right: 0;
+      width: 335px;
+    }
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 20px;
+      left: 0;
+      width: 29px;
+      height: 3px;
+      background-color: #68b738;
+    }
   }
   .related__description {
     display: flex;
@@ -30,6 +56,14 @@
   .related-products__title {
     padding-bottom: 75px;
     padding-left: 109px;
+    &::after {
+      top: 20px;
+      width: 930px;
+    }
+    &::before {
+      top: 20px;
+      width: 80px;
+    }
   }
   .related__description {
     display: flex;

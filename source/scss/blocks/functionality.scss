@@ -3,13 +3,13 @@
   height: 447px;
 }
 .functionality__wrapper {
-  width: 320px;
+  width: 300px;
   height: 447px;
   padding-left: 20px;
 }
 .functionality__title {
   font-family: 'Oswald', serif;
-  font-weight: 400;
+  font-weight: normal;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
@@ -88,6 +88,69 @@
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
+    position: relative;
+  }
+  .functionality__description {
+    &--1::before {
+      content: "1";
+      font-family: 'Oswald', sans-serif;
+      text-align: left;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: normal;
+      margin: 0;
+      color: #f2f2f2;
+      position: absolute;
+      bottom: 40px;
+      right: 10px;
+      width: 71px;
+      height: 228px;
+    }
+    &--2::after {
+      content: "2";
+      font-family: 'Oswald', sans-serif;
+      text-align: left;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: normal;
+      margin: 0;
+      color: #f2f2f2;
+      position: absolute;
+      bottom: 40px;
+      right: 60px;
+      width: 71px;
+      height: 228px;
+    }
+    &--3::after {
+      content: "3";
+      font-family: 'Oswald', sans-serif;
+      text-align: left;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: normal;
+      margin: 0;
+      color: #f2f2f2;
+      position: absolute;
+      bottom: 40px;
+      right: 60px;
+      width: 71px;
+      height: 228px;
+    }
+    &--4::after {
+      content: "4";
+      font-family: 'Oswald', sans-serif;
+      text-align: left;
+      font-size: 281px;
+      line-height: 281px;
+      font-weight: normal;
+      margin: 0;
+      color: #f2f2f2;
+      position: absolute;
+      bottom: 40px;
+      right: 65px;
+      width: 71px;
+      height: 228px;
+    }
   }
   .functionality__item:first-child,
   .functionality__item:nth-child(3) {
@@ -128,12 +191,12 @@
   }
   .functionality__title {
     font-size: 60px;
-    padding-left: 113px;
+    padding: 0;
     margin-bottom: 61px;
   }
   .functionality__list {
     width: 1220px;
-    margin-left: 110px;
+    margin: 0;
     padding: 0;
     display: flex;
     flex-wrap: wrap;
