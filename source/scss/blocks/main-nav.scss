@@ -1,25 +1,16 @@
 .main-nav {
-  width: 320px;
-}
-.main-nav__list {
-  width: 320px;
-  list-style: none;
-  padding: 0;
-  display: block;
+  width: 100%;
 }
 @media (min-width: $tablet-width) {
   .main-nav {
-    width: 469px;
-  }
-  .main-nav__list {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
+    width: 57%;
+    margin-right: 4%;
   }
 }
 @media (min-width: $desktop-width) {
   .main-nav {
-    width: 477px;
-    margin-right: 110px;
+    margin-top: 53px;
+    width: 33%;
+    margin-right: 7.8%;
   }
 }

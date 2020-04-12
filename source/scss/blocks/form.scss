@@ -17,6 +17,9 @@
   color: #111111;
   margin: 0;
 }
+.form__button-wrap {
+  margin-top: 34px;
+}
 .form__button {
   font-family: 'Oswald', serif;
   font-weight: normal;
@@ -25,7 +28,6 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin-top: 34px;
   margin-left: 20px;
   margin-bottom: 23px;
   padding: 13px 77px 11px 80px;
@@ -33,6 +35,9 @@
   border: none;
 }
 @media (min-width: $tablet-width) {
+  .form__title {
+    font-size: 36px;
+  }
   .form__button {
     font-size: 20px;
     margin: 0;
@@ -47,6 +52,7 @@
     align-items: center;
     justify-content: space-between;
     width: 502px;
+    margin-top: 54px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -68,5 +74,6 @@
   }
   .form__button-wrap {
     width: 828px;
+    margin-top: 61px;
   }
 }

@@ -1,49 +1,60 @@
 .choose-program-field {
   height: 115px;
-  padding-top: 21px;
-  padding-bottom: 22px;
-  padding-left: 20px;
+  width: 298px;
+  padding: 21px 0 22px 20px;
+  margin: 0;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  border-right: none;
-  border-left: none;
-  border-bottom: 1px solid #f2f2f2;
-  border-top: 1px solid #f2f2f2;
+  border: 1px solid #cdcdcd;
+}
+.choose-program-field__loose-weight,
+.choose-program-field__weight-set,
+.choose-program-field__advice {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
 }
 .choose-program-field__loose-weight {
-  padding-bottom: 26px;
+  padding-bottom: 13px;
 }
 .choose-program-field__weight-set {
-  padding-bottom: 27px;
+  padding-bottom: 12px;
+}
+.choose-program-field__input {
+  display: none;
+}
+.choose-program-field__check {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 16px;
+  border: 1px solid #cdcdcd;
+  border-radius: 50%;
 }
 @media (min-width: $tablet-width) {
   .choose-program-field {
-    height: 127px;
-    border: 1px solid #cdcdcd;
-    padding-top: 36px;
-    padding-bottom: 33px;
-    padding-left: 20px;
+    height: 146px;
+    width: 600px;
+    padding-top: 25px;
+    padding-bottom: 25px;
+    padding-left: 28px;
   }
-  .choose-program-field__loose-weight {
-    padding-bottom: 33px;
-  }
+  .choose-program-field__loose-weight,
   .choose-program-field__weight-set {
-    padding-bottom: 35px;
+    padding-bottom: 13px;
+  }
+  .choose-program-field__check {
+    width: 38px;
+    height: 38px;
+    margin-right: 20px;
   }
 }
 @media (min-width: $desktop-width) {
   .choose-program-field {
-    height: 196px;
-    width: 570px;
-    padding: 0;
-  }
-  .choose-program-field__loose-weight {
-    padding-bottom: 33px;
-    padding-top: 36px;
-  }
-  .choose-program-field__weight-set {
-    padding-bottom: 35px;
+    height: 146px;
+    width: 542px;
+    padding-left: 28px;
   }
 }

@@ -1,6 +1,21 @@
 .related-field {
-  height: 213px;
+  height: 244px;
   border: none;
+  padding: 0 0 0 20px;
+  margin: 0;
+  position: relative;
+}
+.related-field__title {
+  padding-top: 21px;
+  &::after {
+    content: " ";
+    position: absolute;
+    top: 35px;
+    right: 0;
+    width: 136px;
+    height: 3px;
+    background-color: #68b738;
+  }
 }
 .related-field__wrap {
   display: flex;
@@ -10,12 +25,44 @@
   padding-top: 39px;
 }
 .related-field__label {
-  padding-bottom: 28px;
-  padding-left: 16px;
+  padding-bottom: 12px;
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+}
+.related-field__input {
+  display: none;
+}
+.related-field__tick {
+  width: 22px;
+  height: 17px;
+  padding-left: 5px;
+  padding-top: 3px;
+}
+.related-field__checkbox {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  margin-right: 16px;
+  border: 1px solid #cdcdcd;
 }
 @media (min-width: $tablet-width) {
   .related-field__title {
-    padding-top: 69px;
+    padding-top: 68px;
+    &::after {
+      top: 90px;
+      right: -65px;
+      width: 440px;
+    }
+    &::before {
+      content: " ";
+      position: absolute;
+      top: 90px;
+      left: -70px;
+      width: 29px;
+      height: 3px;
+      background-color: #68b738;
+    }
   }
   .related-field {
     height: 270px;
@@ -26,32 +73,57 @@
     flex-wrap: wrap;
     align-items: center;
     justify-content: flex-start;
-    padding-top: 64px;
+    padding-top: 53px;
     height: 112px;
+    width: 700px;
   }
   .related-field__label {
-    width: 220px;
-    padding-bottom: 28px;
-    padding-left: 16px;
+    width: 340px;
+    padding-bottom: 32px;
+  }
+  .related-field__checkbox {
+    width: 38px;
+    height: 38px;
+    margin-right: 19px;
+  }
+  .related-field__tick {
+    width: 21px;
+    height: 16px;
+    padding-left: 10px;
+    padding-top: 9px;
   }
 }
 @media (min-width: $desktop-width) {
   .related-field__title {
     padding-top: 71px;
-    padding-bottom: 64px;
+    padding-bottom: 53px;
+    &::after {
+      top: 94px;
+      right: -110px;
+      width: 1090px;
+    }
+    &::before {
+      top: 94px;
+      left: -110px;
+      width: 75px;
+    }
   }
   .related-field {
     height: 200px;
     padding-left: 0;
-    padding-bottom: 61px;
   }
   .related-field__wrap {
     padding-top: 0;
     height: 40px;
+    width: 1300px;
   }
   .related-field__label {
-    width: 220px;
+    width: 325px;
     padding-bottom: 0;
-    padding-left: 16px;
+  }
+  .related-field__tick {
+    width: 22px;
+    height: 17px;
+    padding-top: 8px;
   }
 }

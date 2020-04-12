@@ -1,6 +1,10 @@
 .product-description {
   width: 141px;
-  height: 144px;
+  height: 111px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .product-description__title {
   font-family: 'Oswald', serif;
@@ -11,7 +15,6 @@
   color: #111111;
   text-transform: uppercase;
   width: 82px;
-  padding-top: 20px;
 }
 .product-description__detail {
   padding-top: 12px;
@@ -24,6 +27,7 @@
   line-height: 16px;
   text-align: left;
   color: #444444;
+  margin: 0;
 }
 .product-description__value {
   font-family: 'Arial', sans-serif;
@@ -32,38 +36,43 @@
   line-height: 16px;
   text-align: right;
   color: #444444;
+  margin: 0;
 }
 @media (min-width: $tablet-width) {
   .product-description {
     width: 249px;
-    height: 191px;
+    height: 158px;
+    padding-top: 39px;
+    align-items: center;
   }
   .product-description__title {
     font-size: 20px;
     text-align: center;
     width: 124px;
-    padding-top: 39px;
-    padding-left: 62px;
   }
   .product-description__detail {
     padding-top: 28px;
     width: 249px;
+    border-collapse: collapse;
   }
   .product-description__field {
     font-size: 16px;
     text-align: left;
     height: 29px;
+    border-bottom: 1px solid #cdcdcd;
   }
   .product-description__value {
     font-size: 16px;
     text-align: right;
     height: 29px;
+    border-bottom: 1px solid #cdcdcd;
   }
 }
 @media (min-width: $desktop-width) {
   .product-description {
     width: 161px;
-    height: 144px;
+    height: 152px;
+    padding-top: 38px;
   }
   .product-description__detail {
     padding-top: 28px;
@@ -73,8 +82,6 @@
     font-size: 20px;
     text-align: center;
     width: 138px;
-    padding-top: 38px;
-    padding-left: 17px;
   }
   .product-description__field {
     font-size: 16px;

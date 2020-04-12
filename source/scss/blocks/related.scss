@@ -57,7 +57,8 @@
     margin: 0;
   }
   .related__item {
-    border: 1px solid #cdcdcd;
+    border-left: 1px solid #cdcdcd;
+    border-right: 1px solid #cdcdcd;
   }
   .related__wrap {
     display: flex;
@@ -96,7 +97,6 @@
     margin: 0;
   }
   .related__item {
-    border: 1px solid #cdcdcd;
     border-left: none;
     border-right: none;
     display: flex;
@@ -104,10 +104,6 @@
     justify-content: space-between;
   }
   .related__wrap {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    width: 633px;
     margin: 0;
   }
   .related__description {

@@ -6,6 +6,11 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  position: relative;
+}
+.view-more__icon-plus {
+  width: 31px;
+  height: 31px;
 }
 .view-more__products {
   font-family: 'Oswald', serif;
@@ -48,9 +53,13 @@
     width: 322px;
     height: 430px;
   }
+  .view-more__icon-plus {
+    width: 61px;
+    height: 61px;
+  }
   .view-more__products {
     font-size: 20px;
-    padding-top: 128px;
+    padding-top: 50px;
     width: 143px;
   }
   .view-more__flavours {
