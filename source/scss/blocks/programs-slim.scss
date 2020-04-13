@@ -1,8 +1,14 @@
 .programs-slim {
+  box-sizing: border-box;
+  width: 280px;
   position: relative;
   padding-left: 20px;
   padding-right: 20px;
   height: 266px;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: space-between;
 }
 .programs-slim__title {
   font-family: 'Oswald', serif;
@@ -10,9 +16,10 @@
   font-size: 24px;
   line-height: 37px;
   text-align: left;
-  padding: 32px 60px 0 72px;
   color: #111111;
   text-transform: uppercase;
+  padding-top: 32px;
+  padding-left: 70px;
   margin: 0;
   &::before {
     content: " ";
@@ -41,8 +48,12 @@
   line-height: 18px;
   text-align: left;
   color: #444444;
-  margin: 0;
-  padding: 32px 14px 21px 1px;
+  margin-bottom: 0;
+  margin-top: 0;
+  width: 225px;
+  padding-bottom: 22px;
+  padding-left: 1px;
+  border-bottom: 1px solid #cdcdcd;
 }
 .programs-slim__catalog {
   font-family: 'Oswald', serif;
@@ -52,14 +63,11 @@
   text-align: left;
   color: #111111;
   text-transform: uppercase;
-  margin: 0;
-  padding-top: 19px;
-  padding-bottom: 22px;
-  border-top: 1px solid #cdcdcd;
+  margin-bottom: 22px;
   &::before {
     content: " ";
     position: absolute;
-    top: 239px;
+    top: 235px;
     left: 118px;
     width: 18px;
     height: 2px;
@@ -68,7 +76,7 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 235px;
+    top: 231px;
     left: 136px;
     border: 5px solid transparent;
     border-left-color: #111111;
@@ -78,20 +86,22 @@
   .programs-slim {
     width: 708px;
     height: 372px;
-    padding: 0;
+    padding-left: 52px;
+    padding-right: 0;
   }
   .programs-slim__title {
     font-size: 36px;
-    padding: 81px 492px 0 55px;
+    padding-left: 3px;
+    padding-top: 78px;
     &::before {
-      top: 95px;
-      left: 424px;
+      top: 92px;
+      left: 446px;
       width: 200px;
       height: 200px;
     }
     &::after {
-      top: 86px;
-      left: 446px;
+      top: 80px;
+      left: 475px;
       width: 141px;
       height: 194px;
     }
@@ -99,30 +109,32 @@
   .programs-slim__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 31px 316px 0 52px;
+    padding-top: 0;
+    padding-bottom: 0;
+    width: 373px;
+    border: none;
+    margin-bottom: 33px;
   }
   .programs-slim__catalog {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 53px;
-    padding-top: 61px;
-    padding-bottom: 62px;
-    border: none;
+    margin-bottom: 62px;
     &::before {
-      top: 316px;
-      left: 178px;
-      width: 18px;
+      top: 299px;
+      left: 184px;
+      width: 19px;
     }
     &::after {
-      top: 312px;
-      left: 196px;
+      top: 295px;
+      left: 203px;
     }
   }
 }
 @media (min-width: $desktop-width) {
   .programs-slim__title {
     font-size: 36px;
-    padding: 81px 193px 0 216px;
+    padding-top: 78px;
+    padding-left: 164px;
     &::before {
       top: 47px;
       left: 52px;
@@ -139,21 +151,20 @@
   .programs-slim__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 75px 46px 0 52px;
+    width: 462px;
+    margin-bottom: 0;
+    margin-top: 15px;
   }
   .programs-slim__catalog {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 53px;
-    padding-top: 36px;
-    padding-bottom: 62px;
     &::before {
       width: 20px;
-      top: 310px;
+      top: 298px;
       left: 184px;
     }
     &::after {
-      top: 306px;
+      top: 294px;
       left: 204px;
     }
   }

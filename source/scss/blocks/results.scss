@@ -1,10 +1,20 @@
 .results {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
   width: 320px;
-  height: 705px;
+  min-height: 705px;
   background-color: #f2f2f2;
 }
 .results__wrapper {
-  height: 385px;
+  height: 282px;
+  padding-left: 20px;
+  padding-top: 27px;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .results__title {
   font-family: 'Oswald', serif;
@@ -14,8 +24,8 @@
   text-align: left;
   color: #111111;
   margin: 0;
+  padding-top: 23px;
   padding-left: 20px;
-  padding-top: 33px;
 }
 .results__description {
   font-family: 'Arial', sans-serif;
@@ -25,14 +35,12 @@
   text-align: left;
   color: #444444;
   margin: 0;
-  padding: 33px 34px 0 20px;
 }
 .results__wrapper-results {
   display: flex;
   justify-content: space-between;
   align-items: center;
   width: 280px;
-  margin-left: 20px;
 }
 .results__sum {
   padding-top: 27px;
@@ -76,8 +84,15 @@
   color: #111111;
   margin: 0;
 }
+.results__image-wrap {
+  width: 320px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
 .results__cat-image {
   height: 232px;
+  width: 311px;
   padding-right: 9px;
   background: url("../img/before-mobile@1x.png") no-repeat center;
 }
@@ -86,10 +101,7 @@
   align-items: flex-start;
   justify-content: space-between;
   width: 197px;
-  height: 88px;
-  margin-left: 64px;
-  padding-top: 35px;
-  padding-bottom: 38px;
+  margin-top: 35px;
 }
 .results__before,
 .results__after {
@@ -110,13 +122,14 @@
 @media (min-width: $tablet-width) {
   .results {
     width: 768px;
-    height: 1081px;
-    background-color: #f2f2f2;
+    min-height: 1081px;
+    background-color: #ffffff;
   }
   .results__wrapper {
-    height: 619px;
+    min-height: 278px;
     width: 768px;
-    background-color: #ffffff;
+    padding-left: 30px;
+    padding-top: 64px;
   }
   .results__title {
     font-size: 60px;
@@ -126,13 +139,12 @@
   .results__description {
     font-size: 16px;
     line-height: 24px;
-    padding: 60px 63px 0 31px;
+    width: 674px;
   }
   .results__wrap {
     width: 707px;
-    padding-left: 30px;
-    padding-right: 31px;
-    height: 214px;
+    min-height: 78px;
+    padding-top: 56px;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -170,52 +182,63 @@
   }
   .results__image-wrap {
     width: 768px;
-    height: 631px;
+    height: 462px;
+    margin-top: 249px;
+    background-color: #f2f2f2;
+
   }
   .results__wrapper-before-after {
     width: 533px;
     height: 93px;
-    margin-left: 99px;
     padding-top: 21px;
-    padding-bottom: 0;
   }
   .results__cat-image {
     height: 517px;
+    width: 338px;
     padding-right: 0;
     margin-top: -169px;
     background-image: url("../img/before-tablet@1x.png"), url("../img/after-tablet@1x.png");
     background-repeat: no-repeat, no-repeat;
-    background-position: 46px bottom, 146px bottom;
+    background-position: center bottom, center bottom;
+  }
+  .results__before,
+  .results__after {
+    font-size: 20px;
   }
 }
 @media (min-width: $desktop-width) {
   .results {
     width: 1440px;
-    height: 652px;
+    min-height: 652px;
     background-color: #ffffff;
+  }
+  .results__wrapper-desktop {
     display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+    min-height: 462px;
+    margin-top: 66px;
+    background-color: #f2f2f2;
   }
   .results__wrapper {
-    height: 462px;
+    box-sizing: border-box;
     width: 680px;
-    background-color: #f2f2f2;
-    margin-top: 190px;
+    padding-left: 111px;
+    padding-top: 76px;
   }
   .results__title {
     padding-left: 110px;
     padding-top: 63px;
-    margin-top: -190px;
   }
   .results__description {
-    padding: 142px 139px 0 111px;
+    width: 430px;
   }
   .results__wrap {
     width: 366px;
-    padding-left: 111px;
-    padding-right: 31px;
     padding-top: 71px;
     height: 156px;
     flex-direction: column;
+    align-items: flex-start;
   }
   .results__money-spent {
     text-align: left;
@@ -223,9 +246,7 @@
   }
   .results__image-wrap {
     width: 768px;
-    height: 462px;
-    background-color: #f2f2f2;
-    margin-top: 190px;
+    margin: 0;
   }
   .results__wrapper-before-after {
     width: 533px;
