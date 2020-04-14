@@ -66,18 +66,18 @@
   &::before {
     content: " ";
     position: absolute;
-    top: 238px;
+    top: 237px;
     left: 117px;
     width: 18px;
-    height: 2px;
+    height: 2.5px;
     background-color: #111111;
   }
   &::after {
     content: " ";
     position: absolute;
-    top: 234px;
+    top: 233px;
     left: 135px;
-    border: 5px solid transparent;
+    border: 5.5px solid transparent;
     border-left-color: #111111;
   }
 }
@@ -117,24 +117,21 @@
   .programs-pro__catalog {
     font-size: 20px;
     line-height: 20px;
-    padding-left: 53px;
-    padding-top: 61px;
-    padding-bottom: 62px;
+    margin-bottom: 62px;
     &::before {
-      top: 299px;
-      left: 178px;
+      top: 298px;
+      left: 176px;
       width: 19px;
     }
     &::after {
-      top: 295px;
-      left: 197px;
+      top: 294px;
+      left: 195px;
     }
   }
 }
 @media (min-width: $desktop-width) {
   .programs-pro {
     width: 570px;
-    height: 372px;
     margin-top: 0;
     padding-right: 0;
   }
@@ -158,19 +155,21 @@
   .programs-pro__description {
     font-size: 16px;
     line-height: 24px;
-    width: 444px;
+    width: 450px;
     margin-bottom: 0;
-    margin-top: 15px;
+    margin-top: 40px;
   }
   .programs-pro__catalog {
     font-size: 20px;
     line-height: 20px;
+    padding-left: 1px;
     &::before {
-      width: 20px;
       left: 178px;
+      width: 19px;
+      height: 3px;
     }
     &::after {
-      left: 198px;
+      left: 197px;
     }
   }
 }

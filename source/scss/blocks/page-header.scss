@@ -51,7 +51,8 @@
 }
 @media (min-width: $desktop-width) {
   .page-header {
-    margin-top: 53px;
+    min-width: 1440px;
+    margin-top: 52px;
     min-height: 60px;
     &--main {
       position: absolute;

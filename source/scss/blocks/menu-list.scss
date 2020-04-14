@@ -27,6 +27,7 @@
 @media (min-width: $tablet-width) {
   .menu-list__item {
     color: #222222;
+    font-weight: normal;
     font-size: 18px;
     line-height: 25px;
     text-align: left;
@@ -50,13 +51,14 @@
     line-height: 25px;
     text-transform: uppercase;
     padding-bottom: 16px;
+    padding-top: 16px;
     &--active {
-      padding-top: 24px;
-      padding-bottom: 12px;
+      padding-top: 12px;
+      padding-bottom: 8px;
     }
     &--active-white {
-      padding-bottom: 12px;
-      padding-top: 24px;
+      padding-bottom: 8px;
+      padding-top: 12px;
       border-bottom: 2px solid #ffffff;
     }
   }
