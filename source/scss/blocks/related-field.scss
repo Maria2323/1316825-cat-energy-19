@@ -29,15 +29,10 @@
   display: flex;
   align-items: center;
   justify-content: flex-start;
+  position: relative;
 }
 .related-field__input {
   display: none;
-}
-.related-field__tick {
-  width: 22px;
-  height: 17px;
-  padding-left: 5px;
-  padding-top: 3px;
 }
 .related-field__checkbox {
   display: inline-block;
@@ -45,6 +40,15 @@
   height: 28px;
   margin-right: 16px;
   border: 1px solid #cdcdcd;
+}
+input[type="checkbox"]:checked + .related-field__checkbox::before {
+  content: " ";
+  height: 17px;
+  width: 22px;
+  background: url("../img/icon-tick.svg") no-repeat center;
+  position: absolute;
+  top: 6px;
+  left: 5px;
 }
 @media (min-width: $tablet-width) {
   .related-field__title {
@@ -86,11 +90,11 @@
     height: 38px;
     margin-right: 19px;
   }
-  .related-field__tick {
-    width: 21px;
+  input[type="checkbox"]:checked + .related-field__checkbox::before {
     height: 16px;
-    padding-left: 10px;
-    padding-top: 9px;
+    width: 21px;
+    top: 12px;
+    left: 10px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -121,9 +125,10 @@
     width: 325px;
     padding-bottom: 0;
   }
-  .related-field__tick {
-    width: 22px;
+  input[type="checkbox"]:checked + .related-field__checkbox::before {
     height: 17px;
-    padding-top: 8px;
+    width: 22px;
+    top: 12px;
+    left: 10px;
   }
 }
