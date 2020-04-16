@@ -12,37 +12,30 @@
 .product-item__image--chicken-small {
   width: 140px;
   height: 144px;
-  background: url("../img/chicken-small-mobile@1x.jpg") no-repeat center;
 }
 .product-item__image--chicken-big {
   width: 140px;
   height: 144px;
-  background: url("../img/chicken-big-mobile@1x.jpg") no-repeat center;
 }
 .product-item__image--fish-small {
   width: 140px;
   height: 144px;
-  background: url("../img/fish-small-mobile@1x.jpg") no-repeat center;
 }
 .product-item__image--fish-big {
   width: 140px;
   height: 144px;
-  background: url("../img/fish-big-mobile@1x.jpg") no-repeat center;
 }
 .product-item__image--buckwheat-small {
   width: 140px;
   height: 144px;
-  background: url("../img/buckwheat-small-mobile@1x.jpg") no-repeat center;
 }
 .product-item__image--buckwheat-big {
   width: 140px;
   height: 144px;
-  background: url("../img/buckwheat-big-mobile@1x.jpg") no-repeat center;
 }
 .product-item__image--rice-small {
   width: 140px;
   height: 144px;
-  background: url("../img/rice-small-mobile@1x.jpg") no-repeat center;
 }
 @media (min-width: $tablet-width) {
   .product-item {
@@ -60,45 +53,38 @@
   }
   .product-item__image--chicken-small {
     margin-top: -46px;
-    width: 161px;
+    width: 324px;
     height: 172px;
-    background: url("../img/chicken-small-tablet@1x.png") no-repeat center;
   }
   .product-item__image--chicken-big {
     margin-top: -82px;
-    width: 195px;
+    width: 324px;
     height: 208px;
-    background: url("../img/chicken-big-tablet@1x.png") no-repeat center;
   }
   .product-item__image--fish-small {
     margin-top: -48px;
-    width: 163px;
+    width: 324px;
     height: 174px;
-    background: url("../img/fish-small-tablet@1x.png") no-repeat center;
   }
   .product-item__image--fish-big {
     margin-top: -82px;
-    width: 194px;
+    width: 324px;
     height: 208px;
-    background: url("../img/fish-big-tablet@1x.png") no-repeat center;
   }
   .product-item__image--buckwheat-small {
     margin-top: -45px;
-    width: 161px;
+    width: 324px;
     height: 171px;
-    background: url("../img/buckwheat-small-tablet@1x.png") no-repeat center;
   }
   .product-item__image--buckwheat-big {
     margin-top: -82px;
-    width: 195px;
+    width: 324px;
     height: 208px;
-    background: url("../img/buckwheat-big-tablet@1x.png") no-repeat center;
   }
   .product-item__image--rice-small {
     margin-top: -48px;
-    width: 163px;
+    width: 324px;
     height: 174px;
-    background: url("../img/rice-small-tablet@1x.png") no-repeat center;
   }
 }
 @media (min-width: $desktop-width) {
@@ -117,44 +103,37 @@
   }
   .product-item__image--chicken-small {
     margin-top: -45px;
-    width: 161px;
+    width: 245px;
     height: 172px;
-    background: url("../img/chicken-small-desktop@1x.png") no-repeat center;
   }
   .product-item__image--chicken-big {
     margin-top: -81px;
-    width: 195px;
+    width: 245px;
     height: 208px;
-    background: url("../img/chicken-big-desktop@1x.png") no-repeat center;
   }
   .product-item__image--fish-small {
     margin-top: -46px;
-    width: 163px;
+    width: 245px;
     height: 174px;
-    background: url("../img/fish-small-desktop@1x.png") no-repeat center;
   }
   .product-item__image--fish-big {
     margin-top: -81px;
-    width: 194px;
+    width: 245px;
     height: 208px;
-    background: url("../img/fish-big-desktop@1x.png") no-repeat center;
   }
   .product-item__image--buckwheat-small {
     margin-top: -45px;
-    width: 161px;
+    width: 245px;
     height: 171px;
-    background: url("../img/buckwheat-small-desktop@1x.png") no-repeat center;
   }
   .product-item__image--buckwheat-big {
     margin-top: -82px;
-    width: 195px;
+    width: 245px;
     height: 208px;
-    background: url("../img/buckwheat-big-desktop@1x.png") no-repeat center;
   }
   .product-item__image--rice-small {
     margin-top: -46px;
-    width: 163px;
+    width: 245px;
     height: 174px;
-    background: url("../img/rice-small-desktop@1x.png") no-repeat center;
   }
 }
