@@ -13,11 +13,12 @@
 .product-item__wrap {
   display: flex;
   align-items: center;
-  min-height: 144px;
+  max-height: 144px;
 }
 .product-item__image {
   width: 140px;
   height: 144px;
+  display: block;
 }
 @media (min-width: $tablet-width) {
   .product-item {
