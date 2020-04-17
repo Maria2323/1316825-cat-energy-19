@@ -8,6 +8,8 @@
   justify-content: flex-start;
 }
 .menu-list__item {
+  min-height: 65px;
+  box-sizing: border-box;
   color: #111111;
   font-family: 'Oswald', serif;
   font-weight: bold;
@@ -15,10 +17,10 @@
   line-height: 20px;
   text-transform: uppercase;
   text-align: center;
-  border-top: 1px solid #cdcdcd;
-  padding-top: 24px;
-  padding-bottom: 24px;
+  border-top: 1px solid #f2f2f2;
+  padding-top: 23px;
   width: 100%;
+  margin-bottom: 1px;
 }
 .menu-list__link {
   text-decoration: none;

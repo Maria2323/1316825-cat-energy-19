@@ -1,6 +1,7 @@
 .product-description {
   width: 141px;
-  height: 111px;
+  height: 100px;
+  margin-top: -5px;
   display: flex;
   flex-direction: column;
   align-items: flex-start;
@@ -17,14 +18,15 @@
   width: 82px;
 }
 .product-description__detail {
-  padding-top: 12px;
   width: 141px;
+  height: 44px;
+  border-collapse: collapse;
 }
 .product-description__field {
   font-family: 'Arial', sans-serif;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   text-align: left;
   color: #444444;
   margin: 0;
@@ -33,7 +35,7 @@
   font-family: 'Arial', sans-serif;
   font-weight: normal;
   font-size: 12px;
-  line-height: 16px;
+  line-height: 14px;
   text-align: right;
   color: #444444;
   margin: 0;
@@ -53,7 +55,6 @@
   .product-description__detail {
     padding-top: 28px;
     width: 249px;
-    border-collapse: collapse;
   }
   .product-description__field {
     font-size: 16px;

@@ -51,7 +51,8 @@
   color: #444444;
   margin: 0;
   padding-bottom: 22px;
-  width: 201px;
+  padding-top: 10px;
+  width: 240px;
   border-bottom: 1px solid #cdcdcd;
 }
 .programs-pro__catalog {
@@ -62,22 +63,22 @@
   text-align: left;
   color: #111111;
   text-transform: uppercase;
-  margin-bottom: 20px;
+  margin-bottom: 21px;
   text-decoration: none;
   &::before {
     content: " ";
     position: absolute;
     top: 237px;
-    left: 117px;
+    left: 116px;
     width: 18px;
-    height: 2.5px;
+    height: 2px;
     background-color: #111111;
   }
   &::after {
     content: " ";
     position: absolute;
     top: 233px;
-    left: 135px;
+    left: 134px;
     border: 5.5px solid transparent;
     border-left-color: #111111;
   }

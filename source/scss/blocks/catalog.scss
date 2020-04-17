@@ -3,15 +3,16 @@
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
+  margin-top: 10px;
   text-align: left;
   color: #111111;
   margin-left: 20px;
+  margin-bottom: 28px;
 }
 .catalog__list {
   list-style: none;
   padding: 0;
-  margin-left: 20px;
-  margin-right: 20px;
+  margin: 0;
 }
 .catalog__button {
   font-family: 'Oswald', serif;
@@ -21,22 +22,11 @@
   text-align: left;
   color: #ffffff;
   text-transform: uppercase;
-  padding: 13px 106px 12px 109px;
+  padding: 10px 107px 11px 110px;
   background-color: #68b738;
   border: none;
-  margin-bottom: 25px;
-}
-.catalog__item {
-  width: 280px;
-  height: 210px;
-  border-top: 1px solid #f2f2f2;
 }
 @media (min-width: $tablet-width) {
-  .catalog__item {
-    width: 324px;
-    height: 432px;
-    border-top: 1px solid #f2f2f2;
-  }
   .catalog__list {
     width: 708px;
     display: flex;
@@ -63,11 +53,6 @@
   }
 }
 @media (min-width: $desktop-width) {
-  .catalog__item {
-    width: 243px;
-    height: 432px;
-    border-top: 1px solid #f2f2f2;
-  }
   .catalog__list {
     width: 1300px;
     display: flex;

@@ -1,8 +1,9 @@
 .functionality {
   box-sizing: border-box;
   width: 320px;
-  min-height: 447px;
+  min-height: 429px;
   padding-left: 20px;
+  margin-top: 18px;
 }
 .functionality__title {
   font-family: 'Oswald', serif;
@@ -11,11 +12,13 @@
   line-height: 60px;
   text-align: left;
   color: #111111;
+  margin: 0;
 }
 .functionality__list {
   list-style: none;
   padding: 0;
-  margin: 0;
+  margin-top: 28px;
+  margin-bottom: 0;
   min-height: 300px;
   display: flex;
   flex-direction: column;
@@ -36,7 +39,7 @@
   text-align: left;
   color: #444444;
   padding-left: 80px;
-  padding-top: 6px;
+  padding-top: 2px;
   margin: 0;
   &::before {
     content: " ";
@@ -58,25 +61,29 @@
   &--leaf::after {
     background: url("../img/advantage-leaf@1x.png") no-repeat center;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/advantage-leaf@2x.png" x2) no-repeat center;
+      background: url("../img/advantage-leaf@2x.png") no-repeat center;
+      background-size: 76%;
     }
   }
   &--water::after {
     background: url("../img/advantage-powder@1x.png") no-repeat center;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/advantage-powder@2x.png" x2) no-repeat center;
+      background: url("../img/advantage-powder@2x.png") no-repeat center;
+      background-size: 76%;
     }
   }
   &--fork::after {
     background: url("../img/advantage-dining@1x.png") no-repeat center;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/advantage-dining@2x.png" x2) no-repeat center;
+      background: url("../img/advantage-dining@2x.png") no-repeat center;
+      background-size: 76%;
     }
   }
   &--watch::after {
     background: url("../img/advantage-clock@1x.png") no-repeat center;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
-      background: url("../img/advantage-clock@2x.png" x2) no-repeat center;
+      background: url("../img/advantage-clock@2x.png") no-repeat center;
+      background-size: 76%;
     }
   }
 }
