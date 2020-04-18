@@ -5,16 +5,17 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  justify-content: center;
+  justify-content: space-around;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/gift-photo-mobile@2x.jpg") no-repeat center;
+    background-size: cover;
   }
 }
 .gift__icon-wrap {
   width: 56px;
   height: 61px;
-  padding-bottom: 30px;
+  margin-top: 42px;
 }
 .gift__description {
   color: #ffffff;
@@ -23,9 +24,8 @@
   font-size: 16px;
   line-height: 20px;
   text-align: center;
-  margin: 0;
-  width: 159px;
-  padding-top: 34px;
+  width: 164px;
+  margin-bottom: 18px;
 }
 @media (min-width: $tablet-width) {
   .gift {

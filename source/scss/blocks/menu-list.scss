@@ -22,6 +22,9 @@
   width: 100%;
   margin-bottom: 1px;
 }
+.menu-list__item:last-of-type {
+  border-bottom: 1px solid #f2f2f2;
+}
 .menu-list__link {
   text-decoration: none;
   color: #111111;
