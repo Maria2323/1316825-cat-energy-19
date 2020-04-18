@@ -11,7 +11,7 @@
 .results__wrapper {
   height: 282px;
   padding-left: 20px;
-  padding-top: 27px;
+  padding-top: 23px;
   flex-direction: column;
   align-items: center;
   justify-content: space-between;
@@ -24,7 +24,7 @@
   text-align: left;
   color: #111111;
   margin: 0;
-  padding-top: 23px;
+  padding-top: 18px;
   padding-left: 20px;
 }
 .results__description {
@@ -94,7 +94,6 @@
   height: 232px;
   width: 311px;
   padding-right: 9px;
-  background: url("../img/before-mobile@1x.png") no-repeat center;
 }
 .results__wrapper-before-after {
   display: flex;
@@ -197,9 +196,6 @@
     width: 338px;
     padding-right: 0;
     margin-top: -169px;
-    background-image: url("../img/before-tablet@1x.png"), url("../img/after-tablet@1x.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: center bottom, center bottom;
   }
   .results__before,
   .results__after {
@@ -259,8 +255,5 @@
     height: 517px;
     padding-right: 0;
     margin-top: -190px;
-    background-image: url("../img/before-desktop@1x.png"), url("../img/after-desktop@1x.png");
-    background-repeat: no-repeat, no-repeat;
-    background-position: 20px bottom, 120px bottom;
   }
 }

@@ -1,16 +1,16 @@
 .application-form {
-  margin-bottom: 34px;
+  margin-bottom: 32px;
 }
 .application-form__title {
   font-family: 'Oswald', serif;
-  font-weight: bold;
+  font-weight: normal;
   font-size: 36px;
   line-height: 60px;
   text-align: left;
   color: #111111;
   margin: 0;
-  padding-top: 30px;
-  padding-left: 22px;
+  padding-top: 14px;
+  padding-left: 20px;
 }
 .application-form__description {
   font-family: 'Oswald', serif;
@@ -21,7 +21,8 @@
   color: #111111;
   text-transform: uppercase;
   margin: 0;
-  padding-top: 35px;
+  width: 226px;
+  padding-top: 25px;
   padding-left: 20px;
 }
 .application-form__legend {

@@ -1,6 +1,8 @@
 .view-more {
+  box-sizing: border-box;
   border-bottom: 1px solid #f2f2f2;
-  width: 280px;
+  border-top: 1px solid #f2f2f2;
+  width: 320px;
   height: 210px;
   display: flex;
   flex-direction: column;
@@ -11,6 +13,7 @@
 .view-more__icon-plus {
   width: 31px;
   height: 31px;
+  margin-top: 2px;
 }
 .view-more__products {
   font-family: 'Oswald', serif;
@@ -20,7 +23,7 @@
   text-align: center;
   color: #111111;
   text-transform: uppercase;
-  padding-top: 23px;
+  padding-top: 22px;
   margin: 0;
 }
 .view-more__flavours {
@@ -31,11 +34,11 @@
   text-align: center;
   color: #444444;
   margin: 0;
-  padding-top: 11px;
+  padding-top: 8px;
 }
 .view-more__button {
   display: block;
-  margin-top: 22px;
+  margin-top: 20px;
   text-decoration: none;
   background-color: #f2f2f2;
   color: #444444;
@@ -45,7 +48,7 @@
   line-height: 20px;
   text-align: center;
   text-transform: uppercase;
-  padding: 13px 90px 12px 93px;
+  padding: 10px 92px 10px 95px;
 }
 @media (min-width: $tablet-width) {
   .view-more {

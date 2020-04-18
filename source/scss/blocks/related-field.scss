@@ -1,16 +1,16 @@
 .related-field {
   height: 244px;
   border: none;
-  padding: 0 0 0 20px;
+  padding: 0 0 0 18px;
   margin: 0;
   position: relative;
 }
 .related-field__title {
-  padding-top: 21px;
+  padding-top: 16px;
   &::after {
     content: " ";
     position: absolute;
-    top: 35px;
+    top: 30px;
     right: 0;
     width: 136px;
     height: 3px;
@@ -22,7 +22,8 @@
   flex-direction: column;
   align-items: flex-start;
   justify-content: center;
-  padding-top: 39px;
+  padding-top: 35px;
+  padding-left: 2px;
 }
 .related-field__label {
   padding-bottom: 12px;
@@ -30,6 +31,9 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
+}
+.related-field__label:first-of-type {
+  padding-bottom: 13px;
 }
 .related-field__input {
   display: none;

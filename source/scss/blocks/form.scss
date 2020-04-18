@@ -18,7 +18,7 @@
   margin: 0;
 }
 .form__button-wrap {
-  margin-top: 34px;
+  margin-top: 23px;
 }
 .form__button {
   font-family: 'Oswald', serif;
@@ -29,10 +29,19 @@
   color: #ffffff;
   text-transform: uppercase;
   margin-left: 20px;
-  margin-bottom: 23px;
-  padding: 13px 77px 11px 80px;
+  margin-bottom: 17px;
+  padding: 10px 77px 9px 80px;
   background-color: #68b738;
   border: none;
+}
+input[placeholder],
+textarea[placeholder] {
+  font-family: 'Oswald', serif;
+  font-size: 16px;
+  font-weight: normal;
+  line-height: 18px;
+  text-transform: uppercase;
+  color: #444444;
 }
 @media (min-width: $tablet-width) {
   .form__title {
