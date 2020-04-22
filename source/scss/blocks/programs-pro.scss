@@ -1,10 +1,9 @@
 .programs-pro {
-  box-sizing: border-box;
   position: relative;
   margin-top: 20px;
-  width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 87.5%;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   height: 266px;
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
-  padding-left: 70px;
+  padding-left: 25%;
   &::before {
     content: " ";
     position: absolute;
@@ -52,7 +51,7 @@
   margin: 0;
   padding-bottom: 22px;
   padding-top: 10px;
-  width: 240px;
+  width: 100%;
   border-bottom: 1px solid #cdcdcd;
 }
 .programs-pro__catalog {
