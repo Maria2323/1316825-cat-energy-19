@@ -1,10 +1,9 @@
 .programs-pro {
-  box-sizing: border-box;
   position: relative;
   margin-top: 20px;
-  width: 280px;
-  padding-left: 20px;
-  padding-right: 20px;
+  width: 87.5%;
+  padding-left: 7%;
+  padding-right: 7%;
   height: 266px;
   display: flex;
   flex-direction: column;
@@ -21,7 +20,7 @@
   text-transform: uppercase;
   margin: 0;
   padding-top: 30px;
-  padding-left: 70px;
+  padding-left: 30%;
   &::before {
     content: " ";
     position: absolute;
@@ -52,10 +51,11 @@
   margin: 0;
   padding-bottom: 22px;
   padding-top: 10px;
-  width: 240px;
+  width: 99%;
   border-bottom: 1px solid #cdcdcd;
 }
 .programs-pro__catalog {
+  position: relative;
   font-family: 'Oswald', serif;
   font-weight: normal;
   font-size: 16px;
@@ -68,8 +68,8 @@
   &::before {
     content: " ";
     position: absolute;
-    top: 237px;
-    left: 116px;
+    top: 7px;
+    left: 95px;
     width: 18px;
     height: 2px;
     background-color: #111111;
@@ -77,8 +77,8 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 233px;
-    left: 134px;
+    top: 3px;
+    left: 113px;
     border: 5.5px solid transparent;
     border-left-color: #111111;
   }

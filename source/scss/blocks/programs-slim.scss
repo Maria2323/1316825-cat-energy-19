@@ -1,9 +1,8 @@
 .programs-slim {
-  box-sizing: border-box;
-  width: 280px;
+  width: 87.5%;
   position: relative;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   height: 266px;
   display: flex;
   flex-direction: column;
@@ -19,7 +18,7 @@
   color: #111111;
   text-transform: uppercase;
   padding-top: 29px;
-  padding-left: 70px;
+  padding-left: 30%;
   margin: 0;
   &::before {
     content: " ";
@@ -49,12 +48,13 @@
   text-align: left;
   color: #444444;
   margin: 0;
-  width: 238px;
+  width: 99%;
   padding-bottom: 22px;
   padding-top: 10px;
   border-bottom: 1px solid #cdcdcd;
 }
 .programs-slim__catalog {
+  position: relative;
   font-family: 'Oswald', serif;
   font-weight: normal;
   font-size: 16px;
@@ -67,8 +67,8 @@
   &::before {
     content: " ";
     position: absolute;
-    top: 235px;
-    left: 118px;
+    top: 8px;
+    left: 97px;
     width: 18px;
     height: 2px;
     background-color: #111111;
@@ -76,8 +76,8 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 231px;
-    left: 136px;
+    top: 4px;
+    left: 115px;
     border: 5.5px solid transparent;
     border-left-color: #111111;
   }
