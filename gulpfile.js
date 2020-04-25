@@ -7,6 +7,12 @@ var sass = require("gulp-sass");
 var postcss = require("gulp-postcss");
 var autoprefixer = require("autoprefixer");
 var server = require("browser-sync").create();
+var csso = require("gulp-csso");
+var rename = require("gulp-rename");
+var imagemin = require("gulp-imagemin");
+var svgstore = require("gulp-svgstore");
+var posthtml = require("gulp-posthtml");
+var include = require("posthtml-include");
 
 gulp.task("css", function () {
   return gulp.src("source/scss/style.scss")
@@ -16,9 +22,38 @@ gulp.task("css", function () {
     .pipe(postcss([
       autoprefixer()
     ]))
+    .pipe(csso())
+    .pipe(rename("style.min.css"))
     .pipe(sourcemap.write("."))
     .pipe(gulp.dest("source/css"))
     .pipe(server.stream());
+});
+
+gulp.task("images", function () {
+  return gulp.src("source/img/**/*.{jpg,png,svg}")
+    .pipe(imagemin([
+      imagemin.optipng({optimizationLevel: 3}),
+      imagemin.mozjpeg({progressive: true}),
+      imagemin.svgo()
+    ]))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("sprite", function () {
+  return gulp.src("source/img/sprite-*.svg")
+    .pipe(svgstore({
+      inlineSvg: true
+    }))
+    .pipe(rename("sprite.svg"))
+    .pipe(gulp.dest("source/img"));
+});
+
+gulp.task("html", function () {
+  return gulp.src("source/*.html")
+    .pipe(posthtml([
+      include()
+    ]))
+    .pipe(gulp.dest("source"));
 });
 
 gulp.task("server", function () {
@@ -30,8 +65,21 @@ gulp.task("server", function () {
     ui: false
   });
 
+  gulp.task("copy", function () {
+    return gulp.src([
+      "source/fonts/**/*.{woff,woff2}",
+      "source/img/**",
+      "source/js/**",
+      "source/*.ico"
+    ], {
+      base: "source"
+    })
+      .pipe(gulp.dest("build"));
+  });
+
   gulp.watch("source/scss/**/*.scss", gulp.series("css"));
   gulp.watch("source/*.html").on("change", server.reload);
 });
 
-gulp.task("start", gulp.series("css", "server"));
+gulp.task("build", gulp.series("css", "sprite", "html"));
+gulp.task("start", gulp.series("build", "server"));
