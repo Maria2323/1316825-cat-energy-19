@@ -1,3 +1,6 @@
+.form {
+  width: 100%;
+}
 .form__label {
   font-family: 'Oswald', serif;
   font-weight: normal;
@@ -19,6 +22,10 @@
 }
 .form__button-wrap {
   margin-top: 23px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
 }
 .form__button {
   font-family: 'Oswald', serif;
@@ -28,7 +35,6 @@
   text-align: center;
   color: #ffffff;
   text-transform: uppercase;
-  margin-left: 20px;
   margin-bottom: 17px;
   padding: 10px 77px 9px 80px;
   background-color: #68b738;
