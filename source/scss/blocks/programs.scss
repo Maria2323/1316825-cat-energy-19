@@ -18,14 +18,14 @@
 }
 @media (min-width: $tablet-width) {
   .programs {
-    width: 708px;
+    box-sizing: border-box;
     height: 774px;
-    margin-left: 30px;
-    margin-bottom: 51px;
+    width: 100%
   }
   .programs__list {
-    padding: 0;
     height: 774px;
+    padding-left: 3.9%;
+    padding-right: 3.9%;
   }
 }
 @media (min-width: $desktop-width) {

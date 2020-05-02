@@ -1,9 +1,8 @@
 .programs-pro {
-  position: relative;
   margin-top: 20px;
   width: 87.5%;
-  padding-left: 7%;
-  padding-right: 7%;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   height: 266px;
   display: flex;
   flex-direction: column;
@@ -11,6 +10,7 @@
   justify-content: space-between;
 }
 .programs-pro__title {
+  position: relative;
   font-family: 'Oswald', serif;
   font-weight: normal;
   font-size: 24px;
@@ -25,7 +25,7 @@
     content: " ";
     position: absolute;
     top: 24px;
-    left: 22px;
+    left: 4px;
     width: 50px;
     height: 50px;
     background-color: #68b738;
@@ -34,8 +34,8 @@
   &::after {
     content: " ";
     position: absolute;
-    top: 35px;
-    left: 13px;
+    top: 36px;
+    left: -6px;
     width: 67px;
     height: 28px;
     background: url("../img/icon-cat-pro.svg") no-repeat center;
@@ -51,6 +51,7 @@
   margin: 0;
   padding-bottom: 22px;
   padding-top: 10px;
+  padding-left: 1%;
   width: 99%;
   border-bottom: 1px solid #cdcdcd;
 }
@@ -65,11 +66,12 @@
   text-transform: uppercase;
   margin-bottom: 21px;
   text-decoration: none;
+  padding-left: 0.75%;
   &::before {
     content: " ";
     position: absolute;
     top: 7px;
-    left: 95px;
+    left: 97px;
     width: 18px;
     height: 2px;
     background-color: #111111;
@@ -78,31 +80,33 @@
     content: " ";
     position: absolute;
     top: 3px;
-    left: 113px;
+    left: 115px;
     border: 5.5px solid transparent;
     border-left-color: #111111;
   }
 }
 @media (min-width: $tablet-width) {
   .programs-pro {
-    width: 708px;
+    box-sizing: border-box;
+    width: 100%;
     height: 372px;
     margin-top: 30px;
     padding-left: 52px;
+    padding-right: 8%;
   }
   .programs-pro__title {
     font-size: 36px;
-    padding-top: 78px;
-    padding-left: 3px;
+    padding-top: 76px;
+    padding-left: 0;
     &::before {
       top: 91px;
-      left: 448px;
+      left: 396px;
       width: 200px;
       height: 200px;
     }
     &::after {
       top: 135px;
-      left: 412px;
+      left: 360px;
       width: 268px;
       height: 113px;
     }
@@ -110,24 +114,26 @@
   .programs-pro__description {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 0;
+    padding-top: 2px;
     padding-bottom: 0;
     width: 340px;
     border: none;
     margin-bottom: 33px;
+    padding-left: 0;
   }
   .programs-pro__catalog {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 62px;
+    padding-left: 0;
     &::before {
-      top: 298px;
-      left: 176px;
+      top: 9px;
+      left: 125px;
       width: 19px;
     }
     &::after {
-      top: 294px;
-      left: 195px;
+      top: 5px;
+      left: 144px;
     }
   }
 }

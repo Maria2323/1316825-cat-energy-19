@@ -23,12 +23,13 @@
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
-  text-align: left;
+  text-align: center;
   color: #ffffff;
   text-transform: uppercase;
   padding: 10px 107px 11px 110px;
   background-color: #68b738;
   border: none;
+  width: 100%;
 }
 @media (min-width: $tablet-width) {
   .catalog__list {

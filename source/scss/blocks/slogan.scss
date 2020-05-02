@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 503px;
+  height: 502px;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 167px, top center;
@@ -52,9 +52,9 @@
 @media (min-width: $tablet-width) {
   .slogan {
     align-items: flex-start;
-    width: 100%;
-    height: 867px;
-    padding-left: 118px;
+    height: 863px;
+    padding-left: 15.4%;
+    padding-right: 4%;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
     background-position: 29px bottom;
@@ -64,18 +64,18 @@
     color: #111111;
     font-size: 60px;
     text-align: left;
-    padding-top: 68px;
-    padding-left: 2px;
-    width: 460px;
+    padding-top: 53px;
+    width: 85%;
+    max-width: 1000px;
   }
   .slogan__call {
     color: #111111;
     font-size: 20px;
     text-align: left;
-    padding-top: 33px;
+    padding-top: 41px;
   }
   .slogan__button {
-    padding: 17px 29px 15px 26px;
+    padding: 16px 29px 15px 26px;
     margin-top: 48px;
     margin-left: 1px;
     font-size: 20px;
