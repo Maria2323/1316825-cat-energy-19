@@ -39,16 +39,16 @@
 @media (min-width: $tablet-width) {
   .personal-field {
     height: 196px;
-    padding: 69px 0 72px 1px;
+    padding: 65px 0 72px 1px;
   }
   .personal-field__name,
   .personal-field__weight {
     margin-bottom: 20px;
   }
   .personal-field__input {
-    padding-top: 17px;
-    padding-left: 20px;
-    padding-bottom: 17px;
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-bottom: 10px;
 
     &--name {
       margin-left: 16px;

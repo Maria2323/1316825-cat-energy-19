@@ -32,24 +32,31 @@
 }
 @media (min-width: $tablet-width) {
   .gift {
-    width: 708px;
+    width: 100%;
+    margin-left: 0;
+    margin-right: 0;
     height: 200px;
     margin-top: 69px;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
     flex-direction: row;
-    justify-content: space-around;
+    justify-content: space-between;
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/gift-photo-tablet@2x.jpg") no-repeat center;
+      background-size: contain;
     }
   }
   .gift__icon-wrap {
     width: 56px;
     height: 61px;
     padding-bottom: 0;
+    margin-top: -9px;
+    margin-left: 91px;
   }
   .gift__description {
     text-align: left;
-    padding-top: 0;
+    margin-bottom: 0;
+    margin-top: 3px;
+    margin-right: 121px;
   }
 }
 @media (min-width: $desktop-width) {

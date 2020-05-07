@@ -87,6 +87,7 @@
 }
 @media (min-width: $tablet-width) {
   .programs-pro {
+    position: relative;
     box-sizing: border-box;
     width: 100%;
     height: 372px;
@@ -95,18 +96,21 @@
     padding-right: 8%;
   }
   .programs-pro__title {
+    position: static;
     font-size: 36px;
     padding-top: 76px;
     padding-left: 0;
     &::before {
       top: 91px;
-      left: 396px;
+      left: auto;
+      right: 60px;
       width: 200px;
       height: 200px;
     }
     &::after {
       top: 135px;
-      left: 360px;
+      left: auto;
+      right: 28px;
       width: 268px;
       height: 113px;
     }
@@ -116,7 +120,7 @@
     line-height: 24px;
     padding-top: 2px;
     padding-bottom: 0;
-    width: 340px;
+    width: 57%;
     border: none;
     margin-bottom: 33px;
     padding-left: 0;

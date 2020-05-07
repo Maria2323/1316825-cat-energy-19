@@ -31,30 +31,35 @@
 }
 @media (min-width: $tablet-width) {
   .comments-field {
-    height: 337px;
+    height: 351px;
     padding: 0;
   }
   .comments-field__title {
-    padding-bottom: 71px;
-    padding-top: 55px;
+    padding-bottom: 76px;
+    padding-top: 65px;
+    padding-left: 0;
+    margin-left: -2px;
     &::after {
-      top: 76px;
+      top: 87px;
       right: -65px;
-      width: 480px;
+      width: 479px;
     }
     &::before {
       content: " ";
       position: absolute;
-      top: 76px;
-      left: -70px;
-      width: 29px;
+      top: 87px;
+      left: -72px;
+      width: 31px;
       height: 3px;
       background-color: #68b738;
     }
   }
   .comments-field__text {
-    width: 629px;
-    height: 172px;
+    width: 100%;
+    height: 174px;
+    padding-top: 15px;
+    padding-left: 19px;
+    margin: 0;
   }
 }
 @media (min-width: $desktop-width) {
@@ -77,6 +82,8 @@
   }
   .comments-field__text {
     width: 1218px;
-    height: 172px;
+    height: 174px;
+    padding-top: 15px;
+    padding-left: 14px;
   }
 }

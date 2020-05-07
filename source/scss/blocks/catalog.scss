@@ -32,30 +32,31 @@
   width: 100%;
 }
 @media (min-width: $tablet-width) {
+  .catalog {
+    box-sizing: border-box;
+    padding-left: 3.9%;
+    padding-right: 3.9%;
+    padding-bottom: 67px;
+  }
   .catalog__list {
-    width: 708px;
     display: flex;
     flex-wrap: wrap;
-    margin-left: 30px;
-    margin-bottom: 0;
+    justify-content: space-between;
   }
-  .catalog__item:nth-of-type(odd) {
-    margin-right: 60px;
-  }
-  .catalog__item:first-of-type,
-  .catalog__item:nth-of-type(2), {
-    margin-top: 156px;
+  .catalog__item {
+    margin-top: 140px;
   }
   .catalog__title {
     font-size: 60px;
-    margin-left: 30px;
-    margin-bottom: 0;
-    margin-top: 54px;
+    margin-left: 0;
+    margin-bottom: 24px;
+    margin-top: 53px;
   }
   .catalog__button {
     text-align: center;
-    padding: 13px 93px 12px 95px;
+    padding: 11px 93px 10px 95px;
     margin-bottom: 40px;
+    width: 249px;
   }
 }
 @media (min-width: $desktop-width) {

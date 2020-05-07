@@ -47,11 +47,11 @@ input[type="radio"]:checked + .choose-program-field__check::before {
 }
 @media (min-width: $tablet-width) {
   .choose-program-field {
-    height: 146px;
-    width: 600px;
-    padding-top: 25px;
+    box-sizing: border-box;
+    height: 196px;
+    padding-top: 24px;
     padding-bottom: 25px;
-    padding-left: 28px;
+    padding-left: 4.3%;
   }
   .choose-program-field__loose-weight,
   .choose-program-field__weight-set {

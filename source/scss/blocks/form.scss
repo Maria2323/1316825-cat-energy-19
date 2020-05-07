@@ -55,19 +55,28 @@ textarea[placeholder] {
   }
   .form__button {
     font-size: 20px;
-    margin: 0;
-    padding: 17px 67px 15px 63px;
+    margin-bottom: 0;
+    padding: 16px 67px 16px 63px;
   }
   .form {
-    width: 630px;
-    margin-left: 71px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 9.2%;
+    padding-right: 8.8%;
   }
   .form__button-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 502px;
+    flex-direction: row;
+    width: 83%;
     margin-top: 54px;
+  }
+  .form__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  input[placeholder],
+  textarea[placeholder] {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 @media (min-width: $desktop-width) {

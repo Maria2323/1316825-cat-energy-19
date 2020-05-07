@@ -25,11 +25,12 @@
   .product-item {
     width: 324px;
     height: 431px;
+    padding: 0;
     background: #f2f2f2;
-    margin-bottom: 140px;
+    margin-top: 140px;
   }
   .product-item__wrap {
-    width: 324px;
+    width: 100%;
     height: 351px;
     max-height: 351px;
     display: flex;
@@ -37,37 +38,37 @@
     align-items: center;
   }
   .product-item__image--chicken-small {
-    margin-top: -46px;
+    margin-top: -47px;
     width: 324px;
     height: 172px;
   }
   .product-item__image--chicken-big {
-    margin-top: -82px;
+    margin-top: -83px;
     width: 324px;
     height: 208px;
   }
   .product-item__image--fish-small {
-    margin-top: -48px;
+    margin-top: -49px;
     width: 324px;
     height: 174px;
   }
   .product-item__image--fish-big {
-    margin-top: -82px;
+    margin-top: -83px;
     width: 324px;
     height: 208px;
   }
   .product-item__image--buckwheat-small {
-    margin-top: -45px;
+    margin-top: -46px;
     width: 324px;
     height: 171px;
   }
   .product-item__image--buckwheat-big {
-    margin-top: -82px;
+    margin-top: -83px;
     width: 324px;
     height: 208px;
   }
   .product-item__image--rice-small {
-    margin-top: -48px;
+    margin-top: -49px;
     width: 324px;
     height: 174px;
   }

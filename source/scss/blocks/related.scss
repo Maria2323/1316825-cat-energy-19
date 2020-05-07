@@ -71,18 +71,16 @@
 }
 @media (min-width: $tablet-width) {
   .related {
-    width: 708px;
     margin: 0;
   }
   .related__item {
     border-left: 1px solid #cdcdcd;
     border-right: 1px solid #cdcdcd;
-    padding-left: 38px;
-    padding-right: 37px;
-    padding-top: 28px;
+    padding: 25.5px 5.1% 26px 5.2%;
   }
   .related__wrap {
     flex-direction: row;
+    align-items: baseline;
     width: 100%;
     min-height: 18px;
   }
@@ -103,12 +101,15 @@
     line-height: 20px;
     text-align: right;
   }
-  .related__size {
-    padding-right: 61px;
+  .related__price {
+    padding-left: 52px;
+  }
+  .related__item:nth-of-type(2) .related__price {
+    padding-left: 61px;
   }
   .related__button {
-    margin-top: 26px;
-    padding: 13px 287px 12px 285px;
+    margin-top: 22px;
+    padding: 10px 287px 10px 285px;
   }
 }
 @media (min-width: $desktop-width) {

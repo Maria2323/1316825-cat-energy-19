@@ -27,26 +27,26 @@
 }
 @media (min-width: $tablet-width) {
   .related-products {
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 3.9%;
+    padding-right: 3.9%;
     margin-bottom: 76px;
   }
   .related-products__title {
     font-size: 36px;
     padding-top: 0;
-    padding-bottom: 75px;
-    padding-left: 37px;
+    padding-bottom: 80px;
+    padding-left: 5.2%;
     &::after {
-      top: 20px;
+      top: 22px;
       right: 0;
-      width: 335px;
+      width: 327px;
     }
     &::before {
       content: " ";
       position: absolute;
-      top: 20px;
+      top: 22px;
       left: 0;
-      width: 29px;
+      width: 28px;
       height: 3px;
       background-color: #68b738;
     }

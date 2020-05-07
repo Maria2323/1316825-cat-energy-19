@@ -9,12 +9,12 @@
   background-color: #f2f2f2;
 }
 .results__wrapper {
-  height: 282px;
+  height: 277px;
   padding-left: 6.25%;
   padding-right: 6.25%;
   padding-top: 23px;
   flex-direction: column;
-  align-items: center;
+  align-items: flex-start;
   justify-content: space-between;
 }
 .results__title {
@@ -25,7 +25,7 @@
   text-align: left;
   color: #111111;
   margin: 0;
-  padding-top: 18px;
+  padding-top: 17px;
   padding-left: 6.25%;
 }
 .results__description {
@@ -36,6 +36,17 @@
   text-align: left;
   color: #444444;
   margin: 0;
+  width: 98%;
+}
+.results__wrap {
+  min-height: 135px;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  padding-top: 25px;
 }
 .results__wrapper-results {
   display: flex;
@@ -44,8 +55,14 @@
   width: 100%;
 }
 .results__sum {
-  padding-top: 27px;
-  height: 94px;
+  box-sizing: border-box;
+  width: 124px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 .results__kg,
 .results__days {
@@ -54,12 +71,10 @@
   font-size: 24px;
   line-height: 24px;
   text-align: center;
+  text-transform: uppercase;
   color: #111111;
   margin: 0;
-  width: 124px;
-  height: 39px;
-  outline: 1px solid #cdcdcd;
-  padding-top: 17px;
+  padding-top: 13px;
 }
 .results__weight-loss,
 .results__time-spent {
@@ -69,12 +84,17 @@
   line-height: 1;
   text-align: center;
   color: #444444;
-  padding-left: 16px;
-  padding-right: 17px;
-  margin-top: -6px;
-  margin-bottom: 0;
-  width: 87px;
-  height: 23px;
+  margin: 0;
+  width: 90px;
+  background-color: #f2f2f2;
+  box-sizing: border-box;
+  padding: 9px 7px;
+}
+.results__money {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 70%;
 }
 .results__money-spent {
   font-family: 'Oswald', serif;
@@ -83,7 +103,9 @@
   line-height: 20px;
   text-align: center;
   color: #111111;
+  text-transform: uppercase;
   margin: 0;
+  padding-left: 2px;
 }
 .results__image-wrap {
   width: 100%;
@@ -92,16 +114,16 @@
   align-items: center;
 }
 .results__cat-image {
-  height: 232px;
-  width: 311px;
-  padding-right: 9px;
+  height: 240px;
+  width: 318px;
 }
 .results__wrapper-before-after {
   display: flex;
   align-items: flex-start;
   justify-content: space-between;
-  width: 197px;
-  margin-top: 35px;
+  width: 62%;
+  margin-top: 28px;
+  margin-left: 3px;
 }
 .results__before,
 .results__after {
@@ -121,86 +143,95 @@
 }
 @media (min-width: $tablet-width) {
   .results {
-    width: 768px;
     min-height: 1081px;
     background-color: #ffffff;
   }
   .results__wrapper {
-    min-height: 278px;
-    width: 768px;
-    padding-left: 30px;
+    box-sizing: border-box;
+    min-height: 274px;
+    width: 100%;
+    padding-left: 4%;
+    padding-right: 4%;
     padding-top: 64px;
   }
   .results__title {
     font-size: 60px;
-    padding-left: 30px;
-    padding-top: 51px;
+    padding-left: 4%;
+    padding-top: 43px;
   }
   .results__description {
     font-size: 16px;
     line-height: 24px;
-    width: 674px;
+    width: 96%;
   }
   .results__wrap {
-    width: 707px;
+    width: 100%;
     min-height: 78px;
-    padding-top: 56px;
-    display: flex;
+    padding-top: 53px;
+    flex-direction: row;
     align-items: center;
     justify-content: space-between;
+  }
+  .results__money {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: flex-end;
+    min-height: 48px;
+    width: 25%;
   }
   .results__money-spent {
     font-size: 20px;
     line-height: 20px;
     text-align: right;
-    width: 174px;
+    padding: 0;
   }
   .results__wrapper-results {
     width: 366px;
     margin-left: 0;
   }
   .results__sum {
-    padding-top: 0;
-    height: 74px;
+    height: 72px;
+    width: 162px;
   }
   .results__kg,
   .results__days {
     font-size: 30px;
     line-height: 37px;
-    width: 162px;
-    height: 50px;
-    padding-top: 22px;
-    text-transform: uppercase;
+    padding-top: 15px;
   }
   .results__weight-loss,
   .results__time-spent {
     font-size: 14px;
-    padding: 0;
-    margin-top: -6px;
-    margin-bottom: 0;
-    width: 162px;
+    background-color: #ffffff;
+    width: auto;
+    padding-top: 10px;
   }
   .results__image-wrap {
-    width: 768px;
+    box-sizing: border-box;
     height: 462px;
-    margin-top: 249px;
+    margin-top: 239px;
     background-color: #f2f2f2;
-
+    padding-left: 6%;
+    padding-right: 11%;
   }
   .results__wrapper-before-after {
-    width: 533px;
+    width: 89.5%;
+    padding-left: 6%;
     height: 93px;
-    padding-top: 21px;
+    margin-top: 16px;
   }
   .results__cat-image {
+    box-sizing: border-box;
     height: 517px;
-    width: 338px;
-    padding-right: 0;
+    width: 100%;
     margin-top: -169px;
   }
   .results__before,
   .results__after {
     font-size: 20px;
+    padding-bottom: 6px;
+    border-bottom: 1px dotted rgba(0, 0, 0, 0.23);
   }
 }
 @media (min-width: $desktop-width) {
