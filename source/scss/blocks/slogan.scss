@@ -87,22 +87,35 @@
 @media (min-width: $desktop-width) {
   .slogan {
     height: 696px;
-    padding-left: 190px;
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 560px 142px, top 0 right 0;
+    background-position: right 328px top 142px, top 0 right 0;
     background-size: 552px 499px, 720px 696px;
+  }
+  .slogan__container {
+    box-sizing: border-box;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
   }
   .slogan__title {
     padding-top: 222px;
     width: 460px;
-    padding-left: 3px;
+    margin-left: 80px;
   }
   .slogan__call {
-    padding-top: 39px;
+    padding-top: 40px;
+    margin-left: 78px;
   }
   .slogan__button {
-    padding: 17px 29px 15px 26px;
+    box-sizing: border-box;
+    padding: 16px 28px 16px 25px;
     margin-top: 53px;
+    margin-left: 80px;
+    width: 245px;
   }
 }

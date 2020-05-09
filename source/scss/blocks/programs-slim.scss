@@ -143,20 +143,22 @@
   .programs-slim {
     margin-right: 80px;
     width: 570px;
+    padding-left: 53px;
+    padding-right: 56px;
   }
   .programs-slim__title {
     font-size: 36px;
-    padding-top: 78px;
-    padding-left: 164px;
+    padding-top: 77px;
+    padding-left: 163px;
     &::before {
-      top: 47px;
-      left: 52px;
+      top: 48px;
+      left: 53px;
       width: 100px;
       height: 100px;
     }
     &::after {
-      top: 41px;
-      left: 65px;
+      top: 42px;
+      left: 66px;
       width: 71px;
       height: 97px;
     }
@@ -173,14 +175,14 @@
     line-height: 20px;
     padding-left: 1px;
     &::before {
-      top: 298px;
-      left: 186px;
+      top: 10px;
+      left: 133px;
       width: 19px;
-      height: 3px;
+      height: 2px;
     }
     &::after {
-      top: 294px;
-      left: 204px;
+      top: 6px;
+      left: 151px;
     }
   }
 }

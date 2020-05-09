@@ -37,9 +37,11 @@
     </header>
     <main class="page-main">
       <section class="slogan">
-        <H1 class="slogan__title">Функциональное питание для котов</H1>
-        <p class="slogan__call">Занялся собой? Займись котом!</p>
-        <a href="#" class="slogan__button button" title="Подобрать программу">Подобрать программу</a>
+        <div class="slogan__container">
+          <H1 class="slogan__title">Функциональное питание для котов</H1>
+          <p class="slogan__call">Занялся собой? Займись котом!</p>
+          <a href="#" class="slogan__button button" title="Подобрать программу">Подобрать программу</a>
+        </div>
       </section>
       <section class="programs">
           <h2 class="visually-hidden">Выбор программы для кота</h2>
@@ -76,36 +78,40 @@
         </ul>
       </section>
       <section class="results">
-        <h2 class="results__title">Живой пример</h2>
+        <div class="results__title-container">
+          <h2 class="results__title">Живой пример</h2>
+        </div>
         <div class="results__wrapper-desktop">
-          <div class="results__wrapper">
-            <p class="results__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
-            <div class="results__wrap">
-              <div class="results__wrapper-results">
-                <div class="results__sum">
-                  <p class="results__kg">5 кг</p>
-                  <p class="results__weight-loss">снижение веса</p>
+          <div class="results__container">
+            <div class="results__wrapper">
+              <p class="results__description">Борис сбросил 5 кг за 2 месяца, просто заменив свой обычный корм на Cat Energy Slim. Отличный результат без изнуряющих тренировок! При этом он не менял своих привычек и по-прежнему спит по 16 часов в день.</p>
+              <div class="results__wrap">
+                <div class="results__wrapper-results">
+                  <div class="results__sum">
+                    <p class="results__kg">5 кг</p>
+                    <p class="results__weight-loss">снижение веса</p>
+                  </div>
+                  <div class="results__sum">
+                    <p class="results__days">60 дней</p>
+                    <p class="results__time-spent">затрачено времени</p>
+                  </div>
                 </div>
-                <div class="results__sum">
-                  <p class="results__days">60 дней</p>
-                  <p class="results__time-spent">затрачено времени</p>
+                <div class="results__money">
+                  <p class="results__money-spent">Затраты на питание:</p>
+                  <p class="results__money-spent">15 000 руб.</p>
                 </div>
-              </div>
-              <div class="results__money">
-                <p class="results__money-spent">Затраты на питание:</p>
-                <p class="results__money-spent">15 000 руб.</p>
               </div>
             </div>
-          </div>
-          <div class="results__image-wrap">
-            <picture>
-              <source media="(min-width: 1440px)" srcset="../img/before-desktop@1x.png 1x, ../img/before-desktop@2x.png 2x">
-              <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png 1x, ../img/before-tablet@2x.png 2x">
-              <img class="results__cat-image src="../img/before-mobile@1x.png", srcset="../img/before-mobile@2x.png 2x" alt="Кот Борис">
-            </picture>
-            <div class="results__wrapper-before-after">
-              <p class="results__before">Было</p>
-              <p class="results__after">Стало</p>
+            <div class="results__image-wrap">
+              <picture>
+                <source media="(min-width: 1440px)" srcset="../img/before-desktop@1x.png 1x, ../img/before-desktop@2x.png 2x">
+                <source media="(min-width: 768px)" srcset="../img/before-tablet@1x.png 1x, ../img/before-tablet@2x.png 2x">
+                <img class="results__cat-image src="../img/before-mobile@1x.png", srcset="../img/before-mobile@2x.png 2x" alt="Кот Борис">
+              </picture>
+              <div class="results__wrapper-before-after">
+                <p class="results__before">Было</p>
+                <p class="results__after">Стало</p>
+              </div>
             </div>
           </div>
         </div>

@@ -168,10 +168,12 @@
 }
 @media (min-width: $desktop-width) {
   .functionality {
-    width: 1440px;
+    width: 1300px;
     min-height: 381px;
     border-bottom: none;
-    padding-left: 110px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
   }
   .functionality__list {
     min-height: 228px;
@@ -179,9 +181,38 @@
   .functionality__title {
     font-size: 60px;
     padding: 0;
-    margin-bottom: 70px;
+    margin-bottom: 72px;
   }
   .functionality__item {
-    width: 320px;
+    width: 325px;
+  }
+  .functionality__item:nth-of-type(4) {
+    width: 245px;
+  }
+  .functionality__item:first-child::before {
+    left: 117px;
+  }
+  .functionality__item:nth-child(2)::before {
+    left: 112px;
+  }
+  .functionality__item:nth-child(3)::before {
+    left: 113px;
+  }
+  .functionality__item:last-child::before {
+    left: 114px;
+  }
+  .functionality__description {
+    &--leaf {
+      width: 201px;
+    }
+    &--water {
+      width: 224px;
+    }
+    &--fork {
+      width: 206px;
+    }
+    &--watch {
+      width: 248px;
+    }
   }
 }

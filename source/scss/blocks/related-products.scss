@@ -53,9 +53,11 @@
   }
   @media (min-width: $desktop-width) {
     .related-products {
-      padding-left: 109px;
-      padding-right: 110px;
-      margin-bottom: 86px;
+      width: 1300px;
+      padding-left: 40px;
+      padding-right: 40px;
+      padding-bottom: 86px;
+      margin: 0 auto;
     }
     .related-products__title {
       padding-bottom: 75px;

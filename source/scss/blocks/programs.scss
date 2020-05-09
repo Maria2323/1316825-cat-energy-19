@@ -30,13 +30,13 @@
 }
 @media (min-width: $desktop-width) {
   .programs {
-    width: 1220px;
-    margin-left: 110px;
-    margin-top: 80px;
-    height: 372px;
-    margin-bottom: 72px;
+    width: 1300px;
+    height: 525px;
+    margin: 0 auto;
+    padding: 80px 40px 73px 39px;
   }
   .programs__list {
+    width: 1220px;
     padding: 0;
     flex-direction: row;
     height: 372px;

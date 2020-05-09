@@ -57,23 +57,26 @@
 }
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-right: 7.7%;
-    padding-left: 7.6%;
-    margin-top: 52px;
-    min-height: 60px;
+    width: 1300px;
+    padding-left: 39px;
+    padding-right: 40px;
+    padding-top: 55px;
+    margin: 0 auto;
     &--main {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 10;
       background: transparent;
     }
   }
   .page-header__wrapper-logo {
-    width: 16.6%;
+    width: 203px;
+    height: 60px;
   }
   .page-header__logo-image {
-    width: 100%;
+    width: 203px;
     height: 60px;
   }
   .page-header__toggle {

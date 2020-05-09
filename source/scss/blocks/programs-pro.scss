@@ -145,21 +145,22 @@
   .programs-pro {
     width: 570px;
     margin-top: 0;
-    padding-right: 0;
+    padding-left: 53px;
+    padding-right: 74px;
   }
   .programs-pro__title {
     font-size: 36px;
-    padding-top: 78px;
-    padding-left: 164px;
+    padding-top: 77px;
+    padding-left: 163px;
     &::before {
-      top: 47px;
-      left: 52px;
+      top: 48px;
+      left: 53px;
       width: 100px;
       height: 100px;
     }
     &::after {
-      top: 69px;
-      left: 34px;
+      top: 70px;
+      left: 35px;
       width: 134px;
       height: 57px;
     }
@@ -176,12 +177,14 @@
     line-height: 20px;
     padding-left: 1px;
     &::before {
-      left: 178px;
+      top: 11px;
+      left: 126px;
       width: 19px;
-      height: 3px;
+      height: 2px;
     }
     &::after {
-      left: 197px;
+      left: 144px;
+      top: 7px;
     }
   }
 }

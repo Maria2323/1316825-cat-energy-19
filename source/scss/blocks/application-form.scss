@@ -61,15 +61,17 @@
 }
 @media (min-width: $desktop-width) {
   .application-form {
-    margin-bottom: 82px;
+    width: 1300px;
+    margin: 0 auto;
+    padding: 81px 40px 82px;
   }
   .application-form__title {
-    padding-top: 194px;
-    padding-left: 110px;
+    padding-top: 1px;
+    padding-left: 0;
   }
   .application-form__description {
     padding-top: 53px;
-    padding-left: 110px;
+    padding-left: 0;
     width: 346px;
   }
 }
