@@ -7,6 +7,10 @@
   list-style: none;
   margin: 0;
 }
+.footer-list__item {
+  box-sizing: border-box;
+  width: 100%;
+}
 .footer-list__item:first-of-type {
   border-bottom: 1px solid #cdcdcd;
   height: 94px;
@@ -49,7 +53,7 @@
 }
 .footer-list__copyright {
   text-decoration: none;
-  font-family: 'Arial', sans-serif;
+  font-family: 'ArialMT', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
@@ -113,13 +117,24 @@
 }
 @media (min-width: $desktop-width) {
   .footer-list {
+    box-sizing: border-box;
     width: 1300px;
     padding-left: 40px;
     padding-right: 40px;
+    margin: 0 auto;
     height: 150px;
   }
   .footer-list__item {
     height: 34px;
-    width: 128px;
+  }
+  .footer-list__item:nth-of-type(2) {
+    padding-left: 16px;
+  }
+  .footer-list__item:last-of-type {
+    width: 164px;
+    padding-bottom: 3px;
+  }
+  .footer-list__html-academy-logo {
+    width: 42px;
   }
 }

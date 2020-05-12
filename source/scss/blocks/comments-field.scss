@@ -67,23 +67,23 @@
     height: 353px;
   }
   .comments-field__title {
-    padding-bottom: 71px;
-    padding-top: 71px;
+    padding-bottom: 76px;
+    padding-top: 67px;
     &::after {
-      top: 94px;
-      right: -110px;
-      width: 1120px;
+      top: 89px;
+      right: -150px;
+      width: 1150px;
     }
     &::before {
-      top: 94px;
-      left: -110px;
-      width: 75px;
+      top: 89px;
+      left: -111px;
+      width: 70px;
     }
   }
   .comments-field__text {
     width: 1218px;
     height: 174px;
     padding-top: 15px;
-    padding-left: 14px;
+    padding-left: 17px;
   }
 }

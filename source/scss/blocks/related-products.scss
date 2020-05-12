@@ -1,12 +1,13 @@
 .related-products {
   position: relative;
   box-sizing: border-box;
-  padding-left: 20px;
-  padding-right: 20px;
+  padding-left: 6.25%;
+  padding-right: 6.25%;
   margin-bottom: 35px;
+  width: 100%;
 }
 .related-products__title {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 1;
@@ -54,28 +55,31 @@
   @media (min-width: $desktop-width) {
     .related-products {
       width: 1300px;
-      padding-left: 40px;
+      padding-left: 39px;
       padding-right: 40px;
       padding-bottom: 86px;
       margin: 0 auto;
     }
     .related-products__title {
-      padding-bottom: 75px;
+      padding-bottom: 80px;
       padding-left: 0;
       &::after {
-        top: 20px;
-        width: 930px;
+        top: 22px;
+        width: 956px;
+        right: -70px;
       }
       &::before {
-        top: 20px;
-        width: 80px;
+        top: 22px;
+        width: 70px;
+        left: -70px;
       }
     }
     .related-products__wrap {
       display: flex;
       align-items: center;
       justify-content: space-between;
-      width: 100%;
+      width: 1220px;
+      margin-left: 1px;
     }
   }
 }

@@ -18,7 +18,7 @@
   margin-top: 2px;
 }
 .view-more__products {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -29,7 +29,7 @@
   margin: 0;
 }
 .view-more__flavours {
-  font-family: 'Arial', sans-serif;
+  font-family: 'ArialMT', sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 16px;
@@ -84,10 +84,14 @@
 }
 @media (min-width: $desktop-width) {
   .view-more {
-    width: 243px;
+    width: 245px;
+    height: 432px;
   }
   .view-more__button {
-    padding: 13px 39px 12px 37px;
+    padding: 10px 38px 10px 38px;
     width: 169px;
+  }
+  .view-more__products {
+    padding-top: 48px;
   }
 }

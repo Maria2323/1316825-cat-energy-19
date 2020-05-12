@@ -101,18 +101,18 @@
     padding-left: 0;
   }
   .contacts-field__title {
-    padding-top: 73px;
+    padding-top: 69px;
     padding-left: 0;
-    padding-bottom: 68px;
+    padding-bottom: 74px;
     &::after {
-      top: 94px;
-      right: -110px;
-      width: 775px;
+      top: 91px;
+      right: -150px;
+      width: 817px;
     }
     &::before {
-      top: 94px;
-      left: -110px;
-      width: 75px;
+      top: 91px;
+      left: -111px;
+      width: 70px;
     }
   }
   .contacts-field__wrap {
@@ -123,15 +123,18 @@
   .contacts-field__personal {
     flex-grow: 1;
   }
+  .contacts-field__personal:first-child {
+    max-width: 568px;
+  }
   .contacts-field__personal:last-child {
-    margin-left: 78px;
+    max-width: 572px;
   }
   .contacts-field__personal-input {
-    padding-top: 16px;
-    padding-left: 20px;
-    padding-bottom: 14px;
+    padding-top: 10px;
+    padding-left: 18px;
+    padding-bottom: 10px;
     &--email {
-      margin-left: 20px;
+      margin-left: 21px;
     }
     &--tel {
       margin-left: 17px;

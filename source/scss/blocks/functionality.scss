@@ -6,7 +6,7 @@
   margin-top: 18px;
 }
 .functionality__title {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
@@ -87,6 +87,9 @@
       background-size: 76%;
     }
   }
+  .functionality__description br {
+    display: none;
+  }
 }
 @media (min-width: $tablet-width) {
   .functionality {
@@ -113,7 +116,7 @@
     min-height: 228px;
   }
   .functionality__item::before {
-    font-family: 'Oswald', serif;
+    font-family: 'Oswald', sans-serif;
     font-weight: normal;
     font-size: 281px;
     line-height: 1;

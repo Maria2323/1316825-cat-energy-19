@@ -72,11 +72,10 @@
 @media (min-width: $desktop-width) {
   .product-description {
     width: 161px;
-    height: 152px;
-    padding-top: 38px;
+    height: 155px;
+    padding-top: 37px;
   }
   .product-description__detail {
-    padding-top: 28px;
     width: 168px;
   }
   .product-description__title {
@@ -86,11 +85,13 @@
   }
   .product-description__field {
     font-size: 16px;
+    line-height: 12px;
     text-align: left;
     height: 29px;
   }
   .product-description__value {
     font-size: 16px;
+    line-height: 12px;
     text-align: right;
     height: 29px;
   }

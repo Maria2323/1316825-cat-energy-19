@@ -112,17 +112,17 @@ input[type="checkbox"]:checked + .related-field__checkbox::before {
 }
 @media (min-width: $desktop-width) {
   .related-field__title {
-    padding-top: 71px;
-    padding-bottom: 53px;
+    padding-top: 67px;
+    padding-bottom: 57px;
     &::after {
-      top: 94px;
-      right: -110px;
-      width: 1090px;
+      top: 89px;
+      right: -70px;
+      width: 1118px;
     }
     &::before {
-      top: 94px;
-      left: -110px;
-      width: 75px;
+      top: 89px;
+      left: -111px;
+      width: 70px;
     }
   }
   .related-field {

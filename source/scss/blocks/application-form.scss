@@ -3,7 +3,7 @@
   margin-bottom: 32px;
 }
 .application-form__title {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
@@ -14,7 +14,7 @@
   padding-left: 6.25%;
 }
 .application-form__description {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -27,7 +27,7 @@
   padding-left: 6.25%;
 }
 .application-form__legend {
-  font-family: 'Arial', sans-serif;
+  font-family: 'ArialMT', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -63,14 +63,13 @@
   .application-form {
     width: 1300px;
     margin: 0 auto;
-    padding: 81px 40px 82px;
+    padding: 72px 40px 83px;
   }
   .application-form__title {
-    padding-top: 1px;
-    padding-left: 0;
+    padding: 0;
   }
   .application-form__description {
-    padding-top: 53px;
+    padding-top: 56px;
     padding-left: 0;
     width: 346px;
   }

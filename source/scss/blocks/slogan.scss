@@ -15,18 +15,17 @@
 }
 .slogan__title {
   color: #ffffff;
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 1;
   text-align: center;
   margin: 0;
   padding-top: 27px;
-  max-width: 310px;
 }
 .slogan__call {
   color: #ffffff;
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 1;
@@ -42,7 +41,7 @@
   margin-top: 301px;
   color: #ffffff;
   text-decoration: none;
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -65,8 +64,6 @@
     font-size: 60px;
     text-align: left;
     padding-top: 53px;
-    width: 85%;
-    max-width: 1000px;
   }
   .slogan__call {
     color: #111111;
@@ -76,12 +73,13 @@
     padding-left: 2px;
   }
   .slogan__button {
-    padding: 15px 29px 16px 26px;
+    box-sizing: border-box;
+    padding: 15px 28px 16px 25px;
     margin-top: 48px;
     margin-left: 2px;
     font-size: 20px;
     line-height: 1;
-    text-align: left;
+    max-width: 245px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -104,7 +102,6 @@
   }
   .slogan__title {
     padding-top: 222px;
-    width: 460px;
     margin-left: 80px;
   }
   .slogan__call {
@@ -112,10 +109,8 @@
     margin-left: 78px;
   }
   .slogan__button {
-    box-sizing: border-box;
-    padding: 16px 28px 16px 25px;
+    padding-top: 16px;
     margin-top: 53px;
     margin-left: 80px;
-    width: 245px;
   }
 }
