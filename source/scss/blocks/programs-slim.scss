@@ -87,6 +87,21 @@
     border-left-color: #111111;
   }
 }
+.programs-slim__catalog:hover {
+  padding-right: 48px;
+}
+.programs-slim__catalog:hover::before {
+  width: 29px;
+}
+.programs-slim__catalog:active {
+  opacity: 30%;
+}
+.programs-slim__catalog:active::before {
+  opacity: 30%;
+}
+.programs-slim__catalog:active::after {
+  opacity: 30%;
+}
 @media (min-width: $tablet-width) {
   .programs-slim {
     position: relative;
@@ -133,6 +148,9 @@
     padding-left: 0;
     padding-right: 54px;
   }
+  .programs-slim__catalog:hover {
+    padding-right: 62px;
+  }
 }
 @media (min-width: $desktop-width) {
   .programs-slim {
@@ -170,5 +188,8 @@
     line-height: 20px;
     padding-left: 1px;
     padding-right: 53px;
+  }
+  .programs-slim__catalog:hover {
+    padding-right: 61px;
   }
 }

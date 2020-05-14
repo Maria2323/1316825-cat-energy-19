@@ -29,7 +29,9 @@
   padding: 10px 107px 11px 110px;
   background-color: #68b738;
   border: none;
+  box-sizing: border-box;
   width: 100%;
+  text-decoration: none;
 }
 @media (min-width: $tablet-width) {
   .catalog {

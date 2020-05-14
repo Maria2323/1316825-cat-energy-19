@@ -49,6 +49,19 @@ textarea[placeholder] {
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+}
+input,
+textarea {
+  border: 1px solid rgba(205, 205, 205, 0.5);
+}
+input:hover,
+textarea:hover {
+  border: 1px solid #cdcdcd;
+}
+input:active,
+textarea:active {
+  border: 2px solid black;
 }
 @media (min-width: $tablet-width) {
   .form__title {
@@ -63,7 +76,7 @@ textarea[placeholder] {
     box-sizing: border-box;
     width: 100%;
     padding-left: 9.2%;
-    padding-right: 8.8%;
+    padding-right: 8.6%;
   }
   .form__button-wrap {
     flex-direction: row;

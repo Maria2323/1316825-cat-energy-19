@@ -11,6 +11,12 @@
   margin-right: 6.9%;
   margin-left: 6.25%;
 }
+.page-header__wrapper-logo:hover {
+  opacity: 80%;
+}
+.page-header__wrapper-logo:active {
+  opacity: 60%;
+}
 .page-header__logo-image {
   width: 191px;
   height: 39px;
@@ -26,6 +32,9 @@
   background-size: cover;
   border: 0;
   padding: 0;
+}
+.page-header__toggle:checked .main-nav__list {
+  display: none;
 }
 @media (min-width: $tablet-width) {
   .page-header {

@@ -3,6 +3,7 @@
 <head>
     <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи - форма заказа</title>
 </head>
@@ -47,16 +48,22 @@
             <label class="personal-field__old form__label">Возраст (лет):<input class="personal-field__input personal-field__input--old" type="text" name="old" placeholder="7"></label>
           </fieldset>
           <fieldset class="form__program-choiсe-wrapper choose-program-field">
-            <label class="choose-program-field__loose-weight form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="loose-weight"><span class="choose-program-field__check"></span>Похудение</label>
-            <label class="choose-program-field__weight-set form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="weight-set"><span class="choose-program-field__check"></span>Набор массы</label>
-            <label class="choose-program-field__advice form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="need-advice"><span class="choose-program-field__check"></span>Не знаю (нужен ваш совет)</label>
+            <label class="choose-program-field__label choose-program-field__loose-weight form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="loose-weight"><span class="choose-program-field__check"></span>Похудение</label>
+            <label class="choose-program-field__label choose-program-field__weight-set form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="weight-set"><span class="choose-program-field__check"></span>Набор массы</label>
+            <label class="choose-program-field__label choose-program-field__advice form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="need-advice"><span class="choose-program-field__check"></span>Не знаю (нужен ваш совет)</label>
           </fieldset>
         </div>
         <fieldset class="form__contacts-wrapper contacts-field">
           <legend class="form__title contacts-field__title">Контактные данные (владельца кота)</legend>
           <div class="contacts-field__wrap">
-            <label class="contacts-field__personal form__label">E-mail:*<input class="contacts-field__personal-input contacts-field__personal-input--email" type="email" name="e-mail" required placeholder="Kuklachev@gmail.com"></label>
-            <label class="contacts-field__personal form__label">Телефон:*<input class="contacts-field__personal-input contacts-field__personal-input--tel" type="tel" name="phone-number" required placeholder="8 (960) 900-60-90"></label>
+            <label class="contacts-field__personal form__label">E-mail:*
+              <input class="contacts-field__personal-input contacts-field__personal-input--email" type="email" name="e-mail" required placeholder="Kuklachev@gmail.com">
+              <span class="contacts-field__icon contacts-field__icon--mail"><svg class="contacts-field__icon-mail" width="17px" height="14px"><use xlink:href="#sprite-icon-mail"></use></svg></span>
+            </label>
+            <label class="contacts-field__personal form__label">Телефон:*
+              <input class="contacts-field__personal-input contacts-field__personal-input--tel" type="tel" name="phone-number" required placeholder="8 (960) 900-60-90">
+              <span class="contacts-field__icon contacts-field__icon--phone"><svg class="contacts-field__icon-phone" width="21px" height="21px"><use xlink:href="#sprite-icon-phone"></use></svg></span>
+            </label>
           </div>
         </fieldset>
         <fieldset class="form__comments-wrapper comments-field">
@@ -121,8 +128,8 @@
           </div>
         </li>
         <li class="footer-list__item">
-          <a class="footer-list__copyright html-academy" href="#" title="HTML academy">HTML Academy</a>
-          <a class="footer-list__html-academy-logo" href="#" title="HTML academy">
+          <a class="footer-list__copyright html-academy" href="https://htmlacademy.ru/intensive/adaptive" title="HTML academy">HTML Academy</a>
+          <a class="footer-list__html-academy-logo" href="https://htmlacademy.ru/intensive/adaptive" title="HTML academy">
             <svg width="40px" height="46px">
               <use xlink:href="#sprite-htmlacademy"></use>
             </svg>

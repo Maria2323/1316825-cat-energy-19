@@ -54,6 +54,13 @@
   width: 100%;
   box-sizing: border-box;
 }
+.view-more__button:hover {
+  background-color: #ebebeb;
+}
+.view-more__button:active {
+  background-color: #ebebeb;
+  color: rgba(68, 68, 68, 0.3);
+}
 @media (min-width: $tablet-width) {
   .view-more {
     border: 1px solid #f2f2f2;
