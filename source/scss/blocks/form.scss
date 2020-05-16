@@ -63,6 +63,18 @@ input:active,
 textarea:active {
   border: 2px solid black;
 }
+input:focus,
+textarea:focus {
+  border: 2px solid black;
+}
+input:checked,
+textarea:checked {
+  border: 2px solid black;
+}
+input:default,
+textarea:default {
+  border: 2px solid #ff8282;
+}
 @media (min-width: $tablet-width) {
   .form__title {
     font-size: 36px;
