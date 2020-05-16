@@ -128,13 +128,17 @@
     height: 34px;
   }
   .footer-list__item:nth-of-type(2) {
-    padding-left: 16px;
+    padding-left: 17px;
+    width: 142px;
   }
   .footer-list__item:last-of-type {
-    width: 164px;
+    width: 163px;
     padding-bottom: 3px;
   }
   .footer-list__html-academy-logo {
     width: 42px;
+  }
+  .footer-list__item:first-of-type {
+    padding-top: 5px;
   }
 }
