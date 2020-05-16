@@ -31,6 +31,7 @@
 }
 @media (min-width: $tablet-width) {
   .gift {
+    max-width: 630px;
     height: 200px;
     margin-top: 69px;
     padding: 61px 125px 70px 91px;
@@ -53,7 +54,7 @@
 }
 @media (min-width: $desktop-width) {
   .gift {
-    width: 245px;
+    max-width: 245px;
     height: 289px;
     margin: 0;
     padding: 65px 0 42px;
