@@ -25,11 +25,14 @@
   padding-right: 29.3%;
 }
 .footer-list__item:last-of-type {
+  border-top: 1px solid #cdcdcd;
+  height: 78px;
+}
+.footer-list__link {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  border-top: 1px solid #cdcdcd;
-  height: 78px;
+  text-decoration: none;
 }
 .footer-list__logo-image {
   width: 45.7%;

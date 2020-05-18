@@ -29,6 +29,8 @@
 }
 .contacts-field__personal-input {
   flex-grow: 1;
+  height: 52px;
+  box-sizing: border-box;
   &--email {
     margin-left: 12px;
     padding-top: 13px;
@@ -41,6 +43,18 @@
     padding-bottom: 13px;
     padding-left: 15px;
   }
+}
+.contacts-field__personal-input--email:focus + .contacts-field__icon--mail svg {
+  color: #68b738;
+}
+.contacts-field__personal-input--tel:focus + .contacts-field__icon--phone svg {
+  color: #68b738;
+}
+.contacts-field__personal-input--email:not(:placeholder-shown):invalid + .contacts-field__icon--mail svg {
+  color: #ff8282;
+}
+.contacts-field__personal-input--tel:not(:placeholder-shown):invalid + .contacts-field__icon--phone svg {
+  color: #ff8282;
 }
 .contacts-field__personal {
   margin-bottom: 14px;
@@ -63,10 +77,6 @@
 .contacts-field__icon-mail,
 .contacts-field__icon-phone {
   color: #222222;
-}
-.contacts-field__personal:active .contacts-field__icon-mail,
-.contacts-field__personal:active .contacts-field__icon-phone {
-  color: #68b738;
 }
 @media (min-width: $tablet-width) {
   .contacts-field {

@@ -59,21 +59,13 @@ input:hover,
 textarea:hover {
   border: 1px solid #cdcdcd;
 }
-input:active,
-textarea:active {
-  border: 2px solid black;
-}
 input:focus,
 textarea:focus {
   border: 2px solid black;
   outline: none;
 }
-input:checked,
-textarea:checked {
-  border: 2px solid black;
-}
-input:invalid,
-textarea:invalid {
+input:not(:placeholder-shown):invalid,
+textarea:not(:placeholder-shown):invalid {
   border: 2px solid #ff8282;
 }
 @media (min-width: $tablet-width) {
