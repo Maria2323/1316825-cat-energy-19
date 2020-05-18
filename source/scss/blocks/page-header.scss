@@ -32,7 +32,18 @@
   border: 0;
   padding: 0;
 }
-.page-header__toggle:checked .main-nav__list {
+.page-header__toggle-hidden {
+  width: 25px;
+  height: 19px;
+  background-color: transparent;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 0;
+  padding: 0;
+}
+.main-nav__hidden {
   display: none;
 }
 @media (min-width: $tablet-width) {
