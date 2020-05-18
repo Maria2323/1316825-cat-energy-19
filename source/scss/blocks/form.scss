@@ -66,13 +66,14 @@ textarea:active {
 input:focus,
 textarea:focus {
   border: 2px solid black;
+  outline: none;
 }
 input:checked,
 textarea:checked {
   border: 2px solid black;
 }
-input:default,
-textarea:default {
+input:invalid,
+textarea:invalid {
   border: 2px solid #ff8282;
 }
 @media (min-width: $tablet-width) {

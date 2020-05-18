@@ -60,6 +60,14 @@
     right: 13px;
   }
 }
+.contacts-field__icon-mail,
+.contacts-field__icon-phone {
+  color: #222222;
+}
+.contacts-field__personal:active .contacts-field__icon-mail,
+.contacts-field__personal:active .contacts-field__icon-phone {
+  color: #68b738;
+}
 @media (min-width: $tablet-width) {
   .contacts-field {
     height: 311px;

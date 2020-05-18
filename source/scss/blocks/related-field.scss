@@ -45,6 +45,15 @@
   margin-right: 16px;
   border: 1px solid #cdcdcd;
 }
+.related-field__checkbox:hover {
+  border: 1px solid #bababa;
+}
+.related-field__checkbox:active {
+  opacity: 30%;
+}
+.related-field__label:active {
+  opacity: 30%;
+}
 input[type="checkbox"]:checked + .related-field__checkbox::before {
   content: " ";
   height: 17px;
