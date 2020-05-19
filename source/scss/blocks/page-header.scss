@@ -8,8 +8,11 @@
   align-items: center;
   justify-content: space-between;
   min-height: 65px;
-  margin-right: 6.9%;
-  margin-left: 6.25%;
+  padding-right: 6.9%;
+  padding-left: 6.25%;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #f2f2f2;
 }
 .page-header__wrapper-logo:hover {
   opacity: 80%;
@@ -52,7 +55,7 @@
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-top: 26px;
+    margin-top: 27px;
     min-height: 59px;
     padding-right: 4%;
     padding-left: 3.8%;
@@ -62,6 +65,8 @@
     width: 25%;
     min-height: 61px;
     margin: 0;
+    border-bottom: none;
+    padding: 0;
   }
   .page-header__logo-image {
     width: 174px;
