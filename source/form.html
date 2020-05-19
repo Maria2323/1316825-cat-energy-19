@@ -1,8 +1,9 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <link rel="stylesheet" href="css/style.min.css">
+    <link rel="preload" href="/fonts/oswaldregular.woff2" as="font">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <title>HTML Academy: Кэт энерджи - форма заказа</title>
 </head>
@@ -12,13 +13,13 @@
   </div>
   <header class="page-header">
     <div class="page-header__wrapper-logo">
-      <div class="page-header__logo-image">
+      <a href="index.html" title="Главная страница">
         <picture>
-          <source media="(min-width: 1440px)" srcset="../img/logo-desktop.svg">
-          <source media="(min-width: 768px)" srcset="../img/logo-tablet.svg">
-          <img src="../img/logo-mobile.svg">
+          <source media="(min-width: 1300px)" srcset="img/logo-desktop.svg">
+          <source media="(min-width: 768px)" srcset="img/logo-tablet.svg">
+          <img class="page-header__logo-image" width="191" height="39" src="img/logo-mobile.svg" alt="Cat Energy">
         </picture>
-      </div>
+      </a>
       <button type="button" class="page-header__toggle"></button>
     </div>
     <nav class="main-nav">
@@ -47,16 +48,22 @@
             <label class="personal-field__old form__label">Возраст (лет):<input class="personal-field__input personal-field__input--old" type="text" name="old" placeholder="7"></label>
           </fieldset>
           <fieldset class="form__program-choiсe-wrapper choose-program-field">
-            <label class="choose-program-field__loose-weight form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="loose-weight"><span class="choose-program-field__check"></span>Похудение</label>
-            <label class="choose-program-field__weight-set form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="weight-set"><span class="choose-program-field__check"></span>Набор массы</label>
-            <label class="choose-program-field__advice form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="need-advice"><span class="choose-program-field__check"></span>Не знаю (нужен ваш совет)</label>
+            <label class="choose-program-field__label choose-program-field__loose-weight form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="loose-weight"><span class="choose-program-field__check"></span>Похудение</label>
+            <label class="choose-program-field__label choose-program-field__weight-set form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="weight-set"><span class="choose-program-field__check"></span>Набор массы</label>
+            <label class="choose-program-field__label choose-program-field__advice form__label"><input class="choose-program-field__input" type="radio" name="choose-program" value="need-advice"><span class="choose-program-field__check"></span>Не знаю (нужен ваш совет)</label>
           </fieldset>
         </div>
         <fieldset class="form__contacts-wrapper contacts-field">
           <legend class="form__title contacts-field__title">Контактные данные (владельца кота)</legend>
           <div class="contacts-field__wrap">
-          <label class="contacts-field__personal form__label">E-mail:*<input class="contacts-field__personal-input contacts-field__personal-input--email" type="email" name="e-mail" required="" placeholder="Kuklachev@gmail.com"></label>
-          <label class="contacts-field__personal form__label">Телефон:*<input class="contacts-field__personal-input contacts-field__personal-input--tel" type="tel" name="phone-number" required="" placeholder="8 (960) 900-60-90"></label>
+            <label class="contacts-field__personal form__label">E-mail:*
+              <input class="contacts-field__personal-input contacts-field__personal-input--email" type="email" name="e-mail" required placeholder="Kuklachev@gmail.com">
+              <span class="contacts-field__icon contacts-field__icon--mail"><svg class="contacts-field__icon-mail" width="17px" height="14px"><use xlink:href="#sprite-icon-mail"></use></svg></span>
+            </label>
+            <label class="contacts-field__personal form__label">Телефон:*
+              <input class="contacts-field__personal-input contacts-field__personal-input--tel" type="tel" name="phone-number" required placeholder="8 (960) 900-60-90">
+              <span class="contacts-field__icon contacts-field__icon--phone"><svg class="contacts-field__icon-phone" width="21px" height="21px"><use xlink:href="#sprite-icon-phone"></use></svg></span>
+            </label>
           </div>
         </fieldset>
         <fieldset class="form__comments-wrapper comments-field">
@@ -96,31 +103,34 @@
   <footer class="footer-page">
     <div class="footer-page__wrapper">
       <div class="footer-page__contacts">
-        <p class="footer-page__partnership">Приглашаем к сотрудничеству дилеров!</p>
-        <p class="footer-page__address">ул. Большая Конюшенная, д. 19/8 Санкт-Петербург</p>
+        <p class="footer-page__partnership">Приглашаем<br> к сотрудничеству<br> дилеров!</p>
+        <div  class="footer-page__address-wrap">
+          <p class="footer-page__address">ул. Большая Конюшенная, д. 19/8</p>
+          <p class="footer-page__address">Санкт-Петербург</p>
+        </div>
       </div>
       <div class="footer-page__map">
-        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3d03c1f1211995f46cf984b5650da6dd0a63460909da1eaf1ae046f4cd5920fd&amp;source=constructor" width="100%" height="400" frameborder="0"></iframe>
+        <iframe src="https://yandex.ru/map-widget/v1/?um=constructor%3A3d03c1f1211995f46cf984b5650da6dd0a63460909da1eaf1ae046f4cd5920fd&amp;source=constructor" height="400"></iframe>
       </div>
       <ul class="footer-page__list footer-list">
         <li class="footer-list__item">
-          <svg class="footer-list__logo-image"><use xlink:href="#sprite-logo-footer"></use></svg>
+          <svg class="footer-list__logo-image" width="128" height="24"><use xlink:href="#sprite-logo-footer"></use></svg>
         </li>
         <li class="footer-list__item">
-          <div class="footer-list__vk-icon">
-            <a title="Vkontakte"><svg width="22px" height="14px"><use xlink:href="#sprite-icon-vk"></use></svg></a>
+          <div>
+            <a class="footer-list__link" href="#" title="Вконтакте"><svg class="footer-list__vk-icon" width="22" height="14"><use xlink:href="#sprite-icon-vk"></use></svg></a>
           </div>
-          <div class="footer-list__insta-icon">
-            <a title="Instagram"><svg width="16px" height="18px"><use xlink:href="#sprite-icon-insta"></use></svg></a>
+          <div>
+            <a class="footer-list__link" href="#" title="Instagram"><svg class="footer-list__insta-icon" width="16" height="18"><use xlink:href="#sprite-icon-insta"></use></svg></a>
           </div>
-          <div class="footer-list__fb-icon">
-            <a title="Facebook"><svg width="10px" height="19px"><use xlink:href="#sprite-icon-fb"></use></svg></a>
+          <div>
+            <a class="footer-list__link" href="#" title="Facebook"><svg class="footer-list__fb-icon" width="10" height="19"><use xlink:href="#sprite-icon-fb"></use></svg></a>
           </div>
         </li>
         <li class="footer-list__item">
-          <a class="footer-list__copyright html-academy" href="#" title="HTML academy">HTML Academy</a>
-          <a class="footer-list__html-academy-logo" href="#" title="HTML academy">
-            <svg width="40px" height="46px">
+          <a class="footer-list__link" href="https://htmlacademy.ru/intensive/adaptive" title="HTML academy">
+            <div class="footer-list__copyright html-academy">HTML Academy</div>
+            <svg class="footer-list__html-academy-logo" width="40" height="46">
               <use xlink:href="#sprite-htmlacademy"></use>
             </svg>
           </a>
@@ -128,5 +138,6 @@
       </ul>
     </div>
   </footer>
+  <script src="js/script.js"></script>
 </body>
 </html>

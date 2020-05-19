@@ -4,7 +4,7 @@
   flex-direction: column;
   align-items: center;
   width: 100%;
-  height: 503px;
+  height: 502px;
   background-image: url("../img/index-can-mobile@1x.png"), url("../img/index-background-mobile@1x.jpg");
   background-repeat: no-repeat, no-repeat;
   background-position: center 167px, top center;
@@ -15,18 +15,17 @@
 }
 .slogan__title {
   color: #ffffff;
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 1;
   text-align: center;
   margin: 0;
   padding-top: 27px;
-  max-width: 310px;
 }
 .slogan__call {
   color: #ffffff;
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 1;
@@ -42,7 +41,7 @@
   margin-top: 301px;
   color: #ffffff;
   text-decoration: none;
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -52,56 +51,66 @@
 @media (min-width: $tablet-width) {
   .slogan {
     align-items: flex-start;
-    width: 100%;
-    height: 867px;
-    padding-left: 118px;
+    height: 863px;
+    padding-left: 15.2%;
+    padding-right: 4%;
     background-image: url("../img/index-can-tablet@1x.jpg");
     background-repeat: no-repeat;
-    background-position: 29px bottom;
+    background-position: 48% bottom;
     background-size: 709px 609px;
   }
   .slogan__title {
     color: #111111;
     font-size: 60px;
     text-align: left;
-    padding-top: 68px;
-    padding-left: 2px;
-    width: 460px;
+    padding-top: 53px;
   }
   .slogan__call {
     color: #111111;
     font-size: 20px;
     text-align: left;
-    padding-top: 33px;
+    padding-top: 41px;
+    padding-left: 2px;
   }
   .slogan__button {
-    padding: 17px 29px 15px 26px;
+    box-sizing: border-box;
+    padding: 15px 28px 16px 25px;
     margin-top: 48px;
-    margin-left: 1px;
+    margin-left: 2px;
     font-size: 20px;
     line-height: 1;
-    text-align: left;
+    max-width: 245px;
   }
 }
 @media (min-width: $desktop-width) {
   .slogan {
     height: 696px;
-    padding-left: 190px;
+    width: 100%;
+    padding: 0;
+    background-color: #ffffff;
     background-image: url("../img/index-can-desktop@1x.png"), url("../img/index-background-desktop@1x.jpg");
     background-repeat: no-repeat, no-repeat;
-    background-position: 560px 142px, top 0 right 0;
+    background-position: right 328px top 142px, top 0 right 0;
     background-size: 552px 499px, 720px 696px;
+  }
+  .slogan__container {
+    box-sizing: border-box;
+    width: 1300px;
+    padding-left: 40px;
+    padding-right: 40px;
+    margin: 0 auto;
   }
   .slogan__title {
     padding-top: 222px;
-    width: 460px;
-    padding-left: 3px;
+    margin-left: 80px;
   }
   .slogan__call {
-    padding-top: 39px;
+    padding-top: 40px;
+    margin-left: 78px;
   }
   .slogan__button {
-    padding: 17px 29px 15px 26px;
+    padding-top: 16px;
     margin-top: 53px;
+    margin-left: 80px;
   }
 }

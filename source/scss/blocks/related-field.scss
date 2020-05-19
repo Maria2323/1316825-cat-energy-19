@@ -23,7 +23,7 @@
   align-items: flex-start;
   justify-content: center;
   padding-top: 35px;
-  padding-left: 2px;
+  padding-left: 0.7%;
 }
 .related-field__label {
   padding-bottom: 12px;
@@ -31,6 +31,9 @@
   align-items: center;
   justify-content: flex-start;
   position: relative;
+  &:active {
+    opacity: 30%;
+  }
 }
 .related-field__label:first-of-type {
   padding-bottom: 13px;
@@ -44,6 +47,12 @@
   height: 28px;
   margin-right: 16px;
   border: 1px solid #cdcdcd;
+  &:hover {
+    border: 1px solid #bababa;
+  }
+  &:active {
+    opacity: 30%;
+  }
 }
 input[type="checkbox"]:checked + .related-field__checkbox::before {
   content: " ";
@@ -56,37 +65,46 @@ input[type="checkbox"]:checked + .related-field__checkbox::before {
 }
 @media (min-width: $tablet-width) {
   .related-field__title {
-    padding-top: 68px;
+    padding-top: 65px;
+    padding-left: 0;
+    margin-left: -2px;
     &::after {
-      top: 90px;
-      right: -65px;
-      width: 440px;
+      top: 87px;
+      right: -67px;
+      width: 445px;
     }
     &::before {
       content: " ";
       position: absolute;
-      top: 90px;
-      left: -70px;
-      width: 29px;
+      top: 87px;
+      left: -72px;
+      width: 31px;
       height: 3px;
       background-color: #68b738;
     }
   }
   .related-field {
     height: 270px;
-    padding-left: 0;
+    padding: 0;
+    width: 100%;
+    box-sizing: border-box;
   }
   .related-field__wrap {
     flex-direction: row;
     flex-wrap: wrap;
-    align-items: center;
-    justify-content: flex-start;
-    padding-top: 53px;
+    align-items: flex-start;
+    justify-content: space-between;
+    padding-top: 57px;
+    padding-left: 0;
+    margin-left: -1px;
     height: 112px;
-    width: 700px;
+    width: 92.7%;
   }
   .related-field__label {
-    width: 340px;
+    width: 41%;
+    padding-bottom: 32px;
+  }
+  .related-field__label:first-of-type {
     padding-bottom: 32px;
   }
   .related-field__checkbox {
@@ -103,17 +121,17 @@ input[type="checkbox"]:checked + .related-field__checkbox::before {
 }
 @media (min-width: $desktop-width) {
   .related-field__title {
-    padding-top: 71px;
-    padding-bottom: 53px;
+    padding-top: 67px;
+    padding-bottom: 57px;
     &::after {
-      top: 94px;
-      right: -110px;
-      width: 1090px;
+      top: 89px;
+      right: -70px;
+      width: 1118px;
     }
     &::before {
-      top: 94px;
-      left: -110px;
-      width: 75px;
+      top: 89px;
+      left: -111px;
+      width: 70px;
     }
   }
   .related-field {

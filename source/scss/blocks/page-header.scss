@@ -8,13 +8,21 @@
   align-items: center;
   justify-content: space-between;
   min-height: 65px;
-  margin-right: 6.9%;
-  margin-left: 6.25%;
+  padding-right: 6.9%;
+  padding-left: 6.25%;
+  box-sizing: border-box;
+  width: 100%;
+  border-bottom: 1px solid #f2f2f2;
+}
+.page-header__wrapper-logo:hover {
+  opacity: 80%;
+}
+.page-header__wrapper-logo:active {
+  opacity: 60%;
 }
 .page-header__logo-image {
   width: 191px;
   height: 39px;
-  margin-top: -10px;
 }
 .page-header__toggle {
   width: 19px;
@@ -27,6 +35,20 @@
   border: 0;
   padding: 0;
 }
+.page-header__toggle-hidden {
+  width: 25px;
+  height: 19px;
+  background-color: transparent;
+  background-image: url("../img/icon-mobile-menu.svg");
+  background-repeat: no-repeat;
+  background-position: center;
+  background-size: cover;
+  border: 0;
+  padding: 0;
+}
+.main-nav__hidden {
+  display: none;
+}
 @media (min-width: $tablet-width) {
   .page-header {
     box-sizing: border-box;
@@ -36,42 +58,52 @@
     margin-top: 27px;
     min-height: 59px;
     padding-right: 4%;
-    padding-left: 4%;
+    padding-left: 3.8%;
   }
   .page-header__wrapper-logo {
+    box-sizing: border-box;
     width: 25%;
-    min-height: 59px;
+    min-height: 61px;
     margin: 0;
+    border-bottom: none;
+    padding: 0;
   }
   .page-header__logo-image {
-    width: 170px;
+    width: 174px;
     height: 59px;
+    margin-top: -5px;
   }
   .page-header__toggle {
     display: none;
     width: 0;
     height: 0;
   }
+  .main-nav__hidden {
+    display: block;
+  }
 }
 @media (min-width: $desktop-width) {
   .page-header {
-    padding-right: 7.7%;
-    padding-left: 7.6%;
-    margin-top: 52px;
-    min-height: 60px;
+    width: 1300px;
+    padding-left: 39px;
+    padding-right: 40px;
+    padding-top: 55px;
+    margin: 0 auto;
     &--main {
       position: absolute;
       top: 0;
-      left: 0;
+      left: 50%;
+      transform: translateX(-50%);
       z-index: 10;
       background: transparent;
     }
   }
   .page-header__wrapper-logo {
-    width: 16.6%;
+    width: 203px;
+    height: 60px;
   }
   .page-header__logo-image {
-    width: 100%;
+    width: 203px;
     height: 60px;
   }
   .page-header__toggle {

@@ -1,6 +1,5 @@
 .programs-slim {
   width: 87.5%;
-  position: relative;
   padding-left: 6.25%;
   padding-right: 6.25%;
   height: 266px;
@@ -10,7 +9,8 @@
   justify-content: space-between;
 }
 .programs-slim__title {
-  font-family: 'Oswald', serif;
+  position: relative;
+  font-family: 'Oswald', "Arial", sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
@@ -24,7 +24,7 @@
     content: " ";
     position: absolute;
     top: 24px;
-    left: 22px;
+    left: 4px;
     width: 50px;
     height: 51px;
     background-color: #68b738;
@@ -34,28 +34,29 @@
     content: " ";
     position: absolute;
     top: 22px;
-    left: 30px;
+    left: 11px;
     width: 35px;
     height: 49px;
     background: url("../img/icon-cat-slim.svg") no-repeat center;
   }
 }
 .programs-slim__description {
-  font-family: 'Arial', sans-serif;
+  font-family: 'ArialMT', "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
   text-align: left;
   color: #444444;
   margin: 0;
-  width: 99%;
+  width: 98%;
+  padding-left: 1%;
   padding-bottom: 22px;
   padding-top: 10px;
   border-bottom: 1px solid #cdcdcd;
 }
 .programs-slim__catalog {
   position: relative;
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
@@ -64,44 +65,68 @@
   text-transform: uppercase;
   margin-bottom: 22px;
   text-decoration: none;
+  padding-left: 0.75%;
+  padding-right: 40px;
   &::before {
     content: " ";
     position: absolute;
-    top: 8px;
-    left: 97px;
-    width: 18px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 8px;
+    width: 21px;
     height: 2px;
     background-color: #111111;
   }
   &::after {
     content: " ";
     position: absolute;
-    top: 4px;
-    left: 115px;
+    top: 50%;
+    transform: translateY(-50%);
+    right: 0;
     border: 5.5px solid transparent;
     border-left-color: #111111;
   }
 }
+.programs-slim__catalog:hover {
+  padding-right: 48px;
+}
+.programs-slim__catalog:hover::before {
+  width: 29px;
+}
+.programs-slim__catalog:active {
+  opacity: 30%;
+}
+.programs-slim__catalog:active::before {
+  opacity: 30%;
+}
+.programs-slim__catalog:active::after {
+  opacity: 30%;
+}
 @media (min-width: $tablet-width) {
   .programs-slim {
-    width: 708px;
+    position: relative;
+    box-sizing: border-box;
+    width: 100%;
     height: 372px;
-    padding-left: 52px;
-    padding-right: 0;
+    padding-left: 7.3%;
+    padding-right: 8%;
   }
   .programs-slim__title {
+    position: static;
     font-size: 36px;
-    padding-left: 3px;
-    padding-top: 78px;
+    padding-top: 76px;
+    padding-left: 0;
     &::before {
       top: 92px;
-      left: 446px;
+      left: auto;
+      right: 62px;
       width: 200px;
       height: 200px;
     }
     &::after {
       top: 80px;
-      left: 475px;
+      left: auto;
+      right: 92px;
       width: 141px;
       height: 194px;
     }
@@ -109,45 +134,44 @@
   .programs-slim__description {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 0;
+    padding-top: 2px;
     padding-bottom: 0;
-    width: 373px;
+    width: 62%;
     border: none;
     margin-bottom: 33px;
+    padding-left: 0;
   }
   .programs-slim__catalog {
     font-size: 20px;
     line-height: 20px;
     margin-bottom: 62px;
-    &::before {
-      top: 299px;
-      left: 182px;
-      width: 19px;
-    }
-    &::after {
-      top: 295px;
-      left: 201px;
-    }
+    padding-left: 0;
+    padding-right: 54px;
+  }
+  .programs-slim__catalog:hover {
+    padding-right: 62px;
   }
 }
 @media (min-width: $desktop-width) {
   .programs-slim {
     margin-right: 80px;
     width: 570px;
+    padding-left: 53px;
+    padding-right: 56px;
   }
   .programs-slim__title {
     font-size: 36px;
-    padding-top: 78px;
-    padding-left: 164px;
+    padding-top: 77px;
+    padding-left: 163px;
     &::before {
-      top: 47px;
-      left: 52px;
+      top: 48px;
+      left: 53px;
       width: 100px;
       height: 100px;
     }
     &::after {
-      top: 41px;
-      left: 65px;
+      top: 42px;
+      left: 66px;
       width: 71px;
       height: 97px;
     }
@@ -163,15 +187,9 @@
     font-size: 20px;
     line-height: 20px;
     padding-left: 1px;
-    &::before {
-      top: 298px;
-      left: 186px;
-      width: 19px;
-      height: 3px;
-    }
-    &::after {
-      top: 294px;
-      left: 204px;
-    }
+    padding-right: 53px;
+  }
+  .programs-slim__catalog:hover {
+    padding-right: 61px;
   }
 }

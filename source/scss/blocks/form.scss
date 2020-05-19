@@ -2,7 +2,7 @@
   width: 100%;
 }
 .form__label {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 18px;
@@ -10,9 +10,10 @@
   color: #222222;
   text-transform: uppercase;
   margin: 0;
+  cursor: pointer;
 }
 .form__title {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', "Arial", sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 1;
@@ -28,7 +29,7 @@
   justify-content: space-between;
 }
 .form__button {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -42,12 +43,30 @@
 }
 input[placeholder],
 textarea[placeholder] {
-  font-family: 'Oswald', serif;
+  font-family: 'Oswald', "Arial", sans-serif;
   font-size: 16px;
   font-weight: normal;
   line-height: 18px;
   text-transform: uppercase;
   color: #444444;
+  border: 1px solid rgba(205, 205, 205, 0.5);
+}
+input,
+textarea {
+  border: 1px solid rgba(205, 205, 205, 0.5);
+}
+input:hover,
+textarea:hover {
+  border: 1px solid #cdcdcd;
+}
+input:focus,
+textarea:focus {
+  border: 2px solid black;
+  outline: none;
+}
+input:not(:placeholder-shown):invalid,
+textarea:not(:placeholder-shown):invalid {
+  border: 2px solid #ff8282;
 }
 @media (min-width: $tablet-width) {
   .form__title {
@@ -55,19 +74,28 @@ textarea[placeholder] {
   }
   .form__button {
     font-size: 20px;
-    margin: 0;
-    padding: 17px 67px 15px 63px;
+    margin-bottom: 0;
+    padding: 16px 67px 16px 63px;
   }
   .form {
-    width: 630px;
-    margin-left: 71px;
+    box-sizing: border-box;
+    width: 100%;
+    padding-left: 9.2%;
+    padding-right: 8.6%;
   }
   .form__button-wrap {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    width: 502px;
+    flex-direction: row;
+    width: 83%;
     margin-top: 54px;
+  }
+  .form__label {
+    font-size: 20px;
+    line-height: 20px;
+  }
+  input[placeholder],
+  textarea[placeholder] {
+    font-size: 20px;
+    line-height: 20px;
   }
 }
 @media (min-width: $desktop-width) {
@@ -78,17 +106,22 @@ textarea[placeholder] {
   }
   .form {
     width: 1220px;
-    margin-left: 110px;
+    padding-right: 0;
+    padding-left: 1px;
+    margin: 0;
   }
   .form__wrap {
     width: 1220px;
-    margin-top: 69px;
+    margin-top: 65px;
     display: flex;
     align-items: center;
     justify-content: space-between;
   }
   .form__button-wrap {
-    width: 828px;
+    width: 829px;
     margin-top: 61px;
+  }
+  .form__button {
+    padding: 15px 206px 17px 208px;
   }
 }
