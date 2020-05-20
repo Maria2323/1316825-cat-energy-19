@@ -1,12 +1,12 @@
 .programs {
   width: 100%;
-  height: 552px;
+  min-height: 552px;
 }
 .programs__list {
   list-style: none;
   padding-left: 6.25%;
   padding-right: 6.25%;
-  height: 552px;
+  min-height: 552px;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -19,11 +19,11 @@
 @media (min-width: $tablet-width) {
   .programs {
     box-sizing: border-box;
-    height: 774px;
+    min-height: 774px;
     width: 100%
   }
   .programs__list {
-    height: 774px;
+    min-height: 774px;
     padding-left: 3.9%;
     padding-right: 3.9%;
   }
@@ -31,7 +31,7 @@
 @media (min-width: $desktop-width) {
   .programs {
     width: 1300px;
-    height: 525px;
+    min-height: 525px;
     margin: 0 auto;
     padding: 80px 40px 73px 39px;
   }
@@ -39,6 +39,6 @@
     width: 1220px;
     padding: 0;
     flex-direction: row;
-    height: 372px;
+    min-height: 372px;
   }
 }

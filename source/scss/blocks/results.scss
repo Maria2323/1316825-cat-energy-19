@@ -9,7 +9,7 @@
   background-color: #f2f2f2;
 }
 .results__wrapper {
-  height: 277px;
+  min-height: 277px;
   padding-left: 6.25%;
   padding-right: 6.25%;
   padding-top: 23px;
@@ -58,17 +58,14 @@
   width: 100%;
 }
 .results__sum {
-  box-sizing: border-box;
   width: 124px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  height: 56px;
-  border: 1px solid #cdcdcd;
-  border-radius: 3px;
 }
 .results__kg,
 .results__days {
+  box-sizing: border-box;
   font-family: 'Oswald', "Arial", sans-serif;
   font-weight: normal;
   font-size: 24px;
@@ -78,6 +75,10 @@
   color: #111111;
   margin: 0;
   padding-top: 13px;
+  width: 124px;
+  min-height: 56px;
+  border: 1px solid #cdcdcd;
+  border-radius: 3px;
 }
 .results__weight-loss,
 .results__time-spent {
@@ -87,11 +88,12 @@
   line-height: 1;
   text-align: center;
   color: #444444;
-  margin: 0;
+  margin-top: -18px;
   width: 90px;
   background-color: #f2f2f2;
   box-sizing: border-box;
-  padding: 9px 7px;
+  padding: 9px 7px 0;
+  margin-bottom: 0;
 }
 .results__money {
   display: flex;
@@ -202,6 +204,7 @@
     align-items: flex-end;
     min-height: 48px;
     width: 25%;
+    margin-top: -7px;
   }
   .results__money-spent {
     font-size: 20px;
@@ -214,11 +217,12 @@
     margin-left: 0;
   }
   .results__sum {
-    height: 72px;
     width: 162px;
   }
   .results__kg,
   .results__days {
+    width: 162px;
+    min-height: 72px;
     font-size: 30px;
     line-height: 37px;
     padding-top: 15px;
