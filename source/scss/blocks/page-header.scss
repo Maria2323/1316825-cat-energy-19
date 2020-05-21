@@ -3,6 +3,7 @@
   min-height: 65px;
   background-color: white;
 }
+
 .page-header__wrapper-logo {
   display: flex;
   align-items: center;
@@ -14,16 +15,20 @@
   width: 100%;
   border-bottom: 1px solid #f2f2f2;
 }
+
 .page-header__wrapper-logo:hover {
   opacity: 80%;
 }
+
 .page-header__wrapper-logo:active {
   opacity: 60%;
 }
+
 .page-header__logo-image {
   width: 191px;
   height: 39px;
 }
+
 .page-header__toggle {
   width: 19px;
   height: 19px;
@@ -35,6 +40,7 @@
   border: 0;
   padding: 0;
 }
+
 .page-header__toggle-hidden {
   width: 25px;
   height: 19px;
@@ -46,9 +52,11 @@
   border: 0;
   padding: 0;
 }
+
 .main-nav__hidden {
   display: none;
 }
+
 @media (min-width: $tablet-width) {
   .page-header {
     box-sizing: border-box;
@@ -60,6 +68,7 @@
     padding-right: 4%;
     padding-left: 3.8%;
   }
+
   .page-header__wrapper-logo {
     box-sizing: border-box;
     width: 25%;
@@ -68,20 +77,24 @@
     border-bottom: none;
     padding: 0;
   }
+
   .page-header__logo-image {
     width: 174px;
     height: 59px;
     margin-top: -5px;
   }
+
   .page-header__toggle {
     display: none;
     width: 0;
     height: 0;
   }
+
   .main-nav__hidden {
     display: block;
   }
 }
+
 @media (min-width: $desktop-width) {
   .page-header {
     width: 1300px;
@@ -89,6 +102,7 @@
     padding-right: 40px;
     padding-top: 55px;
     margin: 0 auto;
+
     &--main {
       position: absolute;
       top: 0;
@@ -98,14 +112,17 @@
       background: transparent;
     }
   }
+
   .page-header__wrapper-logo {
     width: 203px;
     height: 60px;
   }
+
   .page-header__logo-image {
     width: 203px;
     height: 60px;
   }
+
   .page-header__toggle {
     display: none;
   }

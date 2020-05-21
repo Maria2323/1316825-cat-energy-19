@@ -2,8 +2,9 @@
   width: 100%;
   margin-bottom: 32px;
 }
+
 .application-form__title {
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
@@ -13,8 +14,9 @@
   padding-top: 14px;
   padding-left: 6.25%;
 }
+
 .application-form__description {
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -26,8 +28,9 @@
   padding-top: 25px;
   padding-left: 6.25%;
 }
+
 .application-form__legend {
-  font-family: 'ArialMT', "Arial", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 16px;
@@ -35,16 +38,19 @@
   color: #444444;
   margin: 0;
 }
+
 @media (min-width: $tablet-width) {
   .application-form {
     box-sizing: border-box;
     margin-bottom: 72px;
   }
+
   .application-form__title {
     font-size: 60px;
     padding-top: 52px;
     padding-left: 3.8%;
   }
+
   .application-form__description {
     font-size: 20px;
     line-height: 30px;
@@ -52,6 +58,7 @@
     padding-left: 9.1%;
     width: 50%;
   }
+
   .application-form__legend {
     font-size: 16px;
     line-height: 16px;
@@ -59,15 +66,18 @@
     margin-top: -7px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .application-form {
     width: 1300px;
     margin: 0 auto;
     padding: 72px 40px 83px;
   }
+
   .application-form__title {
     padding: 0;
   }
+
   .application-form__description {
     padding-top: 56px;
     padding-left: 0;

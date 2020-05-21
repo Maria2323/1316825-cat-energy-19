@@ -1,12 +1,14 @@
 .related-field {
-  height: 244px;
+  min-height: 244px;
   border: none;
   padding-left: 5.7%;
   margin: 0;
   position: relative;
 }
+
 .related-field__title {
   padding-top: 16px;
+
   &::after {
     content: " ";
     position: absolute;
@@ -17,6 +19,7 @@
     background-color: #68b738;
   }
 }
+
 .related-field__wrap {
   display: flex;
   flex-direction: column;
@@ -25,35 +28,40 @@
   padding-top: 35px;
   padding-left: 0.7%;
 }
+
 .related-field__label {
   padding-bottom: 12px;
   display: flex;
   align-items: center;
   justify-content: flex-start;
   position: relative;
+
   &:active {
     opacity: 30%;
   }
 }
+
 .related-field__label:first-of-type {
   padding-bottom: 13px;
 }
-.related-field__input {
-  display: none;
-}
+
 .related-field__checkbox {
   display: inline-block;
   width: 28px;
   height: 28px;
   margin-right: 16px;
   border: 1px solid #cdcdcd;
+  box-sizing: border-box;
+
   &:hover {
     border: 1px solid #bababa;
   }
+
   &:active {
     opacity: 30%;
   }
 }
+
 input[type="checkbox"]:checked + .related-field__checkbox::before {
   content: " ";
   height: 17px;
@@ -63,16 +71,27 @@ input[type="checkbox"]:checked + .related-field__checkbox::before {
   top: 6px;
   left: 5px;
 }
+
+input[type="checkbox"]:focus + .related-field__checkbox {
+  border: 2px solid black;
+}
+
+input[type="checkbox"]:invalid + .related-field__checkbox {
+  border: 2px solid #ff8282;
+}
+
 @media (min-width: $tablet-width) {
   .related-field__title {
     padding-top: 65px;
     padding-left: 0;
     margin-left: -2px;
+
     &::after {
       top: 87px;
       right: -67px;
       width: 445px;
     }
+
     &::before {
       content: " ";
       position: absolute;
@@ -83,12 +102,14 @@ input[type="checkbox"]:checked + .related-field__checkbox::before {
       background-color: #68b738;
     }
   }
+
   .related-field {
-    height: 270px;
+    min-height: 270px;
     padding: 0;
     width: 100%;
     box-sizing: border-box;
   }
+
   .related-field__wrap {
     flex-direction: row;
     flex-wrap: wrap;
@@ -97,21 +118,25 @@ input[type="checkbox"]:checked + .related-field__checkbox::before {
     padding-top: 57px;
     padding-left: 0;
     margin-left: -1px;
-    height: 112px;
+    min-height: 112px;
     width: 92.7%;
   }
+
   .related-field__label {
     width: 41%;
     padding-bottom: 32px;
   }
+
   .related-field__label:first-of-type {
     padding-bottom: 32px;
   }
+
   .related-field__checkbox {
     width: 38px;
     height: 38px;
     margin-right: 19px;
   }
+
   input[type="checkbox"]:checked + .related-field__checkbox::before {
     height: 16px;
     width: 21px;
@@ -119,34 +144,45 @@ input[type="checkbox"]:checked + .related-field__checkbox::before {
     left: 10px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .related-field__title {
     padding-top: 67px;
     padding-bottom: 57px;
+
     &::after {
       top: 89px;
       right: -70px;
       width: 1118px;
     }
+
     &::before {
       top: 89px;
       left: -111px;
       width: 70px;
     }
   }
+
   .related-field {
-    height: 200px;
+    min-height: 200px;
     padding-left: 0;
   }
+
   .related-field__wrap {
     padding-top: 0;
-    height: 40px;
+    min-height: 40px;
     width: 1300px;
   }
-  .related-field__label {
-    width: 325px;
-    padding-bottom: 0;
+
+  .related-field__label:first-of-type {
+    padding-bottom: 20px;
   }
+
+  .related-field__label {
+    padding-bottom: 20px;
+    width: 325px;
+  }
+
   input[type="checkbox"]:checked + .related-field__checkbox::before {
     height: 17px;
     width: 22px;

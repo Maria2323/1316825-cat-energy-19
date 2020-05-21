@@ -7,8 +7,9 @@
   align-items: flex-start;
   justify-content: space-between;
 }
+
 .product-description__title {
-  font-family: 'Oswald', "Arial", serif;
+  font-family: "Oswald", "Arial", serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -16,14 +17,17 @@
   color: #111111;
   text-transform: uppercase;
   width: 57%;
+  text-decoration: none;
 }
+
 .product-description__detail {
   width: 100%;
   height: 44px;
   border-collapse: collapse;
 }
+
 .product-description__field {
-  font-family: 'Arial', "Arial", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -31,8 +35,9 @@
   color: #444444;
   margin: 0;
 }
+
 .product-description__value {
-  font-family: 'Arial', "Arial", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-weight: normal;
   font-size: 12px;
   line-height: 14px;
@@ -40,6 +45,7 @@
   color: #444444;
   margin: 0;
 }
+
 @media (min-width: $tablet-width) {
   .product-description {
     width: 249px;
@@ -47,21 +53,25 @@
     padding-top: 38px;
     align-items: center;
   }
+
   .product-description__title {
     font-size: 20px;
     text-align: center;
     width: 144px;
   }
+
   .product-description__detail {
     padding-top: 28px;
     width: 249px;
   }
+
   .product-description__field {
     font-size: 16px;
     text-align: left;
     height: 29px;
     border-bottom: 1px solid #cdcdcd;
   }
+
   .product-description__value {
     font-size: 16px;
     text-align: right;
@@ -69,26 +79,31 @@
     border-bottom: 1px solid #cdcdcd;
   }
 }
+
 @media (min-width: $desktop-width) {
   .product-description {
     width: 161px;
     height: 155px;
     padding-top: 37px;
   }
+
   .product-description__detail {
     width: 168px;
   }
+
   .product-description__title {
     font-size: 20px;
     text-align: center;
     width: 138px;
   }
+
   .product-description__field {
     font-size: 16px;
     line-height: 12px;
     text-align: left;
     height: 29px;
   }
+
   .product-description__value {
     font-size: 16px;
     line-height: 12px;

@@ -2,6 +2,7 @@
   width: 100%;
   min-height: 552px;
 }
+
 .programs__list {
   list-style: none;
   padding-left: 6.25%;
@@ -13,21 +14,25 @@
   flex-direction: column;
   margin: 0;
 }
+
 .programs__item {
   background-color: #f2f2f2;
 }
+
 @media (min-width: $tablet-width) {
   .programs {
     box-sizing: border-box;
     min-height: 774px;
-    width: 100%
+    width: 100%;
   }
+
   .programs__list {
     min-height: 774px;
     padding-left: 3.9%;
     padding-right: 3.9%;
   }
 }
+
 @media (min-width: $desktop-width) {
   .programs {
     width: 1300px;
@@ -35,6 +40,7 @@
     margin: 0 auto;
     padding: 80px 40px 73px 39px;
   }
+
   .programs__list {
     width: 1220px;
     padding: 0;

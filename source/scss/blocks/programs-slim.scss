@@ -6,20 +6,22 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
+
 .programs-slim__title {
   position: relative;
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
   text-align: left;
   color: #111111;
   text-transform: uppercase;
-  padding-top: 29px;
+  padding-top: 30px;
   padding-left: 30%;
   margin: 0;
+
   &::before {
     content: " ";
     position: absolute;
@@ -30,6 +32,7 @@
     background-color: #68b738;
     border-radius: 50%;
   }
+
   &::after {
     content: " ";
     position: absolute;
@@ -40,8 +43,9 @@
     background: url("../img/icon-cat-slim.svg") no-repeat center;
   }
 }
+
 .programs-slim__description {
-  font-family: 'ArialMT', "Arial", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -51,57 +55,66 @@
   width: 98%;
   padding-left: 1%;
   padding-bottom: 22px;
-  padding-top: 10px;
+  padding-top: 29px;
   border-bottom: 1px solid #cdcdcd;
 }
+
 .programs-slim__catalog {
   position: relative;
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
   color: #111111;
   text-transform: uppercase;
-  margin-bottom: 22px;
   text-decoration: none;
   padding-left: 0.75%;
   padding-right: 40px;
+  padding-top: 19px;
+
   &::before {
     content: " ";
     position: absolute;
-    top: 50%;
+    top: 76%;
     transform: translateY(-50%);
     right: 8px;
     width: 21px;
     height: 2px;
     background-color: #111111;
   }
+
   &::after {
     content: " ";
     position: absolute;
-    top: 50%;
+    top: 76%;
     transform: translateY(-50%);
     right: 0;
     border: 5.5px solid transparent;
     border-left-color: #111111;
   }
 }
+
 .programs-slim__catalog:hover {
   padding-right: 48px;
 }
+
 .programs-slim__catalog:hover::before {
   width: 29px;
 }
+
 .programs-slim__catalog:active {
   opacity: 30%;
 }
+
 .programs-slim__catalog:active::before {
   opacity: 30%;
 }
+
 .programs-slim__catalog:active::after {
   opacity: 30%;
 }
+
 @media (min-width: $tablet-width) {
   .programs-slim {
     position: relative;
@@ -111,11 +124,13 @@
     padding-left: 7.3%;
     padding-right: 8%;
   }
+
   .programs-slim__title {
     position: static;
     font-size: 36px;
     padding-top: 76px;
     padding-left: 0;
+
     &::before {
       top: 92px;
       left: auto;
@@ -123,6 +138,7 @@
       width: 200px;
       height: 200px;
     }
+
     &::after {
       top: 80px;
       left: auto;
@@ -131,27 +147,38 @@
       height: 194px;
     }
   }
+
   .programs-slim__description {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 2px;
+    padding-top: 25px;
     padding-bottom: 0;
     width: 62%;
     border: none;
-    margin-bottom: 33px;
     padding-left: 0;
   }
+
   .programs-slim__catalog {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 62px;
     padding-left: 0;
     padding-right: 54px;
+    padding-top: 57px;
+
+    &::before {
+      top: 86%;
+    }
+
+    &::after {
+      top: 86%;
+    }
   }
+
   .programs-slim__catalog:hover {
     padding-right: 62px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .programs-slim {
     margin-right: 80px;
@@ -159,16 +186,19 @@
     padding-left: 53px;
     padding-right: 56px;
   }
+
   .programs-slim__title {
     font-size: 36px;
-    padding-top: 77px;
+    padding-top: 76px;
     padding-left: 163px;
+
     &::before {
       top: 48px;
       left: 53px;
       width: 100px;
       height: 100px;
     }
+
     &::after {
       top: 42px;
       left: 66px;
@@ -176,19 +206,31 @@
       height: 97px;
     }
   }
+
   .programs-slim__description {
     font-size: 16px;
     line-height: 24px;
     width: 462px;
     margin-bottom: 0;
-    margin-top: 40px;
+    padding-top: 74px;
   }
+
   .programs-slim__catalog {
     font-size: 20px;
     line-height: 20px;
     padding-left: 1px;
     padding-right: 53px;
+    padding-top: 32px;
+
+    &::before {
+      top: 80%;
+    }
+
+    &::after {
+      top: 80%;
+    }
   }
+
   .programs-slim__catalog:hover {
     padding-right: 61px;
   }

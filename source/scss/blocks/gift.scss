@@ -10,25 +10,29 @@
   align-items: center;
   justify-content: space-between;
   background: url("../img/gift-photo-mobile@1x.jpg") no-repeat center;
+
   @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
     background: url("../img/gift-photo-mobile@2x.jpg") no-repeat center;
     background-size: cover;
   }
 }
+
 .gift__icon-wrap {
   width: 56px;
   height: 61px;
   background: url("../img/icon-gift.svg") no-repeat center;
 }
+
 .gift__description {
   color: #ffffff;
-  font-family: 'Arial', "Arial", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
   text-align: center;
   margin-left: -1px;
 }
+
 @media (min-width: $tablet-width) {
   .gift {
     max-width: 630px;
@@ -37,21 +41,25 @@
     padding: 61px 125px 70px 91px;
     background: url("../img/gift-photo-tablet@1x.jpg") no-repeat center;
     flex-direction: row;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/gift-photo-tablet@2x.jpg") no-repeat center;
       background-size: contain;
     }
   }
+
   .gift__icon-wrap {
     width: 56px;
     height: 61px;
     padding-bottom: 0;
   }
+
   .gift__description {
     text-align: left;
     margin-top: 28px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .gift {
     max-width: 245px;
@@ -61,19 +69,21 @@
     background: url("../img/gift-photo-desktop@1x.jpg") no-repeat center;
     flex-direction: column;
     justify-content: space-between;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/gift-photo-desktop@2x.jpg") no-repeat center;
       background-size: contain;
     }
   }
+
   .gift__icon-wrap {
     width: 56px;
     height: 61px;
     margin: 0;
   }
+
   .gift__description {
     margin: 0;
     text-align: center;
   }
 }
-

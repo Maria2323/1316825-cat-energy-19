@@ -7,11 +7,12 @@
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  justify-content: space-between;
+  justify-content: flex-start;
 }
+
 .programs-pro__title {
   position: relative;
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 24px;
   line-height: 37px;
@@ -21,6 +22,7 @@
   margin: 0;
   padding-top: 30px;
   padding-left: 30%;
+
   &::before {
     content: " ";
     position: absolute;
@@ -31,6 +33,7 @@
     background-color: #68b738;
     border-radius: 50%;
   }
+
   &::after {
     content: " ";
     position: absolute;
@@ -41,8 +44,9 @@
     background: url("../img/icon-cat-pro.svg") no-repeat center;
   }
 }
+
 .programs-pro__description {
-  font-family: 'ArialMT', "Arial", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-weight: normal;
   font-size: 14px;
   line-height: 18px;
@@ -50,60 +54,69 @@
   color: #444444;
   margin: 0;
   padding-bottom: 22px;
-  padding-top: 10px;
+  padding-top: 29px;
   padding-left: 1%;
   width: 99%;
   border-bottom: 1px solid #cdcdcd;
 }
+
 .programs-pro__catalog {
   position: relative;
   display: block;
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 16px;
   text-align: left;
   color: #111111;
   text-transform: uppercase;
-  margin-bottom: 21px;
   text-decoration: none;
   padding-left: 0.75%;
   padding-right: 42px;
+  padding-top: 20px;
+
   &::before {
     content: " ";
     position: absolute;
-    top: 50%;
+    top: 76%;
     transform: translateY(-50%);
     right: 8px;
     width: 21px;
     height: 2px;
     background-color: #111111;
   }
+
   &::after {
     content: " ";
     position: absolute;
-    top: 50%;
+    top: 76%;
     transform: translateY(-50%);
     right: 0;
     border: 5.5px solid transparent;
     border-left-color: #111111;
   }
 }
+
 .programs-pro__catalog:hover {
   padding-right: 50px;
 }
+
 .programs-pro__catalog:hover::before {
   width: 29px;
 }
+
 .programs-pro__catalog:active {
   opacity: 30%;
 }
+
 .programs-pro__catalog:active::before {
   opacity: 30%;
 }
+
 .programs-pro__catalog:active::after {
   opacity: 30%;
 }
+
 @media (min-width: $tablet-width) {
   .programs-pro {
     position: relative;
@@ -114,11 +127,13 @@
     padding-left: 52px;
     padding-right: 8%;
   }
+
   .programs-pro__title {
     position: static;
     font-size: 36px;
     padding-top: 76px;
     padding-left: 0;
+
     &::before {
       top: 91px;
       left: auto;
@@ -126,6 +141,7 @@
       width: 200px;
       height: 200px;
     }
+
     &::after {
       top: 135px;
       left: auto;
@@ -134,27 +150,38 @@
       height: 113px;
     }
   }
+
   .programs-pro__description {
     font-size: 16px;
     line-height: 24px;
-    padding-top: 2px;
+    padding-top: 25px;
     padding-bottom: 0;
     width: 57%;
     border: none;
-    margin-bottom: 33px;
     padding-left: 0;
   }
+
   .programs-pro__catalog {
     font-size: 20px;
     line-height: 20px;
-    margin-bottom: 62px;
+    padding-top: 57px;
     padding-left: 0;
     padding-right: 52px;
+
+    &::before {
+      top: 86%;
+    }
+
+    &::after {
+      top: 86%;
+    }
   }
+
   .programs-pro__catalog:hover {
     padding-right: 60px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .programs-pro {
     width: 570px;
@@ -162,16 +189,19 @@
     padding-left: 53px;
     padding-right: 74px;
   }
+
   .programs-pro__title {
     font-size: 36px;
-    padding-top: 77px;
+    padding-top: 76px;
     padding-left: 163px;
+
     &::before {
       top: 48px;
       left: 53px;
       width: 100px;
       height: 100px;
     }
+
     &::after {
       top: 70px;
       left: 35px;
@@ -179,16 +209,27 @@
       height: 57px;
     }
   }
+
   .programs-pro__description {
     font-size: 16px;
     line-height: 24px;
     width: 450px;
     margin-bottom: 0;
-    margin-top: 40px;
+    padding-top: 74px;
   }
+
   .programs-pro__catalog {
     font-size: 20px;
     line-height: 20px;
     padding-left: 1px;
+    padding-top: 32px;
+
+    &::before {
+      top: 82%;
+    }
+
+    &::after {
+      top: 82%;
+    }
   }
 }

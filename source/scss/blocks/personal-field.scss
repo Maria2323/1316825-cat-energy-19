@@ -8,6 +8,7 @@
   align-items: flex-start;
   justify-content: center;
 }
+
 .personal-field__name,
 .personal-field__weight,
 .personal-field__old {
@@ -15,10 +16,12 @@
   justify-content: space-between;
   align-items: center;
 }
+
 .personal-field__name,
 .personal-field__weight {
   margin-bottom: 14px;
 }
+
 .personal-field__input {
   box-sizing: border-box;
   padding-top: 12px;
@@ -26,25 +29,31 @@
   padding-bottom: 13px;
   flex-grow: 1;
   height: 45px;
+
   &--name {
     margin-left: 15px;
   }
+
   &--weight {
     margin-left: 18px;
   }
+
   &--old {
     margin-left: 16px;
   }
 }
+
 @media (min-width: $tablet-width) {
   .personal-field {
     height: 196px;
     padding: 65px 0 72px 1px;
   }
+
   .personal-field__name,
   .personal-field__weight {
     margin-bottom: 20px;
   }
+
   .personal-field__input {
     padding-top: 10px;
     padding-left: 18px;
@@ -64,6 +73,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .personal-field {
     height: 196px;

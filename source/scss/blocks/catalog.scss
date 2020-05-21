@@ -1,8 +1,9 @@
 .catalog {
   width: 100%;
 }
+
 .catalog__title {
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
@@ -12,14 +13,16 @@
   margin-left: 6.25%;
   margin-bottom: 28px;
 }
+
 .catalog__list {
   list-style: none;
   padding: 0;
   margin: 0;
   width: 100%;
 }
+
 .catalog__button {
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 16px;
   line-height: 20px;
@@ -33,6 +36,7 @@
   width: 100%;
   text-decoration: none;
 }
+
 @media (min-width: $tablet-width) {
   .catalog {
     box-sizing: border-box;
@@ -40,20 +44,24 @@
     padding-right: 3.9%;
     padding-bottom: 67px;
   }
+
   .catalog__list {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
   }
+
   .catalog__item {
     margin-top: 140px;
   }
+
   .catalog__title {
     font-size: 60px;
     margin-left: 0;
     margin-bottom: 24px;
     margin-top: 53px;
   }
+
   .catalog__button {
     text-align: center;
     padding: 11px 93px 10px 95px;
@@ -61,6 +69,7 @@
     width: 249px;
   }
 }
+
 @media (min-width: $desktop-width) {
   .catalog {
     width: 1300px;
@@ -69,25 +78,27 @@
     padding-right: 40px;
     padding-bottom: 75px;
   }
+
   .catalog__list {
     width: 100%;
     display: flex;
     flex-wrap: wrap;
   }
+
   .catalog__title {
     margin-top: 72px;
     font-size: 60px;
     margin-left: 0;
     margin-bottom: 23px;
   }
+
   .catalog__button {
     text-align: center;
     width: 169px;
     padding: 10px 53px 10px 55px;
   }
+
   .catalog__item {
     margin-top: 142px;
   }
 }
-
-

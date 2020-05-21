@@ -5,8 +5,9 @@
   padding-left: 6.25%;
   margin-top: 18px;
 }
+
 .functionality__title {
-  font-family: 'Oswald', "Arial", sans-serif;
+  font-family: "Oswald", "Arial", sans-serif;
   font-weight: normal;
   font-size: 36px;
   line-height: 60px;
@@ -14,6 +15,7 @@
   color: #111111;
   margin: 0;
 }
+
 .functionality__list {
   width: 93%;
   list-style: none;
@@ -27,13 +29,15 @@
   justify-content: space-between;
   position: relative;
 }
+
 .functionality__item {
   width: 100%;
   min-height: 60px;
   position: relative;
 }
+
 .functionality__description {
-  font-family: 'ArialMT', "Arial", sans-serif;
+  font-family: "ArialMT", "Arial", sans-serif;
   font-weight: 400;
   font-size: 14px;
   line-height: 18px;
@@ -42,6 +46,7 @@
   padding-left: 80px;
   padding-top: 2px;
   margin: 0;
+
   &::before {
     content: " ";
     position: absolute;
@@ -51,6 +56,7 @@
     height: 60px;
     background-color: #68b738;
   }
+
   &::after {
     content: " ";
     position: absolute;
@@ -59,38 +65,48 @@
     width: 60px;
     height: 60px;
   }
+
   &--leaf::after {
     background: url("../img/advantage-leaf@1x.png") no-repeat center;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/advantage-leaf@2x.png") no-repeat center;
       background-size: 76%;
     }
   }
+
   &--water::after {
     background: url("../img/advantage-powder@1x.png") no-repeat center;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/advantage-powder@2x.png") no-repeat center;
       background-size: 76%;
     }
   }
+
   &--fork::after {
     background: url("../img/advantage-dining@1x.png") no-repeat center;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/advantage-dining@2x.png") no-repeat center;
       background-size: 76%;
     }
   }
+
   &--watch::after {
     background: url("../img/advantage-clock@1x.png") no-repeat center;
+
     @media (min-resolution: $retina-dpi), (min-resolution: $retina-dppx) {
       background: url("../img/advantage-clock@2x.png") no-repeat center;
       background-size: 76%;
     }
   }
+
   &--watch br:last-child {
     display: none;
   }
 }
+
 @media (min-width: $tablet-width) {
   .functionality {
     min-height: 736px;
@@ -98,10 +114,12 @@
     border-bottom: 1px solid #cdcdcd;
     margin-top: 45px;
   }
+
   .functionality__title {
     font-size: 60px;
     margin-bottom: 72px;
   }
+
   .functionality__list {
     width: 100%;
     min-height: 545px;
@@ -111,12 +129,14 @@
     align-content: space-between;
     margin: 0;
   }
+
   .functionality__item {
     width: 48%;
     min-height: 228px;
   }
+
   .functionality__item::before {
-    font-family: 'Oswald', sans-serif;
+    font-family: "Oswald", sans-serif;
     font-weight: normal;
     font-size: 281px;
     line-height: 1;
@@ -125,46 +145,58 @@
     color: #f2f2f2;
     z-index: -1;
   }
+
   .functionality__item:first-child::before {
-      content: "1";
-      left: 33.7%;
+    content: "1";
+    left: 33.7%;
   }
+
   .functionality__item:nth-child(2)::before {
-      content: "2";
-      left: 31.3%;
+    content: "2";
+    left: 31.3%;
   }
+
   .functionality__item:nth-child(3)::before {
-      content: "3";
-      left: 31.5%;
+    content: "3";
+    left: 31.5%;
   }
+
   .functionality__item:last-child::before {
-      content: "4";
-      left: 32%;
+    content: "4";
+    left: 32%;
   }
+
   .functionality__description {
     font-size: 16px;
     line-height: 24px;
     padding-left: 0;
     padding-top: 112px;
+
     &::before {
       width: 80px;
       height: 80px;
     }
+
     &--leaf {
       width: 57%;
     }
+
     &--water {
       width: 64%;
     }
+
     &--fork {
       width: 59%;
     }
+
     &--watch {
       width: 70%;
+
       br:first-child {
         display: none;
       }
     }
+
     &::after {
       width: 80px;
       height: 80px;
@@ -172,6 +204,7 @@
     }
   }
 }
+
 @media (min-width: $desktop-width) {
   .functionality {
     width: 1300px;
@@ -181,42 +214,54 @@
     padding-right: 40px;
     margin: 0 auto;
   }
+
   .functionality__list {
     min-height: 228px;
   }
+
   .functionality__title {
     font-size: 60px;
     padding: 0;
     margin-bottom: 72px;
   }
+
   .functionality__item {
     width: 325px;
   }
+
   .functionality__item:nth-of-type(4) {
     width: 245px;
   }
+
   .functionality__item:first-child::before {
     left: 117px;
   }
+
   .functionality__item:nth-child(2)::before {
     left: 112px;
   }
+
   .functionality__item:nth-child(3)::before {
     left: 113px;
   }
+
   .functionality__item:last-child::before {
     left: 114px;
   }
+
   .functionality__description {
     &--leaf {
       width: 201px;
     }
+
     &--water {
       width: 224px;
     }
+
     &--fork {
       width: 206px;
     }
+
     &--watch {
       width: 248px;
     }
